@@ -1,5 +1,288 @@
 [
   {
+    "id": "intel-arc-a310",
+    "brand": "Intel",
+    "name": "Arc A310",
+    "aliases": [],
+    "type": "desktop",
+    "release": "2022-09",
+    "architecture": "Xe-HPG (Alchemist)",
+    "vram": { "gb": 4, "type": "GDDR6", "bus_bits": 64 },
+    "power_w": { "min": 75, "max": 75 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 3.07,
+    "features": { "ray_tracing": true, "upscaling": ["XeSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Intel_graphics_processing_units&oldid=1368155295"
+    ],
+    "scores": { "gaming": { "at_min_power": 29, "at_max_power": 29 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "intel-arc-a350m",
+    "brand": "Intel",
+    "name": "Arc A350M",
+    "aliases": [],
+    "type": "mobile",
+    "release": "2022-03",
+    "architecture": "Xe-HPG (Alchemist)",
+    "vram": { "gb": 4, "type": "GDDR6", "bus_bits": 64 },
+    "power_w": { "min": 25, "max": 35 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 3.38,
+    "features": { "ray_tracing": true, "upscaling": ["XeSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Intel_graphics_processing_units&oldid=1368155295"
+    ],
+    "scores": { "gaming": { "at_min_power": 23, "at_max_power": 27 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "intel-arc-a370m",
+    "brand": "Intel",
+    "name": "Arc A370M",
+    "aliases": [],
+    "type": "mobile",
+    "release": "2022-03",
+    "architecture": "Xe-HPG (Alchemist)",
+    "vram": { "gb": 4, "type": "GDDR6", "bus_bits": 64 },
+    "power_w": { "min": 35, "max": 50 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 4.2,
+    "features": { "ray_tracing": true, "upscaling": ["XeSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Intel_graphics_processing_units&oldid=1368155295"
+    ],
+    "scores": { "gaming": { "at_min_power": 26, "at_max_power": 32 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "intel-arc-a380",
+    "brand": "Intel",
+    "name": "Arc A380",
+    "aliases": [],
+    "type": "desktop",
+    "release": "2022-06",
+    "architecture": "Xe-HPG (Alchemist)",
+    "vram": { "gb": 6, "type": "GDDR6", "bus_bits": 96 },
+    "power_w": { "min": 75, "max": 75 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 4.2,
+    "features": { "ray_tracing": true, "upscaling": ["XeSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Intel_graphics_processing_units&oldid=1368155295"
+    ],
+    "scores": { "gaming": { "at_min_power": 36, "at_max_power": 36 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "intel-arc-a530m",
+    "brand": "Intel",
+    "name": "Arc A530M",
+    "aliases": [],
+    "type": "mobile",
+    "release": "2023",
+    "architecture": "Xe-HPG (Alchemist)",
+    "vram": { "gb": 4, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 65, "max": 95 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "features": { "ray_tracing": true, "upscaling": ["XeSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Intel_graphics_processing_units&oldid=1368155295"
+    ],
+    "scores": { "gaming": { "at_min_power": null, "at_max_power": null } },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "intel-arc-a550m",
+    "brand": "Intel",
+    "name": "Arc A550M",
+    "aliases": [],
+    "type": "mobile",
+    "release": "2022",
+    "architecture": "Xe-HPG (Alchemist)",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 60, "max": 80 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 6.96,
+    "features": { "ray_tracing": true, "upscaling": ["XeSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Intel_graphics_processing_units&oldid=1368155295"
+    ],
+    "scores": { "gaming": { "at_min_power": 39, "at_max_power": 46 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "intel-arc-a570m",
+    "brand": "Intel",
+    "name": "Arc A570M",
+    "aliases": [],
+    "type": "mobile",
+    "release": "2023",
+    "architecture": "Xe-HPG (Alchemist)",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 75, "max": 95 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "features": { "ray_tracing": true, "upscaling": ["XeSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Intel_graphics_processing_units&oldid=1368155295"
+    ],
+    "scores": { "gaming": { "at_min_power": null, "at_max_power": null } },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "intel-arc-a580",
+    "brand": "Intel",
+    "name": "Arc A580",
+    "aliases": [],
+    "type": "desktop",
+    "release": "2023-10",
+    "architecture": "Xe-HPG (Alchemist)",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 175, "max": 175 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 10.45,
+    "features": { "ray_tracing": true, "upscaling": ["XeSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Intel_graphics_processing_units&oldid=1368155295"
+    ],
+    "scores": { "gaming": { "at_min_power": 67, "at_max_power": 67 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "intel-arc-a730m",
+    "brand": "Intel",
+    "name": "Arc A730M",
+    "aliases": [],
+    "type": "mobile",
+    "release": "2022",
+    "architecture": "Xe-HPG (Alchemist)",
+    "vram": { "gb": 12, "type": "GDDR6", "bus_bits": 192 },
+    "power_w": { "min": 80, "max": 120 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 12.6,
+    "features": { "ray_tracing": true, "upscaling": ["XeSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Intel_graphics_processing_units&oldid=1368155295"
+    ],
+    "scores": { "gaming": { "at_min_power": 55, "at_max_power": 69 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "intel-arc-a750",
+    "brand": "Intel",
+    "name": "Arc A750",
+    "aliases": [],
+    "type": "desktop",
+    "release": "2022-10",
+    "architecture": "Xe-HPG (Alchemist)",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 225, "max": 225 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 17.2,
+    "features": { "ray_tracing": true, "upscaling": ["XeSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Intel_graphics_processing_units&oldid=1368155295"
+    ],
+    "scores": { "gaming": { "at_min_power": 95, "at_max_power": 95 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "intel-arc-a770-8gb",
+    "brand": "Intel",
+    "name": "Arc A770 8GB",
+    "aliases": [],
+    "type": "desktop",
+    "release": "2022-10",
+    "architecture": "Xe-HPG (Alchemist)",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 225, "max": 225 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 19.66,
+    "features": { "ray_tracing": true, "upscaling": ["XeSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Intel_graphics_processing_units&oldid=1368155295"
+    ],
+    "scores": { "gaming": { "at_min_power": 105, "at_max_power": 105 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "intel-arc-a770-16gb",
+    "brand": "Intel",
+    "name": "Arc A770 16GB",
+    "aliases": [],
+    "type": "desktop",
+    "release": "2022-10",
+    "architecture": "Xe-HPG (Alchemist)",
+    "vram": { "gb": 16, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 225, "max": 225 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 19.66,
+    "features": { "ray_tracing": true, "upscaling": ["XeSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Intel_graphics_processing_units&oldid=1368155295"
+    ],
+    "scores": { "gaming": { "at_min_power": 105, "at_max_power": 105 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "intel-arc-a770m",
+    "brand": "Intel",
+    "name": "Arc A770M",
+    "aliases": [],
+    "type": "mobile",
+    "release": "2022",
+    "architecture": "Xe-HPG (Alchemist)",
+    "vram": { "gb": 16, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 120, "max": 150 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 16.79,
+    "features": { "ray_tracing": true, "upscaling": ["XeSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Intel_graphics_processing_units&oldid=1368155295"
+    ],
+    "scores": { "gaming": { "at_min_power": 75, "at_max_power": 84 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "intel-arc-b570",
+    "brand": "Intel",
+    "name": "Arc B570",
+    "aliases": [],
+    "type": "desktop",
+    "release": "2025-01",
+    "architecture": "Xe2 (Battlemage)",
+    "vram": { "gb": 10, "type": "GDDR6", "bus_bits": 160 },
+    "power_w": { "min": 150, "max": 150 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 11.52,
+    "features": { "ray_tracing": true, "upscaling": ["XeSS"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Intel_graphics_processing_units&oldid=1368155295"
+    ],
+    "scores": { "gaming": { "at_min_power": 95, "at_max_power": 95 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "intel-arc-b580",
+    "brand": "Intel",
+    "name": "Arc B580",
+    "aliases": [],
+    "type": "desktop",
+    "release": "2024-12",
+    "architecture": "Xe2 (Battlemage)",
+    "vram": { "gb": 12, "type": "GDDR6", "bus_bits": 192 },
+    "power_w": { "min": 190, "max": 190 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 13.67,
+    "features": { "ray_tracing": true, "upscaling": ["XeSS"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Intel_graphics_processing_units&oldid=1368155295"
+    ],
+    "scores": { "gaming": { "at_min_power": 107, "at_max_power": 107 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
     "id": "intel-uhd-graphics-64eu",
     "brand": "Intel",
     "name": "UHD Graphics (64 EU, Xe-LP)",

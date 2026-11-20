@@ -63,9 +63,9 @@ export interface CpuScores {
 }
 export interface ScoreMeta {
   /**
-   * reference: chip de referencia (100 por definición). anchor: estimado a mano desde reviews. interpolated: derivado de anclas de la misma familia. pending: aún sin puntuar.
+   * reference: chip de referencia (100 por definición). anchor: estimado a mano desde reviews. interpolated: derivado de anclas de la misma familia. estimated: estimación automática desde especificaciones (provisional). pending: aún sin puntuar.
    */
-  method: "reference" | "anchor" | "interpolated" | "pending";
+  method: "reference" | "anchor" | "interpolated" | "estimated" | "pending";
   based_on?: string[];
   sources?: Sources;
   reviewed?: string;
@@ -97,6 +97,17 @@ export interface GPU {
     min: number;
     max: number;
   };
+  /**
+   * Interfaz PCIe de la tarjeta. Importa en placas de generación anterior cuando usa menos de 16 líneas.
+   */
+  pcie?: {
+    gen: number;
+    lanes: 1 | 2 | 4 | 8 | 16;
+  };
+  /**
+   * Potencia teórica FP32 máxima (boost). Base de la estimación automática del índice gaming.
+   */
+  fp32_tflops?: number;
   features?: {
     ray_tracing?: boolean;
     upscaling?: string[];

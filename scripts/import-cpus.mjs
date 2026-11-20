@@ -11,6 +11,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { formatJson } from "./lib/json-format.mjs";
+import { allNums, num, parseRelease, slug } from "./lib/parse.mjs";
 
 const root = join(fileURLToPath(import.meta.url), "..", "..");
 const dry = process.argv.includes("--dry");
@@ -62,25 +63,10 @@ const AMD = [
 ].map((rule) => ({ ...rule, file: RYZEN }));
 
 // --- Utilidades de parseo ---------------------------------------------------
-const num = (s) => {
-  const m = String(s ?? "").replace(/,/g, "").match(/\d+(\.\d+)?/);
-  return m ? Number(m[0]) : null;
-};
-const allNums = (s) => (String(s ?? "").replace(/,/g, "").match(/\d+(\.\d+)?/g) || []).map(Number);
 const coresOf = (s) => {
   const m = String(s ?? "").match(/(\d+)\s*(?:\((\d+)\))?/);
   return m ? { cores: Number(m[1]), threads: Number(m[2] ?? m[1]) } : null;
 };
-const slug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
-const MONTHS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
-
-function parseRelease(s) {
-  const text = String(s ?? "").toLowerCase();
-  const year = text.match(/\b(20\d\d)\b/)?.[1] ?? (text.match(/q[1-4]\s*'(\d\d)/) ? `20${text.match(/q[1-4]\s*'(\d\d)/)[1]}` : null);
-  if (!year) return null;
-  const month = MONTHS.findIndex((m) => new RegExp(`\\b${m}`).test(text));
-  return month >= 0 ? `${year}-${String(month + 1).padStart(2, "0")}` : year;
-}
 
 // Busca columnas por patrón. `isE` excluye columnas de núcleos de eficiencia/compactos.
 const isECol = (h) => /\/ (E|LP-E)( |$)|Zen ?\dc|\(Zen ?\dc\)/.test(h);
@@ -94,9 +80,10 @@ function rowToCpu(headers, row, rule, brand, source) {
   // Nombre
   const clean = (s) => String(s ?? "").replace(/\[[^\]]*\]/g, "").replace(/\(PRO\)\s*/gi, "").replace(/\s+/g, " ").trim();
   const branding = clean(first((h) => /branding/i.test(h) && !/\(2\)/.test(h)));
-  const model = clean(first((h) => /^(Model|SKU)( |$)|branding and model \(2\)/i.test(h)));
+  // "1235U (with IPU)": algunos modelos solo aparecen con este sufijo; si el modelo base
+  // también está, ambos generan el mismo id y se deduplican.
+  const model = clean(first((h) => /^(Model|SKU)( |$)|branding and model \(2\)/i.test(h))).replace(/\s*\(with IPU\)/i, "");
   if (!branding || !model || /^(—|-|n\/a)/i.test(model)) return { skip: "sin nombre" };
-  if (/with IPU/i.test(model)) return { skip: "variante con IPU (duplica al modelo base)" };
   const name = /^Core i\d$/.test(branding) ? `${branding}-${model}` : `${branding} ${model}`;
 
   // Núcleos

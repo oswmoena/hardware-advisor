@@ -35,6 +35,21 @@
         "max": { "type": "number", "exclusiveMinimum": 0 }
       }
     },
+    "pcie": {
+      "description": "Interfaz PCIe de la tarjeta. Importa en placas de generación anterior cuando usa menos de 16 líneas.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["gen", "lanes"],
+      "properties": {
+        "gen": { "type": "integer", "minimum": 1 },
+        "lanes": { "enum": [1, 2, 4, 8, 16] }
+      }
+    },
+    "fp32_tflops": {
+      "description": "Potencia teórica FP32 máxima (boost). Base de la estimación automática del índice gaming.",
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
     "features": {
       "type": "object",
       "additionalProperties": false,

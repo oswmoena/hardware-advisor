@@ -81,7 +81,7 @@ export function gpuGamingIndex(gpu: GPU, powerW?: number): GpuGaming {
   return { value: lo + t * (hi - lo), powerUnknown: false };
 }
 
-function compare(a: number | string, op: Op, b: number | string): boolean {
+export function compare(a: number | string, op: Op, b: number | string): boolean {
   switch (op) {
     case "<": return a < b;
     case "<=": return a <= b;

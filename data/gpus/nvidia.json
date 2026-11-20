@@ -1,5 +1,423 @@
 [
   {
+    "id": "nvidia-geforce-rtx-3050",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 3050",
+    "aliases": ["RTX 3050"],
+    "type": "desktop",
+    "release": "2022-12",
+    "architecture": "Ampere",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 115, "max": 115 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 9.1,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 67, "at_max_power": 67 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-3050-6-gb",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 3050 6 GB",
+    "aliases": ["RTX 3050 6 GB"],
+    "type": "desktop",
+    "release": "2024-02",
+    "architecture": "Ampere",
+    "vram": { "gb": 6, "type": "GDDR6", "bus_bits": 96 },
+    "power_w": { "min": 70, "max": 70 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 6.77,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 54, "at_max_power": 54 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-3050-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 3050 Laptop",
+    "aliases": ["RTX 3050 Laptop", "RTX 3050 Laptop GPU", "RTX 3050 Mobile"],
+    "type": "mobile",
+    "release": "2021-05",
+    "architecture": "Ampere",
+    "vram": { "gb": 4, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 35, "max": 80 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 7.13,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 32, "at_max_power": 51 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-3050-ti-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 3050 Ti Laptop",
+    "aliases": ["RTX 3050 Ti Laptop", "RTX 3050 Ti Laptop GPU", "RTX 3050 Ti Mobile"],
+    "type": "mobile",
+    "release": "2021-05",
+    "architecture": "Ampere",
+    "vram": { "gb": 4, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 35, "max": 80 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 8.68,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 37, "at_max_power": 58 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-3060",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 3060",
+    "aliases": ["RTX 3060"],
+    "type": "desktop",
+    "release": "2022-10",
+    "architecture": "Ampere",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 170, "max": 170 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 12.74,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 84, "at_max_power": 84 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-3060-12-gb",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 3060 12 GB",
+    "aliases": ["RTX 3060 12 GB"],
+    "type": "desktop",
+    "release": "2021-02",
+    "architecture": "Ampere",
+    "vram": { "gb": 12, "type": "GDDR6", "bus_bits": 192 },
+    "power_w": { "min": 170, "max": 170 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 12.74,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 84, "at_max_power": 84 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-3060-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 3060 Laptop",
+    "aliases": ["RTX 3060 Laptop", "RTX 3060 Laptop GPU", "RTX 3060 Mobile"],
+    "type": "mobile",
+    "release": "2021-01",
+    "architecture": "Ampere",
+    "vram": { "gb": 6, "type": "GDDR6", "bus_bits": 192 },
+    "power_w": { "min": 60, "max": 115 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 13.07,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 54, "at_max_power": 77 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-3060-ti",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 3060 Ti",
+    "aliases": ["RTX 3060 Ti"],
+    "type": "desktop",
+    "release": "2020-12",
+    "architecture": "Ampere",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 200, "max": 200 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 16.2,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 100, "at_max_power": 100 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-3060-ti-gddr6x",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 3060 Ti GDDR6X",
+    "aliases": ["RTX 3060 Ti GDDR6X"],
+    "type": "desktop",
+    "release": "2022-10",
+    "architecture": "Ampere",
+    "vram": { "gb": 8, "type": "GDDR6X", "bus_bits": 256 },
+    "power_w": { "min": 225, "max": 225 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 16.2,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 100, "at_max_power": 100 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-3070",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 3070",
+    "aliases": ["RTX 3070"],
+    "type": "desktop",
+    "release": "2020-10",
+    "architecture": "Ampere",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 220, "max": 220 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 20.31,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 117, "at_max_power": 117 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-3070-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 3070 Laptop",
+    "aliases": ["RTX 3070 Laptop", "RTX 3070 Laptop GPU", "RTX 3070 Mobile"],
+    "type": "mobile",
+    "release": "2021-01",
+    "architecture": "Ampere",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 80, "max": 125 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 16.59,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 71, "at_max_power": 91 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-3070-ti",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 3070 Ti",
+    "aliases": ["RTX 3070 Ti"],
+    "type": "desktop",
+    "release": "2021-06",
+    "architecture": "Ampere",
+    "vram": { "gb": 8, "type": "GDDR6X", "bus_bits": 256 },
+    "power_w": { "min": 290, "max": 290 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 21.75,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 123, "at_max_power": 123 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-3070-ti-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 3070 Ti Laptop",
+    "aliases": ["RTX 3070 Ti Laptop", "RTX 3070 Ti Laptop GPU", "RTX 3070 Ti Mobile"],
+    "type": "mobile",
+    "release": "2022-01",
+    "architecture": "Ampere",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 80, "max": 125 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 17.49,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 74, "at_max_power": 95 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-3080",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 3080",
+    "aliases": ["RTX 3080"],
+    "type": "desktop",
+    "release": "2020-09",
+    "architecture": "Ampere",
+    "vram": { "gb": 10, "type": "GDDR6X", "bus_bits": 320 },
+    "power_w": { "min": 320, "max": 320 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 29.77,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 153, "at_max_power": 153 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-3080-12-gb",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 3080 12 GB",
+    "aliases": ["RTX 3080 12 GB"],
+    "type": "desktop",
+    "release": "2022-01",
+    "architecture": "Ampere",
+    "vram": { "gb": 12, "type": "GDDR6X", "bus_bits": 384 },
+    "power_w": { "min": 350, "max": 350 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 30.64,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 156, "at_max_power": 156 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-3080-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 3080 Laptop",
+    "aliases": ["RTX 3080 Laptop", "RTX 3080 Laptop GPU", "RTX 3080 Mobile"],
+    "type": "mobile",
+    "release": "2021-01",
+    "architecture": "Ampere",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 80, "max": 150 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 22.2,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 79, "at_max_power": 112 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-3080-ti",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 3080 Ti",
+    "aliases": ["RTX 3080 Ti"],
+    "type": "desktop",
+    "release": "2021-06",
+    "architecture": "Ampere",
+    "vram": { "gb": 12, "type": "GDDR6X", "bus_bits": 384 },
+    "power_w": { "min": 350, "max": 350 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 34.1,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 168, "at_max_power": 168 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-3080-ti-20-gb",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 3080 Ti 20 GB",
+    "aliases": ["RTX 3080 Ti 20 GB"],
+    "type": "desktop",
+    "release": "2022-01",
+    "architecture": "Ampere",
+    "vram": { "gb": 20, "type": "GDDR6X", "bus_bits": 320 },
+    "power_w": { "min": 350, "max": 350 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 34.1,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 168, "at_max_power": 168 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-3080-ti-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 3080 Ti Laptop",
+    "aliases": ["RTX 3080 Ti Laptop", "RTX 3080 Ti Laptop GPU", "RTX 3080 Ti Mobile"],
+    "type": "mobile",
+    "release": "2022-01",
+    "architecture": "Ampere",
+    "vram": { "gb": 16, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 80, "max": 150 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 23.6,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 83, "at_max_power": 117 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-3090",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 3090",
+    "aliases": ["RTX 3090"],
+    "type": "desktop",
+    "release": "2020-09",
+    "architecture": "Ampere",
+    "vram": { "gb": 24, "type": "GDDR6X", "bus_bits": 384 },
+    "power_w": { "min": 350, "max": 350 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 35.58,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 173, "at_max_power": 173 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-3090-ti",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 3090 Ti",
+    "aliases": ["RTX 3090 Ti"],
+    "type": "desktop",
+    "release": "2022-03",
+    "architecture": "Ampere",
+    "vram": { "gb": 24, "type": "GDDR6X", "bus_bits": 384 },
+    "power_w": { "min": 450, "max": 450 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 40,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 188, "at_max_power": 188 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-4050-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 4050 Laptop",
+    "aliases": ["RTX 4050 Laptop", "RTX 4050 Laptop GPU", "RTX 4050 Mobile"],
+    "type": "mobile",
+    "release": "2023-02",
+    "architecture": "Ada Lovelace",
+    "vram": { "gb": 6, "type": "GDDR6", "bus_bits": 96 },
+    "power_w": { "min": 35, "max": 115 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 12.1,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 40, "at_max_power": 77 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
     "id": "nvidia-geforce-rtx-4060",
     "brand": "NVIDIA",
     "name": "GeForce RTX 4060",
@@ -12,7 +430,12 @@
     "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": true },
     "scores": { "gaming": { "at_min_power": 100, "at_max_power": 100 }, "compute": 100 },
     "score_meta": { "method": "reference", "reviewed": "2026-11-20" },
-    "notes": ["Chip de referencia de GPU: gaming = compute = 100 por definición."]
+    "notes": ["Chip de referencia de GPU: gaming = compute = 100 por definición."],
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 15.11,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ]
   },
   {
     "id": "nvidia-geforce-rtx-4060-laptop",
@@ -25,8 +448,528 @@
     "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 128 },
     "power_w": { "min": 35, "max": 115 },
     "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": true },
-    "scores": { "gaming": { "at_min_power": null, "at_max_power": null }, "compute": null },
-    "score_meta": { "method": "pending" },
-    "notes": ["El rendimiento real depende mucho del TGP configurado por el fabricante de la laptop."]
+    "scores": { "gaming": { "at_min_power": 45, "at_max_power": 87 }, "compute": null },
+    "score_meta": { "method": "estimated" },
+    "notes": [
+      "El rendimiento real depende mucho del TGP configurado por el fabricante de la laptop."
+    ],
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 14.5,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ]
+  },
+  {
+    "id": "nvidia-geforce-rtx-4060-ti",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 4060 Ti",
+    "aliases": ["RTX 4060 Ti"],
+    "type": "desktop",
+    "release": "2023-05",
+    "architecture": "Ada Lovelace",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 160, "max": 160 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 22.07,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 130, "at_max_power": 130 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-4060-ti-16-gb",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 4060 Ti 16 GB",
+    "aliases": ["RTX 4060 Ti 16 GB"],
+    "type": "desktop",
+    "release": "2023-07",
+    "architecture": "Ada Lovelace",
+    "vram": { "gb": 16, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 165, "max": 165 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 22.07,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 130, "at_max_power": 130 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-4070",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 4070",
+    "aliases": ["RTX 4070"],
+    "type": "desktop",
+    "release": "2023-04",
+    "architecture": "Ada Lovelace",
+    "vram": { "gb": 12, "type": "GDDR6X", "bus_bits": 192 },
+    "power_w": { "min": 200, "max": 200 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 29.15,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 158, "at_max_power": 158 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-4070-gddr6",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 4070 GDDR6",
+    "aliases": ["RTX 4070 GDDR6"],
+    "type": "desktop",
+    "release": "2024-08",
+    "architecture": "Ada Lovelace",
+    "vram": { "gb": 12, "type": "GDDR6", "bus_bits": 192 },
+    "power_w": { "min": 200, "max": 200 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 29.15,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 158, "at_max_power": 158 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-4070-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 4070 Laptop",
+    "aliases": ["RTX 4070 Laptop", "RTX 4070 Laptop GPU", "RTX 4070 Mobile"],
+    "type": "mobile",
+    "release": "2023-02",
+    "architecture": "Ada Lovelace",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 35, "max": 115 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 20,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 57, "at_max_power": 110 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-4070-super",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 4070 Super",
+    "aliases": ["RTX 4070 Super"],
+    "type": "desktop",
+    "release": "2024-01",
+    "architecture": "Ada Lovelace",
+    "vram": { "gb": 12, "type": "GDDR6X", "bus_bits": 192 },
+    "power_w": { "min": 220, "max": 220 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 35.48,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 182, "at_max_power": 182 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-4070-ti",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 4070 Ti",
+    "aliases": ["RTX 4070 Ti"],
+    "type": "desktop",
+    "release": "2023-01",
+    "architecture": "Ada Lovelace",
+    "vram": { "gb": 12, "type": "GDDR6X", "bus_bits": 192 },
+    "power_w": { "min": 285, "max": 285 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 40.09,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 198, "at_max_power": 198 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-4070-ti-super",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 4070 Ti Super",
+    "aliases": ["RTX 4070 Ti Super"],
+    "type": "desktop",
+    "release": "2024-01",
+    "architecture": "Ada Lovelace",
+    "vram": { "gb": 16, "type": "GDDR6X", "bus_bits": 256 },
+    "power_w": { "min": 285, "max": 285 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 44.1,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 212, "at_max_power": 212 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-4080",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 4080",
+    "aliases": ["RTX 4080"],
+    "type": "desktop",
+    "release": "2022-11",
+    "architecture": "Ada Lovelace",
+    "vram": { "gb": 16, "type": "GDDR6X", "bus_bits": 256 },
+    "power_w": { "min": 320, "max": 320 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 48.74,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 227, "at_max_power": 227 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-4080-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 4080 Laptop",
+    "aliases": ["RTX 4080 Laptop", "RTX 4080 Laptop GPU", "RTX 4080 Mobile"],
+    "type": "mobile",
+    "release": "2023-02",
+    "architecture": "Ada Lovelace",
+    "vram": { "gb": 12, "type": "GDDR6", "bus_bits": 192 },
+    "power_w": { "min": 60, "max": 150 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 33.8,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 96, "at_max_power": 158 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-4080-super",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 4080 Super",
+    "aliases": ["RTX 4080 Super"],
+    "type": "desktop",
+    "release": "2024-01",
+    "architecture": "Ada Lovelace",
+    "vram": { "gb": 16, "type": "GDDR6X", "bus_bits": 256 },
+    "power_w": { "min": 320, "max": 320 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 52.22,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 238, "at_max_power": 238 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-4090",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 4090",
+    "aliases": ["RTX 4090"],
+    "type": "desktop",
+    "release": "2022-10",
+    "architecture": "Ada Lovelace",
+    "vram": { "gb": 24, "type": "GDDR6X", "bus_bits": 384 },
+    "power_w": { "min": 450, "max": 450 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 82.58,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 328, "at_max_power": 328 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-4090-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 4090 Laptop",
+    "aliases": ["RTX 4090 Laptop", "RTX 4090 Laptop GPU", "RTX 4090 Mobile"],
+    "type": "mobile",
+    "release": "2023-02",
+    "architecture": "Ada Lovelace",
+    "vram": { "gb": 16, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 80, "max": 150 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 50.1,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 147, "at_max_power": 208 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-5050",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 5050",
+    "aliases": ["RTX 5050"],
+    "type": "desktop",
+    "release": "2025-07",
+    "architecture": "Blackwell",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 130, "max": 130 },
+    "pcie": { "gen": 5, "lanes": 8 },
+    "fp32_tflops": 13.17,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 91, "at_max_power": 91 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-5050-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 5050 Laptop",
+    "aliases": ["RTX 5050 Laptop", "RTX 5050 Laptop GPU", "RTX 5050 Mobile"],
+    "type": "mobile",
+    "release": "2025-06",
+    "architecture": "Blackwell",
+    "vram": { "gb": 8, "type": "GDDR7", "bus_bits": 128 },
+    "power_w": { "min": 50, "max": 100 },
+    "pcie": { "gen": 5, "lanes": 16 },
+    "fp32_tflops": 13.63,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 57, "at_max_power": 84 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-5060",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 5060",
+    "aliases": ["RTX 5060"],
+    "type": "desktop",
+    "release": "2025-05",
+    "architecture": "Blackwell",
+    "vram": { "gb": 8, "type": "GDDR7", "bus_bits": 128 },
+    "power_w": { "min": 145, "max": 145 },
+    "pcie": { "gen": 5, "lanes": 8 },
+    "fp32_tflops": 19.18,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 118, "at_max_power": 118 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-5060-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 5060 Laptop",
+    "aliases": ["RTX 5060 Laptop", "RTX 5060 Laptop GPU", "RTX 5060 Mobile"],
+    "type": "mobile",
+    "release": "2025-05",
+    "architecture": "Blackwell",
+    "vram": { "gb": 8, "type": "GDDR7", "bus_bits": 128 },
+    "power_w": { "min": 45, "max": 100 },
+    "pcie": { "gen": 5, "lanes": 16 },
+    "fp32_tflops": 16.62,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 62, "at_max_power": 96 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-5060-ti",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 5060 Ti",
+    "aliases": ["RTX 5060 Ti"],
+    "type": "desktop",
+    "release": "2025-04",
+    "architecture": "Blackwell",
+    "vram": { "gb": 8, "type": "GDDR7", "bus_bits": 128 },
+    "power_w": { "min": 180, "max": 180 },
+    "pcie": { "gen": 5, "lanes": 8 },
+    "fp32_tflops": 23.7,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 137, "at_max_power": 137 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-5060-ti-16-gb",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 5060 Ti 16 GB",
+    "aliases": ["RTX 5060 Ti 16 GB"],
+    "type": "desktop",
+    "release": "2025-04",
+    "architecture": "Blackwell",
+    "vram": { "gb": 16, "type": "GDDR7", "bus_bits": 128 },
+    "power_w": { "min": 180, "max": 180 },
+    "pcie": { "gen": 5, "lanes": 8 },
+    "fp32_tflops": 23.7,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 137, "at_max_power": 137 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-5070",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 5070",
+    "aliases": ["RTX 5070"],
+    "type": "desktop",
+    "release": "2025-03",
+    "architecture": "Blackwell",
+    "vram": { "gb": 12, "type": "GDDR7", "bus_bits": 192 },
+    "power_w": { "min": 250, "max": 250 },
+    "pcie": { "gen": 5, "lanes": 16 },
+    "fp32_tflops": 30.72,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 164, "at_max_power": 164 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-5070-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 5070 Laptop",
+    "aliases": ["RTX 5070 Laptop", "RTX 5070 Laptop GPU", "RTX 5070 Mobile"],
+    "type": "mobile",
+    "release": "2025-04",
+    "architecture": "Blackwell",
+    "vram": { "gb": 8, "type": "GDDR7", "bus_bits": 128 },
+    "power_w": { "min": 50, "max": 100 },
+    "pcie": { "gen": 5, "lanes": 16 },
+    "fp32_tflops": 21.63,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 79, "at_max_power": 116 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-5070-ti",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 5070 Ti",
+    "aliases": ["RTX 5070 Ti"],
+    "type": "desktop",
+    "release": "2025-02",
+    "architecture": "Blackwell",
+    "vram": { "gb": 16, "type": "GDDR7", "bus_bits": 256 },
+    "power_w": { "min": 300, "max": 300 },
+    "pcie": { "gen": 5, "lanes": 16 },
+    "fp32_tflops": 43.94,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 211, "at_max_power": 211 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-5070-ti-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 5070 Ti Laptop",
+    "aliases": ["RTX 5070 Ti Laptop", "RTX 5070 Ti Laptop GPU", "RTX 5070 Ti Mobile"],
+    "type": "mobile",
+    "release": "2025-03",
+    "architecture": "Blackwell",
+    "vram": { "gb": 12, "type": "GDDR7", "bus_bits": 192 },
+    "power_w": { "min": 60, "max": 115 },
+    "pcie": { "gen": 5, "lanes": 16 },
+    "fp32_tflops": 26.14,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 92, "at_max_power": 132 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-5080",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 5080",
+    "aliases": ["RTX 5080"],
+    "type": "desktop",
+    "release": "2025-01",
+    "architecture": "Blackwell",
+    "vram": { "gb": 16, "type": "GDDR7", "bus_bits": 256 },
+    "power_w": { "min": 360, "max": 360 },
+    "pcie": { "gen": 5, "lanes": 16 },
+    "fp32_tflops": 56.28,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 251, "at_max_power": 251 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-5080-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 5080 Laptop",
+    "aliases": ["RTX 5080 Laptop", "RTX 5080 Laptop GPU", "RTX 5080 Mobile"],
+    "type": "mobile",
+    "release": "2025-03",
+    "architecture": "Blackwell",
+    "vram": { "gb": 16, "type": "GDDR7", "bus_bits": 256 },
+    "power_w": { "min": 80, "max": 150 },
+    "pcie": { "gen": 5, "lanes": 16 },
+    "fp32_tflops": 35.13,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 115, "at_max_power": 162 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-5090",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 5090",
+    "aliases": ["RTX 5090"],
+    "type": "desktop",
+    "release": "2025-01",
+    "architecture": "Blackwell",
+    "vram": { "gb": 32, "type": "GDDR7", "bus_bits": 512 },
+    "power_w": { "min": 575, "max": 575 },
+    "pcie": { "gen": 5, "lanes": 16 },
+    "fp32_tflops": 104.75,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 388, "at_max_power": 388 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-5090-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 5090 Laptop",
+    "aliases": ["RTX 5090 Laptop", "RTX 5090 Laptop GPU", "RTX 5090 Mobile"],
+    "type": "mobile",
+    "release": "2025-03",
+    "architecture": "Blackwell",
+    "vram": { "gb": 24, "type": "GDDR7", "bus_bits": 256 },
+    "power_w": { "min": 95, "max": 150 },
+    "pcie": { "gen": 5, "lanes": 16 },
+    "fp32_tflops": 45.34,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 151, "at_max_power": 194 } },
+    "score_meta": { "method": "estimated" }
   }
 ]

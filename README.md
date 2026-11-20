@@ -37,7 +37,7 @@ las URLs canónicas, el sitemap y los datos estructurados.
 | Ruta | Qué es |
 |---|---|
 | `/` | búsqueda en vivo de CPUs y GPUs |
-| `/cpu/[id]`, `/gpu/[id]` | ficha estática e indexable de cada chip |
+| `/cpu/[id]`, `/gpu/[id]` | ficha estática e indexable de cada chip; las CPUs de escritorio incluyen las GPUs recomendadas con un equipo de ejemplo editable |
 | `/buscar?q=` | resultados sin JavaScript (no indexada) |
 | `/sitemap.xml`, `/robots.txt` | SEO |
 
@@ -70,7 +70,22 @@ npm run fetch:wikipedia             # descargar todas las páginas a data/raw/
 npm run fetch:wikipedia -- Raptor   # solo las páginas que contengan "Raptor"
 npm run import:cpus                 # agregar a data/cpus/ las CPUs que aún no estén
 npm run import:cpus -- --dry        # ver qué agregaría, sin escribir
+npm run import:gpus                 # ídem para GPUs dedicadas (desktop y laptop)
+npm run estimate                    # completar índices provisionales (method "estimated")
 ```
+
+### Índices provisionales
+
+`npm run estimate` calcula un índice aproximado para cada chip sin puntuar, a partir de sus
+especificaciones (`scripts/lib/estimate.mjs`):
+
+- **CPU**: single-core = frecuencia turbo × IPC de la arquitectura; multi-core suma núcleos
+  P y E con la frecuencia sostenida según el consumo y un bono por SMT.
+- **GPU**: (TFLOPS FP32 × factor de arquitectura)^0,7; en laptops, el índice a potencia
+  mínima escala con (TGP mín / TGP máx)^0,55.
+
+Se muestran en el sitio como "estimación automática". El script recalcula las fichas
+`estimated` y nunca toca las `reference`, `anchor` ni `interpolated`.
 
 El importador nunca modifica una ficha que ya existe (mismo `id`): lo curado a mano manda.
 Qué secciones de Wikipedia se importan (y con qué plataforma, socket y año por defecto)

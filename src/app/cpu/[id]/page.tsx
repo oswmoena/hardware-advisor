@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs.tsx";
+import { GpuPairing } from "@/components/GpuPairing.tsx";
 import { ScoreCard } from "@/components/ScoreCard.tsx";
-import type { CPU } from "@/lib/data-types.ts";
-import { getCpu, getCpus, getGpu, getProfiles, getReferenceCpu } from "@/lib/data.ts";
+import type { CPU, GPU } from "@/lib/data-types.ts";
+import { getCpu, getCpus, getGpu, getGpus, getProfiles, getReferenceCpu } from "@/lib/data.ts";
 import { ASSUMED_RAM_GB, SITE_URL, cpuTag, formatIndex, formatRelease, recommendedFor, scoreCpuAlone } from "@/lib/present.ts";
 
 type Props = { params: Promise<{ id: string }> };
@@ -16,6 +17,12 @@ const coresText = (cpu: CPU) => {
   return e ? `${p + e} núcleos (${p}P + ${e}E) y ${threads} hilos` : `${p} núcleos y ${threads} hilos`;
 };
 const fmt = (n: number) => n.toLocaleString("es");
+
+/** GPUs de escritorio con puntuación, sin campos que el cliente no necesita. */
+const pairingCandidates = (): GPU[] =>
+  getGpus()
+    .filter((g) => g.type === "desktop" && g.scores.gaming.at_max_power !== null)
+    .map(({ spec_sources: _s, notes: _n, ...g }) => g);
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cpu = getCpu((await params).id);
@@ -95,6 +102,8 @@ export default async function CpuPage({ params }: Props) {
         </article>
       </div>
 
+      {cpu.platform === "desktop" && !pending && <GpuPairing cpu={cpu} gpus={pairingCandidates()} config={getProfiles()} />}
+
       <h2>Índices de rendimiento</h2>
       <table className="specs">
         <caption className="visually-hidden">Índices de rendimiento de {cpu.name}</caption>
@@ -109,7 +118,10 @@ export default async function CpuPage({ params }: Props) {
           </tr>
         </tbody>
       </table>
-      <p className="note">100 = {reference.name}. Un índice de 150 rinde un 50 % más; uno de 60, un 40 % menos.</p>
+      <p className="note">
+        100 = {reference.name}. Un índice de 150 rinde un 50 % más; uno de 60, un 40 % menos.
+        {cpu.score_meta.method === "estimated" && " Estimación automática a partir de las especificaciones (provisional)."}
+      </p>
 
       <h2>Especificaciones</h2>
       <table className="specs">
