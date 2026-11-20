@@ -14,8 +14,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "node --experimental-strip-types --no-warnings --test src/lib/*.test.ts",
-    "types:gen": "node scripts/gen-types.mjs"
+    "test": "node --experimental-strip-types --no-warnings --test src/lib/*.test.ts scripts/lib/*.test.mjs",
+    "types:gen": "node scripts/gen-types.mjs",
+    "import:gpus": "node scripts/import-gpus.mjs",
+    "estimate": "node scripts/estimate-scores.mjs"
   },
   "license": "MIT",
   "dependencies": {

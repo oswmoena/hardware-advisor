@@ -342,3 +342,109 @@ input[type="search"],
   font-size: 0.875rem;
   color: var(--muted);
 }
+
+/* ---------- Emparejamiento CPU ↔ GPU ---------- */
+.build-form fieldset {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 1rem 1.25rem 1.25rem;
+  margin: 0 0 1rem;
+}
+.build-form legend {
+  font-weight: 600;
+  padding-inline: 0.25rem;
+}
+.build-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+  gap: 1rem 1.25rem;
+  align-items: start;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.build-grid fieldset.field {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+.build-grid fieldset.field legend {
+  padding: 0;
+  margin-block-end: 0.25rem;
+  font-weight: 400;
+}
+select {
+  font: inherit;
+  font-size: max(1rem, 1em);
+  min-block-size: 48px;
+  border-radius: var(--radius);
+  border: 1px solid var(--muted);
+  padding: 0.5rem 0.75rem;
+  background: var(--surface);
+  color: var(--text);
+}
+.radio {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-block-size: 2rem;
+}
+.button.secondary {
+  background: transparent;
+  color: var(--accent);
+  margin-block-start: 0.5rem;
+}
+
+.pairings {
+  display: grid;
+  gap: 0.75rem;
+  padding-inline-start: 1.75rem;
+  margin: 1rem 0;
+}
+.pairing-item {
+  border: 1px solid var(--border);
+  border-inline-start: 4px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 0.75rem 1rem;
+}
+.pairing-item[data-balance="balanced"] { border-inline-start-color: var(--good); }
+.pairing-item[data-balance="cpu-limited"] { border-inline-start-color: var(--poor); }
+.pairing-item[data-balance="gpu-limited"] { border-inline-start-color: var(--ok); }
+.pairing-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.25rem 1rem;
+  font-weight: 600;
+}
+.pairing-item p {
+  margin: 0.25rem 0 0;
+}
+.pairing-meta {
+  font-size: 0.9375rem;
+}
+.badge {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  padding: 0.125rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+  white-space: nowrap;
+}
+.pairing-item[data-balance="balanced"] .badge { color: var(--good); }
+.pairing-item[data-balance="cpu-limited"] .badge { color: var(--poor); }
+.pairing-item[data-balance="gpu-limited"] .badge { color: var(--ok); }
+.more summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-weight: 600;
+  min-block-size: 2.75rem;
+  display: flex;
+  align-items: center;
+}

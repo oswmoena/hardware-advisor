@@ -10,6 +10,976 @@
     "vram": null,
     "scores": { "gaming": { "at_min_power": null, "at_max_power": null } },
     "score_meta": { "method": "pending" },
-    "notes": ["Integrada básica de los Ryzen 7000/9000 de escritorio: sirve para video y escritorio, no para jugar."]
+    "notes": [
+      "Integrada básica de los Ryzen 7000/9000 de escritorio: sirve para video y escritorio, no para jugar."
+    ]
+  },
+  {
+    "id": "amd-radeon-rx-6300",
+    "brand": "AMD",
+    "name": "Radeon RX 6300",
+    "aliases": ["RX 6300"],
+    "type": "desktop",
+    "release": "2022-01",
+    "architecture": "RDNA 2",
+    "vram": { "gb": 2, "type": "GDDR6", "bus_bits": 32 },
+    "power_w": { "min": 32, "max": 32 },
+    "pcie": { "gen": 4, "lanes": 4 },
+    "fp32_tflops": 3.13,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 42, "at_max_power": 42 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-6300m",
+    "brand": "AMD",
+    "name": "Radeon RX 6300M",
+    "aliases": ["RX 6300M"],
+    "type": "mobile",
+    "release": "2022-01",
+    "architecture": "RDNA 2",
+    "vram": { "gb": 2, "type": "GDDR6", "bus_bits": 32 },
+    "power_w": { "min": 25, "max": 25 },
+    "pcie": { "gen": 4, "lanes": 4 },
+    "fp32_tflops": 3.13,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 38, "at_max_power": 38 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-6400",
+    "brand": "AMD",
+    "name": "Radeon RX 6400",
+    "aliases": ["RX 6400"],
+    "type": "desktop",
+    "release": "2022-01",
+    "architecture": "RDNA 2",
+    "vram": { "gb": 4, "type": "GDDR6", "bus_bits": 64 },
+    "power_w": { "min": 53, "max": 53 },
+    "pcie": { "gen": 4, "lanes": 4 },
+    "fp32_tflops": 3.57,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 46, "at_max_power": 46 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-6450m",
+    "brand": "AMD",
+    "name": "Radeon RX 6450M",
+    "aliases": ["RX 6450M"],
+    "type": "mobile",
+    "release": "2023-01",
+    "architecture": "RDNA 2",
+    "vram": { "gb": 4, "type": "GDDR6", "bus_bits": 64 },
+    "power_w": { "min": 50, "max": 50 },
+    "pcie": { "gen": 4, "lanes": 4 },
+    "fp32_tflops": 3.78,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 43, "at_max_power": 43 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-6500-xt",
+    "brand": "AMD",
+    "name": "Radeon RX 6500 XT",
+    "aliases": ["RX 6500 XT"],
+    "type": "desktop",
+    "release": "2022-01",
+    "architecture": "RDNA 2",
+    "vram": { "gb": 4, "type": "GDDR6", "bus_bits": 64 },
+    "power_w": { "min": 113, "max": 113 },
+    "pcie": { "gen": 4, "lanes": 4 },
+    "fp32_tflops": 5.77,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 65, "at_max_power": 65 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-6500m",
+    "brand": "AMD",
+    "name": "Radeon RX 6500M",
+    "aliases": ["RX 6500M"],
+    "type": "mobile",
+    "release": "2022-01",
+    "architecture": "RDNA 2",
+    "vram": { "gb": 4, "type": "GDDR6", "bus_bits": 64 },
+    "power_w": { "min": 50, "max": 50 },
+    "pcie": { "gen": 4, "lanes": 4 },
+    "fp32_tflops": 4.98,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 53, "at_max_power": 53 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-6550m",
+    "brand": "AMD",
+    "name": "Radeon RX 6550M",
+    "aliases": ["RX 6550M"],
+    "type": "mobile",
+    "release": "2023-01",
+    "architecture": "RDNA 2",
+    "vram": { "gb": 4, "type": "GDDR6", "bus_bits": 64 },
+    "power_w": { "min": 80, "max": 80 },
+    "pcie": { "gen": 4, "lanes": 4 },
+    "fp32_tflops": 5.8,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 59, "at_max_power": 59 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-6550s",
+    "brand": "AMD",
+    "name": "Radeon RX 6550S",
+    "aliases": ["RX 6550S"],
+    "type": "mobile",
+    "release": "2023-01",
+    "architecture": "RDNA 2",
+    "vram": { "gb": 4, "type": "GDDR6", "bus_bits": 64 },
+    "power_w": { "min": 50, "max": 50 },
+    "pcie": { "gen": 4, "lanes": 4 },
+    "fp32_tflops": 4.9,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 52, "at_max_power": 52 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-6600",
+    "brand": "AMD",
+    "name": "Radeon RX 6600",
+    "aliases": ["RX 6600"],
+    "type": "desktop",
+    "release": "2021-10",
+    "architecture": "RDNA 2",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 132, "max": 132 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 8.93,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 88, "at_max_power": 88 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-6600-xt",
+    "brand": "AMD",
+    "name": "Radeon RX 6600 XT",
+    "aliases": ["RX 6600 XT"],
+    "type": "desktop",
+    "release": "2021-08",
+    "architecture": "RDNA 2",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 160, "max": 160 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 10.61,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 99, "at_max_power": 99 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-6600m",
+    "brand": "AMD",
+    "name": "Radeon RX 6600M",
+    "aliases": ["RX 6600M"],
+    "type": "mobile",
+    "release": "2021-05",
+    "architecture": "RDNA 2",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 100, "max": 100 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 7.8,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 72, "at_max_power": 72 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-6600s",
+    "brand": "AMD",
+    "name": "Radeon RX 6600S",
+    "aliases": ["RX 6600S"],
+    "type": "mobile",
+    "release": "2022-01",
+    "architecture": "RDNA 2",
+    "vram": { "gb": 4, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 80, "max": 80 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 7.81,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 72, "at_max_power": 72 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-6650-xt",
+    "brand": "AMD",
+    "name": "Radeon RX 6650 XT",
+    "aliases": ["RX 6650 XT"],
+    "type": "desktop",
+    "release": "2022-05",
+    "architecture": "RDNA 2",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 180, "max": 180 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 10.79,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 100, "at_max_power": 100 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-6650m",
+    "brand": "AMD",
+    "name": "Radeon RX 6650M",
+    "aliases": ["RX 6650M"],
+    "type": "mobile",
+    "release": "2022-01",
+    "architecture": "RDNA 2",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 120, "max": 120 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 8.85,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 79, "at_max_power": 79 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-6650m-xt",
+    "brand": "AMD",
+    "name": "Radeon RX 6650M XT",
+    "aliases": ["RX 6650M XT"],
+    "type": "mobile",
+    "release": "2022-01",
+    "architecture": "RDNA 2",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 120, "max": 120 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 9.97,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 86, "at_max_power": 86 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-6700",
+    "brand": "AMD",
+    "name": "Radeon RX 6700",
+    "aliases": ["RX 6700"],
+    "type": "desktop",
+    "release": "2021-06",
+    "architecture": "RDNA 2",
+    "vram": { "gb": 10, "type": "GDDR6", "bus_bits": 160 },
+    "power_w": { "min": 175, "max": 175 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 11.29,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 104, "at_max_power": 104 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-6700-xt",
+    "brand": "AMD",
+    "name": "Radeon RX 6700 XT",
+    "aliases": ["RX 6700 XT"],
+    "type": "desktop",
+    "release": "2021-03",
+    "architecture": "RDNA 2",
+    "vram": { "gb": 12, "type": "GDDR6", "bus_bits": 192 },
+    "power_w": { "min": 230, "max": 230 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 13.22,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 116, "at_max_power": 116 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-6700m",
+    "brand": "AMD",
+    "name": "Radeon RX 6700M",
+    "aliases": ["RX 6700M"],
+    "type": "mobile",
+    "release": "2021-05",
+    "architecture": "RDNA 2",
+    "vram": { "gb": 10, "type": "GDDR6", "bus_bits": 160 },
+    "power_w": { "min": 135, "max": 135 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 10.61,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 89, "at_max_power": 89 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-6700s",
+    "brand": "AMD",
+    "name": "Radeon RX 6700S",
+    "aliases": ["RX 6700S"],
+    "type": "mobile",
+    "release": "2022-01",
+    "architecture": "RDNA 2",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 80, "max": 80 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 7.92,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 73, "at_max_power": 73 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-6750-gre-10gb",
+    "brand": "AMD",
+    "name": "Radeon RX 6750 GRE 10GB",
+    "aliases": ["RX 6750 GRE 10GB"],
+    "type": "desktop",
+    "release": "2023-10",
+    "architecture": "RDNA 2",
+    "vram": { "gb": 10, "type": "GDDR6", "bus_bits": 160 },
+    "power_w": { "min": 170, "max": 170 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 11.29,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 104, "at_max_power": 104 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-6750-gre-12gb",
+    "brand": "AMD",
+    "name": "Radeon RX 6750 GRE 12GB",
+    "aliases": ["RX 6750 GRE 12GB"],
+    "type": "desktop",
+    "release": "2023-10",
+    "architecture": "RDNA 2",
+    "vram": { "gb": 12, "type": "GDDR6", "bus_bits": 192 },
+    "power_w": { "min": 230, "max": 230 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 13.22,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 116, "at_max_power": 116 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-6750-xt",
+    "brand": "AMD",
+    "name": "Radeon RX 6750 XT",
+    "aliases": ["RX 6750 XT"],
+    "type": "desktop",
+    "release": "2022-05",
+    "architecture": "RDNA 2",
+    "vram": { "gb": 12, "type": "GDDR6", "bus_bits": 192 },
+    "power_w": { "min": 250, "max": 250 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 13.31,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 116, "at_max_power": 116 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-6800",
+    "brand": "AMD",
+    "name": "Radeon RX 6800",
+    "aliases": ["RX 6800"],
+    "type": "desktop",
+    "release": "2020-11",
+    "architecture": "RDNA 2",
+    "vram": { "gb": 16, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 250, "max": 250 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 16.17,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 133, "at_max_power": 133 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-6800-xt",
+    "brand": "AMD",
+    "name": "Radeon RX 6800 XT",
+    "aliases": ["RX 6800 XT"],
+    "type": "desktop",
+    "release": "2020-11",
+    "architecture": "RDNA 2",
+    "vram": { "gb": 16, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 300, "max": 300 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 20.74,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 159, "at_max_power": 159 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-6800m",
+    "brand": "AMD",
+    "name": "Radeon RX 6800M",
+    "aliases": ["RX 6800M"],
+    "type": "mobile",
+    "release": "2021-05",
+    "architecture": "RDNA 2",
+    "vram": { "gb": 12, "type": "GDDR6", "bus_bits": 192 },
+    "power_w": { "min": 145, "max": 145 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 11.78,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 96, "at_max_power": 96 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-6800s",
+    "brand": "AMD",
+    "name": "Radeon RX 6800S",
+    "aliases": ["RX 6800S"],
+    "type": "mobile",
+    "release": "2022-01",
+    "architecture": "RDNA 2",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 100, "max": 100 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 9.22,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 81, "at_max_power": 81 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-6850m-xt",
+    "brand": "AMD",
+    "name": "Radeon RX 6850M XT",
+    "aliases": ["RX 6850M XT"],
+    "type": "mobile",
+    "release": "2022-01",
+    "architecture": "RDNA 2",
+    "vram": { "gb": 12, "type": "GDDR6", "bus_bits": 192 },
+    "power_w": { "min": 165, "max": 165 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 13.21,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 104, "at_max_power": 104 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-6900-xt",
+    "brand": "AMD",
+    "name": "Radeon RX 6900 XT",
+    "aliases": ["RX 6900 XT"],
+    "type": "desktop",
+    "release": "2020-12",
+    "architecture": "RDNA 2",
+    "vram": { "gb": 16, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 300, "max": 300 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 23.04,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 171, "at_max_power": 171 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-6950-xt",
+    "brand": "AMD",
+    "name": "Radeon RX 6950 XT",
+    "aliases": ["RX 6950 XT"],
+    "type": "desktop",
+    "release": "2022-05",
+    "architecture": "RDNA 2",
+    "vram": { "gb": 16, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 335, "max": 335 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 23.65,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 174, "at_max_power": 174 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-7400",
+    "brand": "AMD",
+    "name": "Radeon RX 7400",
+    "aliases": ["RX 7400"],
+    "type": "desktop",
+    "release": "2025-08",
+    "architecture": "RDNA 3",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 55, "max": 55 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 7.88,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 52, "at_max_power": 52 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-7600",
+    "brand": "AMD",
+    "name": "Radeon RX 7600",
+    "aliases": ["RX 7600"],
+    "type": "desktop",
+    "release": "2023-05",
+    "architecture": "RDNA 3",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 165, "max": 165 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 21.75,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 106, "at_max_power": 106 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-7600-xt",
+    "brand": "AMD",
+    "name": "Radeon RX 7600 XT",
+    "aliases": ["RX 7600 XT"],
+    "type": "desktop",
+    "release": "2024-01",
+    "architecture": "RDNA 3",
+    "vram": { "gb": 16, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 190, "max": 190 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 22.57,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 108, "at_max_power": 108 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-7600m",
+    "brand": "AMD",
+    "name": "Radeon RX 7600M",
+    "aliases": ["RX 7600M"],
+    "type": "mobile",
+    "release": "2023-01",
+    "architecture": "RDNA 3",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 90, "max": 90 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 17.28,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 81, "at_max_power": 81 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-7600m-xt",
+    "brand": "AMD",
+    "name": "Radeon RX 7600M XT",
+    "aliases": ["RX 7600M XT"],
+    "type": "mobile",
+    "release": "2023-01",
+    "architecture": "RDNA 3",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 120, "max": 120 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 21.42,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 94, "at_max_power": 94 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-7600s",
+    "brand": "AMD",
+    "name": "Radeon RX 7600S",
+    "aliases": ["RX 7600S"],
+    "type": "mobile",
+    "release": "2023-01",
+    "architecture": "RDNA 3",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 75, "max": 75 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 15.77,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 76, "at_max_power": 76 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-7650-gre",
+    "brand": "AMD",
+    "name": "Radeon RX 7650 GRE",
+    "aliases": ["RX 7650 GRE"],
+    "type": "desktop",
+    "release": "2025-02",
+    "architecture": "RDNA 3",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 170, "max": 170 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 22.08,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 107, "at_max_power": 107 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-7700",
+    "brand": "AMD",
+    "name": "Radeon RX 7700",
+    "aliases": ["RX 7700"],
+    "type": "desktop",
+    "release": "2025-09",
+    "architecture": "RDNA 3",
+    "vram": { "gb": 16, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 263, "max": 263 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 25.2,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 117, "at_max_power": 117 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-7700-xt",
+    "brand": "AMD",
+    "name": "Radeon RX 7700 XT",
+    "aliases": ["RX 7700 XT"],
+    "type": "desktop",
+    "release": "2023-09",
+    "architecture": "RDNA 3",
+    "vram": { "gb": 12, "type": "GDDR6", "bus_bits": 192 },
+    "power_w": { "min": 245, "max": 245 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 35.17,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 148, "at_max_power": 148 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-7700s",
+    "brand": "AMD",
+    "name": "Radeon RX 7700S",
+    "aliases": ["RX 7700S"],
+    "type": "mobile",
+    "release": "2023-01",
+    "architecture": "RDNA 3",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 100, "max": 100 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 20.48,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 91, "at_max_power": 91 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-7800-xt",
+    "brand": "AMD",
+    "name": "Radeon RX 7800 XT",
+    "aliases": ["RX 7800 XT"],
+    "type": "desktop",
+    "release": "2023-09",
+    "architecture": "RDNA 3",
+    "vram": { "gb": 16, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 263, "max": 263 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 37.32,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 154, "at_max_power": 154 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-7800m",
+    "brand": "AMD",
+    "name": "Radeon RX 7800M",
+    "aliases": ["RX 7800M"],
+    "type": "mobile",
+    "release": "2024-09",
+    "architecture": "RDNA 3",
+    "vram": { "gb": 12, "type": "GDDR6", "bus_bits": 192 },
+    "power_w": { "min": 180, "max": 180 },
+    "fp32_tflops": 35.87,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 135, "at_max_power": 135 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-7900-gre",
+    "brand": "AMD",
+    "name": "Radeon RX 7900 GRE",
+    "aliases": ["RX 7900 GRE"],
+    "type": "desktop",
+    "release": "2023-02",
+    "architecture": "RDNA 3",
+    "vram": { "gb": 16, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 260, "max": 260 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 45.98,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 178, "at_max_power": 178 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-7900-xt",
+    "brand": "AMD",
+    "name": "Radeon RX 7900 XT",
+    "aliases": ["RX 7900 XT"],
+    "type": "desktop",
+    "release": "2022-12",
+    "architecture": "RDNA 3",
+    "vram": { "gb": 20, "type": "GDDR6", "bus_bits": 320 },
+    "power_w": { "min": 315, "max": 315 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 51.61,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 193, "at_max_power": 193 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-7900-xtx",
+    "brand": "AMD",
+    "name": "Radeon RX 7900 XTX",
+    "aliases": ["RX 7900 XTX"],
+    "type": "desktop",
+    "release": "2022-12",
+    "architecture": "RDNA 3",
+    "vram": { "gb": 24, "type": "GDDR6", "bus_bits": 384 },
+    "power_w": { "min": 355, "max": 355 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 61.44,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 218, "at_max_power": 218 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-7900m",
+    "brand": "AMD",
+    "name": "Radeon RX 7900M",
+    "aliases": ["RX 7900M"],
+    "type": "mobile",
+    "release": "2023-10",
+    "architecture": "RDNA 3",
+    "vram": { "gb": 16, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 180, "max": 180 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 38.52,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 142, "at_max_power": 142 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-9050",
+    "brand": "AMD",
+    "name": "Radeon RX 9050",
+    "aliases": ["RX 9050"],
+    "type": "desktop",
+    "release": "2026-07",
+    "architecture": "RDNA 4",
+    "vram": { "gb": 4, "type": "GDDR6", "bus_bits": 64 },
+    "power_w": { "min": 92, "max": 92 },
+    "pcie": { "gen": 5, "lanes": 16 },
+    "fp32_tflops": 10.56,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 68, "at_max_power": 68 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-9060",
+    "brand": "AMD",
+    "name": "Radeon RX 9060",
+    "aliases": ["RX 9060"],
+    "type": "desktop",
+    "release": "2025-08",
+    "architecture": "RDNA 4",
+    "vram": { "gb": 8, "type": "GDDR6" },
+    "power_w": { "min": 132, "max": 132 },
+    "pcie": { "gen": 5, "lanes": 16 },
+    "fp32_tflops": 21.43,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 112, "at_max_power": 112 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-9060-xt",
+    "brand": "AMD",
+    "name": "Radeon RX 9060 XT",
+    "aliases": ["RX 9060 XT"],
+    "type": "desktop",
+    "release": "2025-06",
+    "architecture": "RDNA 4",
+    "vram": { "gb": 8, "type": "GDDR6" },
+    "power_w": { "min": 160, "max": 160 },
+    "pcie": { "gen": 5, "lanes": 16 },
+    "fp32_tflops": 25.64,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 127, "at_max_power": 127 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-9070",
+    "brand": "AMD",
+    "name": "Radeon RX 9070",
+    "aliases": ["RX 9070"],
+    "type": "desktop",
+    "release": "2025-03",
+    "architecture": "RDNA 4",
+    "vram": { "gb": 16, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 220, "max": 220 },
+    "pcie": { "gen": 5, "lanes": 16 },
+    "fp32_tflops": 36.12,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 162, "at_max_power": 162 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-9070-gre",
+    "brand": "AMD",
+    "name": "Radeon RX 9070 GRE",
+    "aliases": ["RX 9070 GRE"],
+    "type": "desktop",
+    "release": "2025-05",
+    "architecture": "RDNA 4",
+    "vram": { "gb": 12, "type": "GDDR6", "bus_bits": 192 },
+    "power_w": { "min": 220, "max": 220 },
+    "pcie": { "gen": 5, "lanes": 16 },
+    "fp32_tflops": 34.28,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 156, "at_max_power": 156 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-9070-xt",
+    "brand": "AMD",
+    "name": "Radeon RX 9070 XT",
+    "aliases": ["RX 9070 XT"],
+    "type": "desktop",
+    "release": "2025-03",
+    "architecture": "RDNA 4",
+    "vram": { "gb": 16, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 304, "max": 304 },
+    "pcie": { "gen": 5, "lanes": 16 },
+    "fp32_tflops": 48.66,
+    "features": { "ray_tracing": true, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 199, "at_max_power": 199 } },
+    "score_meta": { "method": "estimated" }
   }
 ]

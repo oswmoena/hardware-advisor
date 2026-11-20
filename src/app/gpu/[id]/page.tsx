@@ -98,7 +98,10 @@ export default async function GpuPage({ params }: Props) {
           </tr>
         </tbody>
       </table>
-      <p className="note">100 = {referenceGpu.name} (escritorio).</p>
+      <p className="note">
+        100 = {referenceGpu.name} (escritorio).
+        {gpu.score_meta.method === "estimated" && " Estimación automática a partir de las especificaciones (provisional)."}
+      </p>
 
       <h2>Especificaciones</h2>
       <table className="specs">

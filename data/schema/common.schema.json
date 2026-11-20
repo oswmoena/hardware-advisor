@@ -47,8 +47,8 @@
       "required": ["method"],
       "properties": {
         "method": {
-          "description": "reference: chip de referencia (100 por definición). anchor: estimado a mano desde reviews. interpolated: derivado de anclas de la misma familia. pending: aún sin puntuar.",
-          "enum": ["reference", "anchor", "interpolated", "pending"]
+          "description": "reference: chip de referencia (100 por definición). anchor: estimado a mano desde reviews. interpolated: derivado de anclas de la misma familia. estimated: estimación automática desde especificaciones (provisional). pending: aún sin puntuar.",
+          "enum": ["reference", "anchor", "interpolated", "estimated", "pending"]
         },
         "based_on": { "type": "array", "items": { "type": "string" } },
         "sources": { "$ref": "#/$defs/sources" },

@@ -13,8 +13,8 @@
     "power_w": { "base": 6 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 42, "multi": 7 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-atom-x7213e",
@@ -30,8 +30,8 @@
     "power_w": { "base": 10 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 42, "multi": 8 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-atom-x7425e",
@@ -47,8 +47,8 @@
     "power_w": { "base": 12 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 44, "multi": 17 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-celeron-6305",
@@ -64,8 +64,8 @@
     "power_w": { "base": 15 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Tiger_Lake&oldid=1373251947"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 37, "multi": 7 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-celeron-7300",
@@ -81,8 +81,8 @@
     "power_w": { "base": 9, "max": 29 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 23, "multi": 6 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-celeron-7305",
@@ -98,8 +98,8 @@
     "power_w": { "base": 15, "max": 55 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 26, "multi": 8 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-celeron-g6900",
@@ -115,8 +115,8 @@
     "power_w": { "base": 46 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 83, "multi": 22 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-celeron-g6900t",
@@ -132,8 +132,25 @@
     "power_w": { "base": 35 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 69, "multi": 18 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "intel-core-3-100u",
+    "brand": "Intel",
+    "name": "Core 3 100U",
+    "aliases": [],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2024",
+    "architecture": "Raptor Lake Refresh",
+    "cores": { "performance": 2, "efficiency": 4, "threads": 8 },
+    "clocks_ghz": { "base": 1.2, "boost": 4.7 },
+    "power_w": { "base": 15, "max": 55 },
+    "socket": null,
+    "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
+    "scores": { "single": 89, "multi": 39 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-3-n350",
@@ -149,8 +166,8 @@
     "power_w": { "base": 7 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 51, "multi": 36 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-3-n355",
@@ -166,8 +183,8 @@
     "power_w": { "base": 15 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 51, "multi": 39 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-5-120u",
@@ -183,8 +200,8 @@
     "power_w": { "base": 15, "max": 55 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 95, "multi": 61 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-5-210h",
@@ -200,8 +217,8 @@
     "power_w": { "base": 45, "max": 95 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 91, "multi": 84 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-5-220h",
@@ -217,8 +234,8 @@
     "power_w": { "base": 45, "max": 95 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 93, "multi": 110 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-5-220u",
@@ -234,8 +251,8 @@
     "power_w": { "base": 15, "max": 55 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 95, "multi": 61 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-7-150u",
@@ -251,8 +268,8 @@
     "power_w": { "base": 15, "max": 55 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 103, "multi": 66 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-7-240h",
@@ -268,8 +285,8 @@
     "power_w": { "base": 45, "max": 115 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 99, "multi": 123 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-7-245hx",
@@ -288,8 +305,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 102, "multi": 161 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-7-250h",
@@ -305,8 +322,8 @@
     "power_w": { "base": 45, "max": 115 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 103, "multi": 155 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-7-250u",
@@ -322,8 +339,8 @@
     "power_w": { "base": 15, "max": 55 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 103, "multi": 66 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-9-270h",
@@ -339,8 +356,8 @@
     "power_w": { "base": 45, "max": 115 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 110, "multi": 166 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i3-1110g4",
@@ -355,8 +372,8 @@
     "clocks_ghz": { "base": 2.5, "boost": 3.9 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Tiger_Lake&oldid=1373251947"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 64, "multi": 19 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i3-1115g4",
@@ -372,8 +389,8 @@
     "power_w": { "base": 12, "max": 28 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Tiger_Lake&oldid=1373251947"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 67, "multi": 16 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i3-1120g4",
@@ -388,8 +405,8 @@
     "clocks_ghz": { "base": 1.5, "boost": 3.5 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Tiger_Lake&oldid=1373251947"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 57, "multi": 34 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i3-1125g4",
@@ -405,8 +422,8 @@
     "power_w": { "base": 12, "max": 28 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Tiger_Lake&oldid=1373251947"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 61, "multi": 28 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i3-1210u",
@@ -422,8 +439,25 @@
     "power_w": { "base": 9, "max": 29 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 82, "multi": 34 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "intel-core-i3-1215u",
+    "brand": "Intel",
+    "name": "Core i3-1215U",
+    "aliases": ["i3-1215U", "i3 1215U", "Core i3 1215U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2022",
+    "architecture": "Alder Lake",
+    "cores": { "performance": 2, "efficiency": 4, "threads": 8 },
+    "clocks_ghz": { "base": 1.2, "boost": 4.4 },
+    "power_w": { "base": 15, "max": 55 },
+    "socket": null,
+    "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
+    "scores": { "single": 82, "multi": 36 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i3-1220p",
@@ -438,8 +472,8 @@
     "clocks_ghz": { "base": 1.5, "boost": 4.4 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 82, "multi": 65 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i3-1305u",
@@ -455,8 +489,25 @@
     "power_w": { "base": 15, "max": 55 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 86, "multi": 27 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "intel-core-i3-1315u",
+    "brand": "Intel",
+    "name": "Core i3-1315U",
+    "aliases": ["i3-1315U", "i3 1315U", "Core i3 1315U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023",
+    "architecture": "Raptor Lake",
+    "cores": { "performance": 2, "efficiency": 4, "threads": 8 },
+    "clocks_ghz": { "base": 1.2, "boost": 4.5 },
+    "power_w": { "base": 15, "max": 55 },
+    "socket": null,
+    "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
+    "scores": { "single": 86, "multi": 38 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i3-12100",
@@ -472,8 +523,8 @@
     "power_w": { "base": 60, "max": 89 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 84, "multi": 56 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i3-12100f",
@@ -489,8 +540,8 @@
     "power_w": { "base": 58, "max": 89 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 84, "multi": 56 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i3-12100t",
@@ -506,8 +557,8 @@
     "power_w": { "base": 35, "max": 69 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 80, "multi": 54 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i3-12300",
@@ -523,8 +574,8 @@
     "power_w": { "base": 60, "max": 89 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 86, "multi": 58 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i3-12300t",
@@ -540,8 +591,8 @@
     "power_w": { "base": 35, "max": 69 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 82, "multi": 55 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i3-13100",
@@ -557,8 +608,8 @@
     "power_w": { "base": 60, "max": 110 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 90, "multi": 60 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i3-13100f",
@@ -574,8 +625,8 @@
     "power_w": { "base": 58, "max": 110 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 90, "multi": 60 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i3-13100t",
@@ -591,8 +642,8 @@
     "power_w": { "base": 35, "max": 69 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 84, "multi": 56 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i3-14100",
@@ -608,8 +659,8 @@
     "power_w": { "base": 60, "max": 110 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 94, "multi": 63 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i3-14100f",
@@ -625,8 +676,8 @@
     "power_w": { "base": 58, "max": 110 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 94, "multi": 63 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i3-14100t",
@@ -642,8 +693,8 @@
     "power_w": { "base": 35, "max": 69 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 88, "multi": 59 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i3-n300",
@@ -659,8 +710,8 @@
     "power_w": { "base": 7, "max": 25 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 50, "multi": 35 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i3-n305",
@@ -676,8 +727,8 @@
     "power_w": { "base": 15, "max": 35 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 50, "multi": 38 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-1130g7",
@@ -692,8 +743,8 @@
     "clocks_ghz": { "base": 1.8, "boost": 4 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Tiger_Lake&oldid=1373251947"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 66, "multi": 39 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-1135g7",
@@ -709,8 +760,8 @@
     "power_w": { "base": 12, "max": 28 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Tiger_Lake&oldid=1373251947"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 69, "multi": 32 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-1140g7-vpro",
@@ -725,8 +776,8 @@
     "clocks_ghz": { "base": 1.8, "boost": 4.2 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Tiger_Lake&oldid=1373251947"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 69, "multi": 41 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-1145g7-vpro",
@@ -742,8 +793,8 @@
     "power_w": { "base": 12, "max": 28 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Tiger_Lake&oldid=1373251947"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 72, "multi": 34 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-1155g7",
@@ -759,8 +810,8 @@
     "power_w": { "base": 12, "max": 28 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Tiger_Lake&oldid=1373251947"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 74, "multi": 34 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-1230u",
@@ -776,8 +827,25 @@
     "power_w": { "base": 9, "max": 29 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 82, "multi": 49 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "intel-core-i5-1235u",
+    "brand": "Intel",
+    "name": "Core i5-1235U",
+    "aliases": ["i5-1235U", "i5 1235U", "Core i5 1235U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2022",
+    "architecture": "Alder Lake",
+    "cores": { "performance": 2, "efficiency": 8, "threads": 12 },
+    "clocks_ghz": { "base": 1.3, "boost": 4.4 },
+    "power_w": { "base": 15, "max": 55 },
+    "socket": null,
+    "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
+    "scores": { "single": 82, "multi": 53 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-1240p",
@@ -792,8 +860,8 @@
     "clocks_ghz": { "base": 1.7, "boost": 4.4 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 82, "multi": 90 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-1240u",
@@ -809,8 +877,8 @@
     "power_w": { "base": 9, "max": 29 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 82, "multi": 49 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-1245u",
@@ -826,8 +894,8 @@
     "power_w": { "base": 15, "max": 55 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 82, "multi": 53 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-1250p",
@@ -842,8 +910,8 @@
     "clocks_ghz": { "base": 1.7, "boost": 4.4 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 82, "multi": 90 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-1334u",
@@ -859,8 +927,8 @@
     "power_w": { "base": 15, "max": 55 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 87, "multi": 56 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-1335u",
@@ -876,8 +944,8 @@
     "power_w": { "base": 15, "max": 55 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 87, "multi": 56 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-1340p",
@@ -893,8 +961,8 @@
     "power_w": { "base": 28, "max": 64 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 87, "multi": 88 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-1345u",
@@ -910,8 +978,8 @@
     "power_w": { "base": 15, "max": 55 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 89, "multi": 57 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-1350p",
@@ -927,8 +995,8 @@
     "power_w": { "base": 28, "max": 64 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 89, "multi": 90 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-11260h",
@@ -944,8 +1012,8 @@
     "power_w": { "base": 35, "max": 45 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Tiger_Lake&oldid=1373251947"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 72, "multi": 64 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-11300h",
@@ -961,8 +1029,8 @@
     "power_w": { "base": 28, "max": 35 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Tiger_Lake&oldid=1373251947"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 72, "multi": 40 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-11320h",
@@ -978,8 +1046,8 @@
     "power_w": { "base": 28, "max": 35 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Tiger_Lake&oldid=1373251947"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 74, "multi": 41 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-11400",
@@ -995,8 +1063,8 @@
     "power_w": { "base": 65 },
     "socket": "LGA1200",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Rocket_Lake&oldid=1359904771"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 76, "multi": 76 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-11400f",
@@ -1012,8 +1080,8 @@
     "power_w": { "base": 65 },
     "socket": "LGA1200",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Rocket_Lake&oldid=1359904771"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 76, "multi": 76 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-11400h",
@@ -1029,8 +1097,8 @@
     "power_w": { "base": 35, "max": 45 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Tiger_Lake&oldid=1373251947"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 74, "multi": 66 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-11400t",
@@ -1046,8 +1114,8 @@
     "power_w": { "base": 35 },
     "socket": "LGA1200",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Rocket_Lake&oldid=1359904771"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 64, "multi": 64 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-11500",
@@ -1063,8 +1131,8 @@
     "power_w": { "base": 65 },
     "socket": "LGA1200",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Rocket_Lake&oldid=1359904771"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 79, "multi": 79 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-11500h-vpro",
@@ -1080,8 +1148,8 @@
     "power_w": { "base": 35, "max": 45 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Tiger_Lake&oldid=1373251947"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 75, "multi": 67 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-11500t",
@@ -1097,8 +1165,8 @@
     "power_w": { "base": 35 },
     "socket": "LGA1200",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Rocket_Lake&oldid=1359904771"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 67, "multi": 67 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-11600",
@@ -1114,8 +1182,8 @@
     "power_w": { "base": 65 },
     "socket": "LGA1200",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Rocket_Lake&oldid=1359904771"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 83, "multi": 83 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-11600k",
@@ -1131,8 +1199,8 @@
     "power_w": { "base": 125 },
     "socket": "LGA1200",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Rocket_Lake&oldid=1359904771"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 85, "multi": 88 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-11600kf",
@@ -1148,8 +1216,8 @@
     "power_w": { "base": 125 },
     "socket": "LGA1200",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Rocket_Lake&oldid=1359904771"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 85, "multi": 88 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-11600t",
@@ -1165,8 +1233,8 @@
     "power_w": { "base": 35 },
     "socket": "LGA1200",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Rocket_Lake&oldid=1359904771"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 71, "multi": 71 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-12400",
@@ -1182,8 +1250,8 @@
     "power_w": { "base": 65, "max": 117 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 86, "multi": 86 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-12400f",
@@ -1199,8 +1267,8 @@
     "power_w": { "base": 65, "max": 117 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 86, "multi": 86 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-12400t",
@@ -1216,8 +1284,8 @@
     "power_w": { "base": 35, "max": 74 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 82, "multi": 82 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-12450h",
@@ -1232,8 +1300,8 @@
     "clocks_ghz": { "base": 2, "boost": 4.4 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 82, "multi": 69 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-12450hx",
@@ -1248,8 +1316,8 @@
     "clocks_ghz": { "base": 2.4, "boost": 4.4 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 82, "multi": 69 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-12490f",
@@ -1265,8 +1333,8 @@
     "power_w": { "base": 65, "max": 117 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 90, "multi": 90 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-12500",
@@ -1282,8 +1350,8 @@
     "power_w": { "base": 65, "max": 117 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 90, "multi": 90 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-12500h",
@@ -1298,8 +1366,8 @@
     "clocks_ghz": { "base": 2.5, "boost": 4.5 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 84, "multi": 92 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-12500t",
@@ -1315,8 +1383,8 @@
     "power_w": { "base": 35, "max": 74 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 86, "multi": 86 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-12600",
@@ -1332,8 +1400,8 @@
     "power_w": { "base": 65, "max": 117 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 94, "multi": 94 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-12600h",
@@ -1348,8 +1416,8 @@
     "clocks_ghz": { "base": 2.7, "boost": 4.5 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 84, "multi": 92 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-12600hx",
@@ -1364,8 +1432,8 @@
     "clocks_ghz": { "base": 2.5, "boost": 4.6 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 86, "multi": 94 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-12600k",
@@ -1381,8 +1449,8 @@
     "power_w": { "base": 125, "max": 150 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 96, "multi": 129 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-12600kf",
@@ -1398,8 +1466,8 @@
     "power_w": { "base": 125, "max": 150 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 96, "multi": 129 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-12600t",
@@ -1415,8 +1483,8 @@
     "power_w": { "base": 35, "max": 74 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 90, "multi": 90 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-13400",
@@ -1432,8 +1500,8 @@
     "power_w": { "base": 65, "max": 148 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 92, "multi": 117 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-13400f",
@@ -1449,8 +1517,8 @@
     "power_w": { "base": 65, "max": 148 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 92, "multi": 117 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-13400t",
@@ -1466,8 +1534,8 @@
     "power_w": { "base": 35, "max": 82 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 88, "multi": 112 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-13420h",
@@ -1483,8 +1551,8 @@
     "power_w": { "base": 45, "max": 95 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 87, "multi": 80 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-13450hx",
@@ -1500,8 +1568,8 @@
     "power_w": { "base": 55, "max": 157 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 87, "multi": 113 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-13490f",
@@ -1517,8 +1585,8 @@
     "power_w": { "base": 65, "max": 148 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 96, "multi": 122 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-13500",
@@ -1534,8 +1602,8 @@
     "power_w": { "base": 65, "max": 154 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 96, "multi": 149 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-13500h",
@@ -1551,8 +1619,8 @@
     "power_w": { "base": 45, "max": 95 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 89, "multi": 106 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-13500hx",
@@ -1568,8 +1636,8 @@
     "power_w": { "base": 55, "max": 157 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 89, "multi": 141 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-13500t",
@@ -1585,8 +1653,8 @@
     "power_w": { "base": 35, "max": 92 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 92, "multi": 143 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-13505h",
@@ -1602,8 +1670,8 @@
     "power_w": { "base": 45, "max": 115 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 89, "multi": 106 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-13600",
@@ -1619,8 +1687,8 @@
     "power_w": { "base": 65, "max": 154 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 100, "multi": 155 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-13600h",
@@ -1636,8 +1704,8 @@
     "power_w": { "base": 45, "max": 95 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 91, "multi": 108 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-13600hx",
@@ -1653,8 +1721,8 @@
     "power_w": { "base": 55, "max": 157 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 91, "multi": 144 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-13600k",
@@ -1670,8 +1738,8 @@
     "power_w": { "base": 125, "max": 181 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 102, "multi": 165 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-13600kf",
@@ -1687,8 +1755,8 @@
     "power_w": { "base": 125, "max": 181 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 102, "multi": 165 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-13600t",
@@ -1704,8 +1772,8 @@
     "power_w": { "base": 35, "max": 92 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 96, "multi": 149 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-14400",
@@ -1721,8 +1789,8 @@
     "power_w": { "base": 65, "max": 148 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 94, "multi": 120 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-14400f",
@@ -1738,8 +1806,8 @@
     "power_w": { "base": 65, "max": 148 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 94, "multi": 120 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-14400t",
@@ -1755,8 +1823,8 @@
     "power_w": { "base": 35, "max": 82 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 90, "multi": 115 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-14450hx",
@@ -1772,8 +1840,8 @@
     "power_w": { "base": 55, "max": 157 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 91, "multi": 118 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-14490f",
@@ -1789,8 +1857,8 @@
     "power_w": { "base": 65, "max": 148 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 98, "multi": 125 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-14500",
@@ -1806,8 +1874,8 @@
     "power_w": { "base": 65, "max": 154 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 100, "multi": 155 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-14500hx",
@@ -1823,8 +1891,8 @@
     "power_w": { "base": 55, "max": 157 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 93, "multi": 147 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-14500t",
@@ -1840,8 +1908,8 @@
     "power_w": { "base": 35, "max": 92 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 96, "multi": 149 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-14600",
@@ -1857,8 +1925,8 @@
     "power_w": { "base": 65, "max": 154 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 104, "multi": 161 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-14600k",
@@ -1874,8 +1942,8 @@
     "power_w": { "base": 125, "max": 181 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 106, "multi": 172 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-14600kf",
@@ -1891,8 +1959,8 @@
     "power_w": { "base": 125, "max": 181 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 106, "multi": 172 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i5-14600t",
@@ -1908,8 +1976,8 @@
     "power_w": { "base": 35, "max": 92 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 102, "multi": 158 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-1160g7",
@@ -1924,8 +1992,8 @@
     "clocks_ghz": { "base": 2.1, "boost": 4.4 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Tiger_Lake&oldid=1373251947"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 72, "multi": 43 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-1165g7",
@@ -1941,8 +2009,8 @@
     "power_w": { "base": 12, "max": 28 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Tiger_Lake&oldid=1373251947"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 77, "multi": 36 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-1180g7-vpro",
@@ -1957,8 +2025,8 @@
     "clocks_ghz": { "base": 2.2, "boost": 4.6 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Tiger_Lake&oldid=1373251947"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 75, "multi": 45 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-1185g7-vpro",
@@ -1974,8 +2042,8 @@
     "power_w": { "base": 12, "max": 28 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Tiger_Lake&oldid=1373251947"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 79, "multi": 37 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-1195g7",
@@ -1991,8 +2059,8 @@
     "power_w": { "base": 12, "max": 28 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Tiger_Lake&oldid=1373251947"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 82, "multi": 38 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-1250u",
@@ -2008,8 +2076,8 @@
     "power_w": { "base": 9, "max": 29 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 88, "multi": 53 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-1255u",
@@ -2025,8 +2093,8 @@
     "power_w": { "base": 15, "max": 55 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 88, "multi": 57 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-1260p",
@@ -2041,8 +2109,8 @@
     "clocks_ghz": { "base": 2.1, "boost": 4.7 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 88, "multi": 96 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-1260u",
@@ -2058,8 +2126,8 @@
     "power_w": { "base": 9, "max": 29 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 88, "multi": 53 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-1265u",
@@ -2075,8 +2143,8 @@
     "power_w": { "base": 15, "max": 55 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 89, "multi": 58 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-1270p",
@@ -2091,8 +2159,8 @@
     "clocks_ghz": { "base": 2.2, "boost": 4.8 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 89, "multi": 98 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-1280p",
@@ -2107,8 +2175,8 @@
     "clocks_ghz": { "base": 1.8, "boost": 4.8 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 89, "multi": 124 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-1355u",
@@ -2124,8 +2192,8 @@
     "power_w": { "base": 15, "max": 55 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 95, "multi": 61 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-1360p",
@@ -2141,8 +2209,8 @@
     "power_w": { "base": 28, "max": 64 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 95, "multi": 96 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-1365u",
@@ -2158,8 +2226,8 @@
     "power_w": { "base": 15, "max": 55 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 99, "multi": 63 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-1370p",
@@ -2175,8 +2243,8 @@
     "power_w": { "base": 28, "max": 64 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 99, "multi": 127 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-11370h",
@@ -2192,8 +2260,8 @@
     "power_w": { "base": 28, "max": 35 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Tiger_Lake&oldid=1373251947"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 79, "multi": 44 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-11375h",
@@ -2209,8 +2277,8 @@
     "power_w": { "base": 28, "max": 35 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Tiger_Lake&oldid=1373251947"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 82, "multi": 45 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-11390h",
@@ -2226,8 +2294,8 @@
     "power_w": { "base": 28, "max": 35 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Tiger_Lake&oldid=1373251947"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 82, "multi": 45 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-11600h",
@@ -2243,8 +2311,8 @@
     "power_w": { "base": 35, "max": 45 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Tiger_Lake&oldid=1373251947"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 75, "multi": 67 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-11700",
@@ -2260,8 +2328,8 @@
     "power_w": { "base": 65 },
     "socket": "LGA1200",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Rocket_Lake&oldid=1359904771"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 85, "multi": 113 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-11700f",
@@ -2277,8 +2345,8 @@
     "power_w": { "base": 65 },
     "socket": "LGA1200",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Rocket_Lake&oldid=1359904771"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 85, "multi": 113 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-11700k",
@@ -2294,8 +2362,8 @@
     "power_w": { "base": 125 },
     "socket": "LGA1200",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Rocket_Lake&oldid=1359904771"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 86, "multi": 120 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-11700kf",
@@ -2311,8 +2379,8 @@
     "power_w": { "base": 125 },
     "socket": "LGA1200",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Rocket_Lake&oldid=1359904771"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 86, "multi": 120 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-11700t",
@@ -2328,8 +2396,8 @@
     "power_w": { "base": 35 },
     "socket": "LGA1200",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Rocket_Lake&oldid=1359904771"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 79, "multi": 106 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-11800h",
@@ -2345,8 +2413,8 @@
     "power_w": { "base": 35, "max": 45 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Tiger_Lake&oldid=1373251947"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 75, "multi": 90 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-11850h-vpro",
@@ -2362,8 +2430,8 @@
     "power_w": { "base": 35, "max": 45 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Tiger_Lake&oldid=1373251947"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 79, "multi": 93 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-12650h",
@@ -2378,8 +2446,8 @@
     "clocks_ghz": { "base": 2.3, "boost": 4.7 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 88, "multi": 100 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-12650hx",
@@ -2394,8 +2462,8 @@
     "clocks_ghz": { "base": 2, "boost": 4.7 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 88, "multi": 122 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-12700",
@@ -2411,8 +2479,8 @@
     "power_w": { "base": 65, "max": 180 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 96, "multi": 155 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-12700f",
@@ -2428,8 +2496,8 @@
     "power_w": { "base": 65, "max": 180 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 96, "multi": 155 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-12700h",
@@ -2444,8 +2512,8 @@
     "clocks_ghz": { "base": 2.3, "boost": 4.7 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 88, "multi": 122 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-12700k",
@@ -2461,8 +2529,8 @@
     "power_w": { "base": 125, "max": 190 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 98, "multi": 165 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-12700kf",
@@ -2478,8 +2546,8 @@
     "power_w": { "base": 125, "max": 190 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 98, "multi": 165 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-12700t",
@@ -2495,8 +2563,8 @@
     "power_w": { "base": 35, "max": 99 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 92, "multi": 149 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-12800h",
@@ -2511,8 +2579,8 @@
     "clocks_ghz": { "base": 2.4, "boost": 4.8 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 89, "multi": 124 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-12800hx",
@@ -2527,8 +2595,8 @@
     "clocks_ghz": { "base": 2, "boost": 4.8 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 89, "multi": 151 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-12850hx",
@@ -2543,8 +2611,8 @@
     "clocks_ghz": { "base": 2.1, "boost": 4.8 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 89, "multi": 151 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-13620h",
@@ -2562,8 +2630,8 @@
     "socket": null,
     "igpu": "intel-uhd-graphics-64eu",
     "npu_tops": null,
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" },
+    "scores": { "single": 93, "multi": 116 },
+    "score_meta": { "method": "estimated" },
     "notes": []
   },
   {
@@ -2580,8 +2648,8 @@
     "power_w": { "base": 55, "max": 157 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 93, "multi": 147 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-13700",
@@ -2597,8 +2665,8 @@
     "power_w": { "base": 65, "max": 219 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 104, "multi": 196 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-13700e",
@@ -2614,8 +2682,8 @@
     "power_w": { "base": 65 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 102, "multi": 192 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-13700f",
@@ -2631,8 +2699,8 @@
     "power_w": { "base": 65, "max": 219 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 104, "multi": 196 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-13700h",
@@ -2648,8 +2716,8 @@
     "power_w": { "base": 45, "max": 115 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 95, "multi": 143 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-13700hx",
@@ -2665,8 +2733,8 @@
     "power_w": { "base": 55, "max": 157 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 95, "multi": 182 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-13700k",
@@ -2682,8 +2750,8 @@
     "power_w": { "base": 125, "max": 253 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 108, "multi": 213 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-13700kf",
@@ -2699,8 +2767,8 @@
     "power_w": { "base": 125, "max": 253 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 108, "multi": 213 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-13700t",
@@ -2716,8 +2784,8 @@
     "power_w": { "base": 35, "max": 106 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 98, "multi": 184 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-13700te",
@@ -2733,8 +2801,8 @@
     "power_w": { "base": 35 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 96, "multi": 181 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-13705h",
@@ -2750,8 +2818,8 @@
     "power_w": { "base": 45, "max": 115 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 95, "multi": 143 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-13790f",
@@ -2767,8 +2835,8 @@
     "power_w": { "base": 65, "max": 219 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 104, "multi": 196 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-13800h",
@@ -2784,8 +2852,8 @@
     "power_w": { "base": 45, "max": 115 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 99, "multi": 149 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-13850hx",
@@ -2801,8 +2869,8 @@
     "power_w": { "base": 55, "max": 157 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 101, "multi": 221 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-14650hx",
@@ -2818,8 +2886,8 @@
     "power_w": { "base": 55, "max": 157 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 99, "multi": 189 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-14700",
@@ -2835,8 +2903,8 @@
     "power_w": { "base": 65, "max": 219 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 108, "multi": 233 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-14700f",
@@ -2852,8 +2920,8 @@
     "power_w": { "base": 65, "max": 219 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 108, "multi": 233 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-14700hx",
@@ -2869,8 +2937,8 @@
     "power_w": { "base": 55, "max": 157 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 105, "multi": 229 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-14700k",
@@ -2886,8 +2954,8 @@
     "power_w": { "base": 125, "max": 253 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 112, "multi": 253 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-14700kf",
@@ -2903,8 +2971,8 @@
     "power_w": { "base": 125, "max": 253 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 112, "multi": 253 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-14700t",
@@ -2920,8 +2988,8 @@
     "power_w": { "base": 35, "max": 106 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 104, "multi": 224 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i7-14790f",
@@ -2937,8 +3005,8 @@
     "power_w": { "base": 65, "max": 219 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 108, "multi": 203 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-11900",
@@ -2954,8 +3022,8 @@
     "power_w": { "base": 65 },
     "socket": "LGA1200",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Rocket_Lake&oldid=1359904771"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 90, "multi": 120 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-11900f",
@@ -2971,8 +3039,8 @@
     "power_w": { "base": 65 },
     "socket": "LGA1200",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Rocket_Lake&oldid=1359904771"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 90, "multi": 120 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-11900h",
@@ -2988,8 +3056,8 @@
     "power_w": { "base": 35, "max": 45 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Tiger_Lake&oldid=1373251947"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 80, "multi": 95 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-11900k",
@@ -3005,8 +3073,8 @@
     "power_w": { "base": 125 },
     "socket": "LGA1200",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Rocket_Lake&oldid=1359904771"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 91, "multi": 127 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-11900kf",
@@ -3022,8 +3090,8 @@
     "power_w": { "base": 125 },
     "socket": "LGA1200",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Rocket_Lake&oldid=1359904771"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 91, "multi": 127 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-11900t",
@@ -3039,8 +3107,8 @@
     "power_w": { "base": 35 },
     "socket": "LGA1200",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Rocket_Lake&oldid=1359904771"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 85, "multi": 113 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-11950h-vpro",
@@ -3056,8 +3124,8 @@
     "power_w": { "base": 35, "max": 45 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Tiger_Lake&oldid=1373251947"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 82, "multi": 97 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-11980hk",
@@ -3073,8 +3141,8 @@
     "power_w": { "base": 45, "max": 65 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Tiger_Lake&oldid=1373251947"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 82, "multi": 107 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-12900",
@@ -3090,8 +3158,8 @@
     "power_w": { "base": 65, "max": 202 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 100, "multi": 189 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-12900f",
@@ -3107,8 +3175,8 @@
     "power_w": { "base": 65, "max": 202 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 100, "multi": 189 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-12900h",
@@ -3123,8 +3191,8 @@
     "clocks_ghz": { "base": 2.5, "boost": 5 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 93, "multi": 129 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-12900hk",
@@ -3139,8 +3207,8 @@
     "clocks_ghz": { "base": 2.5, "boost": 5 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 93, "multi": 129 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-12900hx",
@@ -3155,8 +3223,8 @@
     "clocks_ghz": { "base": 2.3, "boost": 5 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 93, "multi": 157 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-12900k",
@@ -3172,8 +3240,8 @@
     "power_w": { "base": 125, "max": 241 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 102, "multi": 202 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-12900kf",
@@ -3189,8 +3257,8 @@
     "power_w": { "base": 125, "max": 241 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 102, "multi": 202 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-12900ks",
@@ -3206,8 +3274,8 @@
     "power_w": { "base": 150, "max": 241 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 108, "multi": 213 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-12900t",
@@ -3223,8 +3291,8 @@
     "power_w": { "base": 35, "max": 106 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 96, "multi": 182 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-12950hx",
@@ -3239,8 +3307,8 @@
     "clocks_ghz": { "base": 2.3, "boost": 5 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 93, "multi": 157 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-13900",
@@ -3256,8 +3324,8 @@
     "power_w": { "base": 65, "max": 219 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 112, "multi": 272 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-13900e",
@@ -3273,8 +3341,8 @@
     "power_w": { "base": 65 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 104, "multi": 253 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-13900f",
@@ -3290,8 +3358,8 @@
     "power_w": { "base": 65, "max": 219 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 112, "multi": 272 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-13900h",
@@ -3307,8 +3375,8 @@
     "power_w": { "base": 45, "max": 115 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 103, "multi": 155 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-13900hk",
@@ -3324,8 +3392,8 @@
     "power_w": { "base": 45, "max": 115 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 103, "multi": 155 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-13900hx",
@@ -3341,8 +3409,8 @@
     "power_w": { "base": 55, "max": 157 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 103, "multi": 254 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-13900k",
@@ -3358,8 +3426,8 @@
     "power_w": { "base": 125, "max": 253 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 116, "multi": 295 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-13900kf",
@@ -3375,8 +3443,8 @@
     "power_w": { "base": 125, "max": 253 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 116, "multi": 295 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-13900ks",
@@ -3392,8 +3460,8 @@
     "power_w": { "base": 150, "max": 253 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 120, "multi": 305 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-13900t",
@@ -3409,8 +3477,8 @@
     "power_w": { "base": 35, "max": 106 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 106, "multi": 258 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-13900te",
@@ -3426,8 +3494,8 @@
     "power_w": { "base": 35 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 100, "multi": 243 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-13905h",
@@ -3443,8 +3511,8 @@
     "power_w": { "base": 45, "max": 115 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 103, "multi": 155 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-13950hx",
@@ -3460,8 +3528,8 @@
     "power_w": { "base": 55, "max": 157 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 105, "multi": 258 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-13980hx",
@@ -3477,8 +3545,8 @@
     "power_w": { "base": 55, "max": 157 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 106, "multi": 263 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-14900",
@@ -3494,8 +3562,8 @@
     "power_w": { "base": 65, "max": 219 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 116, "multi": 282 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-14900f",
@@ -3511,8 +3579,8 @@
     "power_w": { "base": 65, "max": 219 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 116, "multi": 282 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-14900hx",
@@ -3528,8 +3596,8 @@
     "power_w": { "base": 55, "max": 157 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 110, "multi": 272 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-14900k",
@@ -3545,8 +3613,8 @@
     "power_w": { "base": 125, "max": 253 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 120, "multi": 305 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-14900kf",
@@ -3562,8 +3630,8 @@
     "power_w": { "base": 125, "max": 253 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 120, "multi": 305 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-14900ks",
@@ -3579,8 +3647,8 @@
     "power_w": { "base": 150, "max": 253 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 124, "multi": 315 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-i9-14900t",
@@ -3596,8 +3664,8 @@
     "power_w": { "base": 35, "max": 106 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 110, "multi": 267 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-3-205",
@@ -3616,8 +3684,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 103, "multi": 94 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-3-205t",
@@ -3636,8 +3704,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 103, "multi": 94 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-5-115u",
@@ -3653,8 +3721,8 @@
     "power_w": { "base": 15, "max": 57 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Meteor_Lake&oldid=1379698444"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 77, "multi": 43 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-5-125h",
@@ -3670,8 +3738,8 @@
     "power_w": { "base": 28, "max": 115 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Meteor_Lake&oldid=1379698444"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 82, "multi": 96 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-5-125u",
@@ -3687,8 +3755,8 @@
     "power_w": { "base": 15, "max": 57 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Meteor_Lake&oldid=1379698444"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 78, "multi": 61 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-5-134u",
@@ -3704,8 +3772,8 @@
     "power_w": { "base": 9, "max": 30 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Meteor_Lake&oldid=1379698444"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 80, "multi": 58 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-5-135h",
@@ -3721,8 +3789,8 @@
     "power_w": { "base": 28, "max": 115 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Meteor_Lake&oldid=1379698444"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 84, "multi": 98 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-5-135u",
@@ -3738,8 +3806,8 @@
     "power_w": { "base": 15, "max": 57 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Meteor_Lake&oldid=1379698444"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 80, "multi": 62 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-5-225",
@@ -3758,8 +3826,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 103, "multi": 121 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-5-225f",
@@ -3778,8 +3846,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 103, "multi": 121 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-5-225h",
@@ -3798,8 +3866,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 98, "multi": 120 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-5-225t",
@@ -3818,8 +3886,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 103, "multi": 121 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-5-225u",
@@ -3838,8 +3906,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 96, "multi": 89 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-5-226v",
@@ -3856,8 +3924,8 @@
     "socket": null,
     "npu_tops": 40,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Lunar_Lake&oldid=1386451490"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 90, "multi": 61 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-5-228v",
@@ -3874,8 +3942,8 @@
     "socket": null,
     "npu_tops": 40,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Lunar_Lake&oldid=1386451490"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 90, "multi": 61 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-5-235",
@@ -3894,8 +3962,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 105, "multi": 163 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-5-235h",
@@ -3914,8 +3982,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 100, "multi": 123 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-5-235hx",
@@ -3934,8 +4002,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 102, "multi": 161 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-5-235t",
@@ -3954,8 +4022,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 105, "multi": 163 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-5-235u",
@@ -3974,8 +4042,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 98, "multi": 90 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-5-236v",
@@ -3992,8 +4060,8 @@
     "socket": null,
     "npu_tops": 40,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Lunar_Lake&oldid=1386451490"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 94, "multi": 63 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-5-238v",
@@ -4010,8 +4078,8 @@
     "socket": null,
     "npu_tops": 40,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Lunar_Lake&oldid=1386451490"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 94, "multi": 63 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-5-245",
@@ -4030,8 +4098,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 107, "multi": 167 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-5-245hx",
@@ -4050,8 +4118,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 102, "multi": 161 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-5-245k",
@@ -4070,8 +4138,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 109, "multi": 178 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-5-245kf",
@@ -4090,8 +4158,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 109, "multi": 178 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-5-245t",
@@ -4110,8 +4178,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 107, "multi": 167 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-5-250k-plus",
@@ -4130,8 +4198,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 111, "multi": 225 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-5-250kf-plus",
@@ -4150,8 +4218,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 111, "multi": 225 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-7-155h",
@@ -4167,8 +4235,8 @@
     "power_w": { "base": 28, "max": 115 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Meteor_Lake&oldid=1379698444"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 88, "multi": 127 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-7-155u",
@@ -4184,8 +4252,8 @@
     "power_w": { "base": 15, "max": 57 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Meteor_Lake&oldid=1379698444"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 88, "multi": 68 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-7-164u",
@@ -4201,8 +4269,8 @@
     "power_w": { "base": 9, "max": 30 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Meteor_Lake&oldid=1379698444"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 88, "multi": 63 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-7-165h",
@@ -4218,8 +4286,8 @@
     "power_w": { "base": 28, "max": 115 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Meteor_Lake&oldid=1379698444"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 91, "multi": 132 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-7-165u",
@@ -4235,8 +4303,8 @@
     "power_w": { "base": 15, "max": 57 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Meteor_Lake&oldid=1379698444"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 89, "multi": 69 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-7-251hx",
@@ -4255,8 +4323,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 102, "multi": 200 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-7-255h",
@@ -4275,8 +4343,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 102, "multi": 148 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-7-255hx",
@@ -4295,8 +4363,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 104, "multi": 232 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-7-255u",
@@ -4315,8 +4383,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 104, "multi": 96 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-7-256v",
@@ -4333,8 +4401,8 @@
     "socket": null,
     "npu_tops": 47,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Lunar_Lake&oldid=1386451490"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 96, "multi": 65 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-7-258v",
@@ -4351,8 +4419,8 @@
     "socket": null,
     "npu_tops": 47,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Lunar_Lake&oldid=1386451490"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 96, "multi": 65 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-7-265",
@@ -4371,8 +4439,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 109, "multi": 240 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-7-265f",
@@ -4391,8 +4459,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 109, "multi": 240 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-7-265h",
@@ -4411,8 +4479,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 106, "multi": 154 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-7-265hx",
@@ -4431,8 +4499,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 106, "multi": 237 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-7-265k",
@@ -4451,8 +4519,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 115, "multi": 266 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-7-265kf",
@@ -4471,8 +4539,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 115, "multi": 266 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-7-265t",
@@ -4491,8 +4559,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 109, "multi": 240 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-7-265u",
@@ -4511,8 +4579,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 106, "multi": 98 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-7-266v",
@@ -4529,8 +4597,8 @@
     "socket": null,
     "npu_tops": 48,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Lunar_Lake&oldid=1386451490"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 100, "multi": 67 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-7-268v",
@@ -4547,8 +4615,8 @@
     "socket": null,
     "npu_tops": 48,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Lunar_Lake&oldid=1386451490"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 100, "multi": 67 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-7-270hx-plus",
@@ -4567,8 +4635,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 106, "multi": 237 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-7-270k-plus",
@@ -4587,8 +4655,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 115, "multi": 311 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-9-185h",
@@ -4604,8 +4672,8 @@
     "power_w": { "base": 45, "max": 115 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Meteor_Lake&oldid=1379698444"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 93, "multi": 157 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-9-275hx",
@@ -4624,8 +4692,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 108, "multi": 283 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-9-285",
@@ -4644,8 +4712,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 113, "multi": 293 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-9-285h",
@@ -4664,8 +4732,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 108, "multi": 183 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-9-285hx",
@@ -4684,8 +4752,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 110, "multi": 288 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-9-285k",
@@ -4704,8 +4772,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 120, "multi": 323 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-9-285t",
@@ -4724,8 +4792,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 111, "multi": 287 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-9-288v",
@@ -4742,8 +4810,8 @@
     "socket": null,
     "npu_tops": 48,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Lunar_Lake&oldid=1386451490"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 102, "multi": 79 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-core-ultra-9-290hx-plus",
@@ -4762,8 +4830,8 @@
     "spec_sources": [
       "https://en.wikipedia.org/w/index.php?title=Arrow_Lake_(microprocessor)&oldid=1384915790"
     ],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 110, "multi": 288 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-pentium-8500",
@@ -4779,8 +4847,25 @@
     "power_w": { "base": 9, "max": 29 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 82, "multi": 25 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "intel-pentium-8505",
+    "brand": "Intel",
+    "name": "Pentium 8505",
+    "aliases": [],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2022",
+    "architecture": "Alder Lake",
+    "cores": { "performance": 1, "efficiency": 4, "threads": 6 },
+    "clocks_ghz": { "base": 1.2, "boost": 4.4 },
+    "power_w": { "base": 15, "max": 55 },
+    "socket": null,
+    "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
+    "scores": { "single": 82, "multi": 26 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-pentium-gold-7505",
@@ -4796,8 +4881,8 @@
     "power_w": { "base": 15 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Tiger_Lake&oldid=1373251947"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 57, "multi": 14 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-pentium-gold-g7400",
@@ -4813,8 +4898,8 @@
     "power_w": { "base": 46 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 91, "multi": 30 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-pentium-gold-g7400t",
@@ -4830,8 +4915,8 @@
     "power_w": { "base": 35 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 76, "multi": 25 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-processor-300",
@@ -4847,8 +4932,8 @@
     "power_w": { "base": 46 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 98, "multi": 33 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-processor-300t",
@@ -4864,8 +4949,8 @@
     "power_w": { "base": 35 },
     "socket": "LGA1700",
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 85, "multi": 28 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-processor-n50",
@@ -4881,8 +4966,8 @@
     "power_w": { "base": 6 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 44, "multi": 8 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-processor-n95",
@@ -4898,8 +4983,8 @@
     "power_w": { "base": 15 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 44, "multi": 17 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-processor-n97",
@@ -4915,8 +5000,8 @@
     "power_w": { "base": 12 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 47, "multi": 17 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-processor-n100",
@@ -4932,8 +5017,8 @@
     "power_w": { "base": 6, "max": 25 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 44, "multi": 16 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-processor-n150",
@@ -4949,8 +5034,8 @@
     "power_w": { "base": 6 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 47, "multi": 16 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-processor-n200",
@@ -4966,8 +5051,8 @@
     "power_w": { "base": 6, "max": 25 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 48, "multi": 17 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-processor-n250",
@@ -4983,8 +5068,8 @@
     "power_w": { "base": 6 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Alder_Lake&oldid=1384313871"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 50, "multi": 17 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-processor-u300",
@@ -5000,8 +5085,8 @@
     "power_w": { "base": 15, "max": 55 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Raptor_Lake&oldid=1384563389"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 84, "multi": 27 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-xeon-w-11855m-vpro",
@@ -5017,8 +5102,8 @@
     "power_w": { "base": 35, "max": 45 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Tiger_Lake&oldid=1373251947"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 80, "multi": 72 },
+    "score_meta": { "method": "estimated" }
   },
   {
     "id": "intel-xeon-w-11955m-vpro",
@@ -5034,7 +5119,7 @@
     "power_w": { "base": 35, "max": 45 },
     "socket": null,
     "spec_sources": ["https://en.wikipedia.org/w/index.php?title=Tiger_Lake&oldid=1373251947"],
-    "scores": { "single": null, "multi": null },
-    "score_meta": { "method": "pending" }
+    "scores": { "single": 82, "multi": 97 },
+    "score_meta": { "method": "estimated" }
   }
 ]
