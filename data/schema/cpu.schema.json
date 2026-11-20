@@ -53,6 +53,7 @@
     "socket": { "type": ["string", "null"], "description": "Solo desktop (AM5, LGA1700, LGA1851...). null en mobile." },
     "igpu": { "type": ["string", "null"], "description": "id de la GPU integrada en data/gpus, o null si no tiene." },
     "npu_tops": { "type": ["number", "null"] },
+    "spec_sources": { "$ref": "common.schema.json#/$defs/sources" },
     "scores": { "$ref": "common.schema.json#/$defs/cpuScores" },
     "score_meta": { "$ref": "common.schema.json#/$defs/scoreMeta" },
     "notes": { "type": "array", "items": { "type": "string" } }

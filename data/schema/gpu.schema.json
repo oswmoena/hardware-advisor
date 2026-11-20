@@ -44,6 +44,7 @@
         "frame_generation": { "type": "boolean" }
       }
     },
+    "spec_sources": { "$ref": "common.schema.json#/$defs/sources" },
     "scores": { "$ref": "common.schema.json#/$defs/gpuScores" },
     "score_meta": { "$ref": "common.schema.json#/$defs/scoreMeta" },
     "notes": { "type": "array", "items": { "type": "string" } }

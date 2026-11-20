@@ -1,5 +1,1339 @@
 [
   {
+    "id": "amd-ryzen-3-30",
+    "brand": "AMD",
+    "name": "Ryzen 3 30",
+    "aliases": ["R3 30"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2025-10",
+    "architecture": "Zen 2 (Mendocino)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 2.4, "boost": 4.1 },
+    "power_w": { "base": 15 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-3-110",
+    "brand": "AMD",
+    "name": "Ryzen 3 110",
+    "aliases": ["R3 110"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2025-10",
+    "architecture": "Zen 3+ (Rembrandt-R)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 3, "boost": 4.3 },
+    "power_w": { "base": 28, "max": 30 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-3-205",
+    "brand": "AMD",
+    "name": "Ryzen 3 205",
+    "aliases": ["R3 205"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2026-06",
+    "architecture": "Zen 4 (Hawk Point Refresh)",
+    "cores": { "performance": 1, "efficiency": 3, "threads": 8 },
+    "clocks_ghz": { "base": 2.8, "boost": 4.6 },
+    "power_w": { "base": 28, "max": 40 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-3-210",
+    "brand": "AMD",
+    "name": "Ryzen 3 210",
+    "aliases": ["R3 210"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2025-02",
+    "architecture": "Zen 4 (Hawk Point Refresh)",
+    "cores": { "performance": 1, "efficiency": 3, "threads": 8 },
+    "clocks_ghz": { "base": 3.6, "boost": 4.7 },
+    "power_w": { "base": 28, "max": 30 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-3-5100",
+    "brand": "AMD",
+    "name": "Ryzen 3 5100",
+    "aliases": ["R3 5100"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2023",
+    "architecture": "Zen 3 (Cezanne)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 3.8, "boost": 4.2 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-3-5125c",
+    "brand": "AMD",
+    "name": "Ryzen 3 5125C",
+    "aliases": ["R3 5125C"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2022-05",
+    "architecture": "Zen 3 (Cezanne and Barceló)",
+    "cores": { "performance": 2, "efficiency": 0, "threads": 4 },
+    "clocks_ghz": { "base": 3 },
+    "power_w": { "base": 15 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-3-5300g",
+    "brand": "AMD",
+    "name": "Ryzen 3 5300G",
+    "aliases": ["R3 5300G"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2021-04",
+    "architecture": "Zen 3 (Cezanne)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 4, "boost": 4.2 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-3-5300ge",
+    "brand": "AMD",
+    "name": "Ryzen 3 5300GE",
+    "aliases": ["R3 5300GE"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2021-04",
+    "architecture": "Zen 3 (Cezanne)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 3.6, "boost": 4.2 },
+    "power_w": { "base": 35 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-3-5300u",
+    "brand": "AMD",
+    "name": "Ryzen 3 5300U",
+    "aliases": ["R3 5300U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2021-01",
+    "architecture": "Zen 2 (Lucienne)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 2.6, "boost": 3.8 },
+    "power_w": { "base": 10, "max": 25 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-3-5305g",
+    "brand": "AMD",
+    "name": "Ryzen 3 5305G",
+    "aliases": ["R3 5305G"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2021",
+    "architecture": "Zen 3 (Cezanne)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 4, "boost": 4.2 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-3-5305ge",
+    "brand": "AMD",
+    "name": "Ryzen 3 5305GE",
+    "aliases": ["R3 5305GE"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2021",
+    "architecture": "Zen 3 (Cezanne)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 3.6, "boost": 4.2 },
+    "power_w": { "base": 35 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-3-5400u",
+    "brand": "AMD",
+    "name": "Ryzen 3 5400U",
+    "aliases": ["R3 5400U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2021-01",
+    "architecture": "Zen 3 (Cezanne and Barceló)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 2.6, "boost": 4 },
+    "power_w": { "base": 10, "max": 25 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-3-5425u",
+    "brand": "AMD",
+    "name": "Ryzen 3 5425U",
+    "aliases": ["R3 5425U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2022-01",
+    "architecture": "Zen 3 (Cezanne and Barceló)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 2.7, "boost": 4.1 },
+    "power_w": { "base": 15 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-3-7320u",
+    "brand": "AMD",
+    "name": "Ryzen 3 7320U",
+    "aliases": ["R3 7320U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2022-09",
+    "architecture": "Zen 2 (Mendocino)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 2.4, "boost": 4.1 },
+    "power_w": { "base": 15 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-3-7330u",
+    "brand": "AMD",
+    "name": "Ryzen 3 7330U",
+    "aliases": ["R3 7330U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-01",
+    "architecture": "Zen 3 (Barcelo-R)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 2.3, "boost": 4.3 },
+    "power_w": { "base": 15 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-3-7335u",
+    "brand": "AMD",
+    "name": "Ryzen 3 7335U",
+    "aliases": ["R3 7335U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-01",
+    "architecture": "Zen 3+ (Rembrandt-R)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 3, "boost": 4.3 },
+    "power_w": { "base": 15, "max": 30 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-3-7440u",
+    "brand": "AMD",
+    "name": "Ryzen 3 7440U",
+    "aliases": ["R3 7440U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-05",
+    "architecture": "Zen 4 (Phoenix)",
+    "cores": { "performance": 1, "efficiency": 3, "threads": 8 },
+    "clocks_ghz": { "base": 3.6, "boost": 4.7 },
+    "power_w": { "base": 15, "max": 30 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-3-8300g",
+    "brand": "AMD",
+    "name": "Ryzen 3 8300G",
+    "aliases": ["R3 8300G"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2024-01",
+    "architecture": "Zen 4 (Phoenix)",
+    "cores": { "performance": 1, "efficiency": 3, "threads": 8 },
+    "clocks_ghz": { "base": 4, "boost": 4.9 },
+    "power_w": { "base": 65 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-3-8300ge",
+    "brand": "AMD",
+    "name": "Ryzen 3 8300GE",
+    "aliases": ["R3 8300GE"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2024-04",
+    "architecture": "Zen 4 (Phoenix)",
+    "cores": { "performance": 1, "efficiency": 3, "threads": 8 },
+    "clocks_ghz": { "base": 4, "boost": 4.9 },
+    "power_w": { "base": 35 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-3-8440u",
+    "brand": "AMD",
+    "name": "Ryzen 3 8440U",
+    "aliases": ["R3 8440U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2024",
+    "architecture": "Zen 4 (Hawk Point)",
+    "cores": { "performance": 1, "efficiency": 3, "threads": 8 },
+    "clocks_ghz": { "base": 3.6, "boost": 4.7 },
+    "power_w": { "base": 15, "max": 30 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-40",
+    "brand": "AMD",
+    "name": "Ryzen 5 40",
+    "aliases": ["R5 40"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2025-10",
+    "architecture": "Zen 2 (Mendocino)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 2.8, "boost": 4.3 },
+    "power_w": { "base": 15 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-125",
+    "brand": "AMD",
+    "name": "Ryzen 5 125",
+    "aliases": ["R5 125"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2026-06",
+    "architecture": "Zen 4 (Hawk Point Refresh)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 2.8, "boost": 4.5 },
+    "power_w": { "base": 28, "max": 40 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-130",
+    "brand": "AMD",
+    "name": "Ryzen 5 130",
+    "aliases": ["R5 130"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2025-10",
+    "architecture": "Zen 3+ (Rembrandt-R)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 2.9, "boost": 4.55 },
+    "power_w": { "base": 28, "max": 30 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-150",
+    "brand": "AMD",
+    "name": "Ryzen 5 150",
+    "aliases": ["R5 150"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2025-10",
+    "architecture": "Zen 3+ (Rembrandt-R)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.3, "boost": 4.55 },
+    "power_w": { "base": 45, "max": 54 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-216",
+    "brand": "AMD",
+    "name": "Ryzen 5 216",
+    "aliases": ["R5 216"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2026-06",
+    "architecture": "Zen 4 (Hawk Point Refresh)",
+    "cores": { "performance": 2, "efficiency": 4, "threads": 12 },
+    "clocks_ghz": { "base": 2.9, "boost": 4.7 },
+    "power_w": { "base": 35, "max": 40 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-220",
+    "brand": "AMD",
+    "name": "Ryzen 5 220",
+    "aliases": ["R5 220"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2025-02",
+    "architecture": "Zen 4 (Hawk Point Refresh)",
+    "cores": { "performance": 2, "efficiency": 4, "threads": 12 },
+    "clocks_ghz": { "base": 3.7, "boost": 4.9 },
+    "power_w": { "base": 28, "max": 30 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-224",
+    "brand": "AMD",
+    "name": "Ryzen 5 224",
+    "aliases": ["R5 224"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2026-06",
+    "architecture": "Zen 4 (Hawk Point Refresh)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.3, "boost": 4.8 },
+    "power_w": { "base": 28, "max": 30 },
+    "socket": null,
+    "npu_tops": 16,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-225",
+    "brand": "AMD",
+    "name": "Ryzen 5 225",
+    "aliases": ["R5 225"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2026-06",
+    "architecture": "Zen 4 (Hawk Point Refresh)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.3, "boost": 4.8 },
+    "power_w": { "base": 45, "max": 54 },
+    "socket": null,
+    "npu_tops": 16,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-230",
+    "brand": "AMD",
+    "name": "Ryzen 5 230",
+    "aliases": ["R5 230"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2025-02",
+    "architecture": "Zen 4 (Hawk Point Refresh)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.5, "boost": 4.9 },
+    "power_w": { "base": 28, "max": 30 },
+    "socket": null,
+    "npu_tops": 16,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-240",
+    "brand": "AMD",
+    "name": "Ryzen 5 240",
+    "aliases": ["R5 240"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2025-02",
+    "architecture": "Zen 4 (Hawk Point Refresh)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 4.3, "boost": 5 },
+    "power_w": { "base": 45, "max": 54 },
+    "socket": null,
+    "npu_tops": 16,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-5500",
+    "brand": "AMD",
+    "name": "Ryzen 5 5500",
+    "aliases": ["R5 5500"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2022-04",
+    "architecture": "Zen 3 (Cezanne)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.6, "boost": 4.2 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-5500f",
+    "brand": "AMD",
+    "name": "Ryzen 5 5500F",
+    "aliases": ["R5 5500F"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2026-09",
+    "architecture": "Zen 3 (Vermeer)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3, "boost": 4.4 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-5500gt",
+    "brand": "AMD",
+    "name": "Ryzen 5 5500GT",
+    "aliases": ["R5 5500GT"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2024-01",
+    "architecture": "Zen 3 (Cezanne)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.6, "boost": 4.4 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-5500h",
+    "brand": "AMD",
+    "name": "Ryzen 5 5500H",
+    "aliases": ["R5 5500H"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-06",
+    "architecture": "Zen 3 (Cezanne and Barceló)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 3.3, "boost": 4.2 },
+    "power_w": { "base": 35, "max": 54 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-5500u",
+    "brand": "AMD",
+    "name": "Ryzen 5 5500U",
+    "aliases": ["R5 5500U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2021-01",
+    "architecture": "Zen 2 (Lucienne)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 2.1, "boost": 4 },
+    "power_w": { "base": 10, "max": 25 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-5500x3d",
+    "brand": "AMD",
+    "name": "Ryzen 5 5500X3D",
+    "aliases": ["R5 5500X3D"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2025-06",
+    "architecture": "Zen 3 (Vermeer)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3, "boost": 4 },
+    "power_w": { "base": 105 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-5560u",
+    "brand": "AMD",
+    "name": "Ryzen 5 5560U",
+    "aliases": ["R5 5560U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2021-01",
+    "architecture": "Zen 3 (Cezanne and Barceló)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 2.3, "boost": 4 },
+    "power_w": { "base": 10, "max": 25 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-5600",
+    "brand": "AMD",
+    "name": "Ryzen 5 5600",
+    "aliases": ["R5 5600"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2022-04",
+    "architecture": "Zen 3 (Vermeer)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.5, "boost": 4.4 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-5600f",
+    "brand": "AMD",
+    "name": "Ryzen 5 5600F",
+    "aliases": ["R5 5600F"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2025-09",
+    "architecture": "Zen 3 (Vermeer)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3, "boost": 4 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-5600g",
+    "brand": "AMD",
+    "name": "Ryzen 5 5600G",
+    "aliases": ["R5 5600G"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2021-04",
+    "architecture": "Zen 3 (Cezanne)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.9, "boost": 4.4 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-5600ge",
+    "brand": "AMD",
+    "name": "Ryzen 5 5600GE",
+    "aliases": ["R5 5600GE"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2021-04",
+    "architecture": "Zen 3 (Cezanne)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.4, "boost": 4.4 },
+    "power_w": { "base": 35 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-5600gt",
+    "brand": "AMD",
+    "name": "Ryzen 5 5600GT",
+    "aliases": ["R5 5600GT"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2024-01",
+    "architecture": "Zen 3 (Cezanne)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.6, "boost": 4.6 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-5600h",
+    "brand": "AMD",
+    "name": "Ryzen 5 5600H",
+    "aliases": ["R5 5600H"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2021-01",
+    "architecture": "Zen 3 (Cezanne and Barceló)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.3, "boost": 4.2 },
+    "power_w": { "base": 35, "max": 54 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-5600hs",
+    "brand": "AMD",
+    "name": "Ryzen 5 5600HS",
+    "aliases": ["R5 5600HS"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2021-01",
+    "architecture": "Zen 3 (Cezanne and Barceló)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3, "boost": 4.2 },
+    "power_w": { "base": 35 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-5600t",
+    "brand": "AMD",
+    "name": "Ryzen 5 5600T",
+    "aliases": ["R5 5600T"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2024-10",
+    "architecture": "Zen 3 (Vermeer)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.5, "boost": 4.5 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-5600u",
+    "brand": "AMD",
+    "name": "Ryzen 5 5600U",
+    "aliases": ["R5 5600U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2021-01",
+    "architecture": "Zen 3 (Cezanne and Barceló)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 2.3, "boost": 4.2 },
+    "power_w": { "base": 10, "max": 25 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-5600x",
+    "brand": "AMD",
+    "name": "Ryzen 5 5600X",
+    "aliases": ["R5 5600X"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2020-11",
+    "architecture": "Zen 3 (Vermeer)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.7, "boost": 4.6 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-5600x3d",
+    "brand": "AMD",
+    "name": "Ryzen 5 5600X3D",
+    "aliases": ["R5 5600X3D"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2023-07",
+    "architecture": "Zen 3 (Vermeer)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.3, "boost": 4.4 },
+    "power_w": { "base": 105 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-5600xt",
+    "brand": "AMD",
+    "name": "Ryzen 5 5600XT",
+    "aliases": ["R5 5600XT"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2024-10",
+    "architecture": "Zen 3 (Vermeer)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.7, "boost": 4.7 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-5605g",
+    "brand": "AMD",
+    "name": "Ryzen 5 5605G",
+    "aliases": ["R5 5605G"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2021",
+    "architecture": "Zen 3 (Cezanne)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.9, "boost": 4.4 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-5605ge",
+    "brand": "AMD",
+    "name": "Ryzen 5 5605GE",
+    "aliases": ["R5 5605GE"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2021",
+    "architecture": "Zen 3 (Cezanne)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.4, "boost": 4.4 },
+    "power_w": { "base": 35 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-5625u",
+    "brand": "AMD",
+    "name": "Ryzen 5 5625U",
+    "aliases": ["R5 5625U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2022-01",
+    "architecture": "Zen 3 (Cezanne and Barceló)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 2.3, "boost": 4.3 },
+    "power_w": { "base": 15 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-6600h",
+    "brand": "AMD",
+    "name": "Ryzen 5 6600H",
+    "aliases": ["R5 6600H"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2022-01",
+    "architecture": "Zen 3+ (Rembrandt)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.3, "boost": 4.5 },
+    "power_w": { "base": 45 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-6600hs",
+    "brand": "AMD",
+    "name": "Ryzen 5 6600HS",
+    "aliases": ["R5 6600HS"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2022-01",
+    "architecture": "Zen 3+ (Rembrandt)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.3, "boost": 4.5 },
+    "power_w": { "base": 35 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-6600u",
+    "brand": "AMD",
+    "name": "Ryzen 5 6600U",
+    "aliases": ["R5 6600U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2022-01",
+    "architecture": "Zen 3+ (Rembrandt)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 2.9, "boost": 4.5 },
+    "power_w": { "base": 15, "max": 28 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-7235h",
+    "brand": "AMD",
+    "name": "Ryzen 5 7235H",
+    "aliases": ["R5 7235H"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2024",
+    "architecture": "Zen 3+ (Rembrandt-R)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 3.2, "boost": 4.2 },
+    "power_w": { "base": 35, "max": 53 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-7235hs",
+    "brand": "AMD",
+    "name": "Ryzen 5 7235HS",
+    "aliases": ["R5 7235HS"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2024",
+    "architecture": "Zen 3+ (Rembrandt-R)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 3.2, "boost": 4.2 },
+    "power_w": { "base": 35, "max": 53 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-7400",
+    "brand": "AMD",
+    "name": "Ryzen 5 7400",
+    "aliases": ["R5 7400"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2025-09",
+    "architecture": "Zen 4 (Raphael)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.3, "boost": 4.3 },
+    "power_w": { "base": 65 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-7400f",
+    "brand": "AMD",
+    "name": "Ryzen 5 7400F",
+    "aliases": ["R5 7400F"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2025-01",
+    "architecture": "Zen 4 (Raphael)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.7, "boost": 4.7 },
+    "power_w": { "base": 65 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-7430u",
+    "brand": "AMD",
+    "name": "Ryzen 5 7430U",
+    "aliases": ["R5 7430U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023",
+    "architecture": "Zen 3 (Barcelo-R)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 2.3, "boost": 4.3 },
+    "power_w": { "base": 15 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-7500",
+    "brand": "AMD",
+    "name": "Ryzen 5 7500",
+    "aliases": ["R5 7500"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2026-09",
+    "architecture": "Zen 4 (Raphael)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.7, "boost": 5 },
+    "power_w": { "base": 65 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-7500f",
+    "brand": "AMD",
+    "name": "Ryzen 5 7500F",
+    "aliases": ["R5 7500F"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2023-07",
+    "architecture": "Zen 4 (Raphael)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.7, "boost": 5 },
+    "power_w": { "base": 65 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-7500x3d",
+    "brand": "AMD",
+    "name": "Ryzen 5 7500X3D",
+    "aliases": ["R5 7500X3D"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2025-11",
+    "architecture": "Zen 4 (Raphael)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 4, "boost": 4.5 },
+    "power_w": { "base": 65 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-7520u",
+    "brand": "AMD",
+    "name": "Ryzen 5 7520U",
+    "aliases": ["R5 7520U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2022-09",
+    "architecture": "Zen 2 (Mendocino)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 2.8, "boost": 4.3 },
+    "power_w": { "base": 15 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-7530u",
+    "brand": "AMD",
+    "name": "Ryzen 5 7530U",
+    "aliases": ["R5 7530U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-01",
+    "architecture": "Zen 3 (Barcelo-R)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 2, "boost": 4.5 },
+    "power_w": { "base": 15 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-7535h",
+    "brand": "AMD",
+    "name": "Ryzen 5 7535H",
+    "aliases": ["R5 7535H"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-04",
+    "architecture": "Zen 3+ (Rembrandt-R)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.3, "boost": 4.55 },
+    "power_w": { "base": 35, "max": 54 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-7535hs",
+    "brand": "AMD",
+    "name": "Ryzen 5 7535HS",
+    "aliases": ["R5 7535HS"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-04",
+    "architecture": "Zen 3+ (Rembrandt-R)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.3, "boost": 4.55 },
+    "power_w": { "base": 35, "max": 54 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-7535u",
+    "brand": "AMD",
+    "name": "Ryzen 5 7535U",
+    "aliases": ["R5 7535U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-01",
+    "architecture": "Zen 3+ (Rembrandt-R)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 2.9, "boost": 4.55 },
+    "power_w": { "base": 15, "max": 30 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-7540u",
+    "brand": "AMD",
+    "name": "Ryzen 5 7540U",
+    "aliases": ["R5 7540U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-05",
+    "architecture": "Zen 4 (Phoenix)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.2, "boost": 4.9 },
+    "power_w": { "base": 15, "max": 30 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-7545u",
+    "brand": "AMD",
+    "name": "Ryzen 5 7545U",
+    "aliases": ["R5 7545U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-11",
+    "architecture": "Zen 4 (Phoenix)",
+    "cores": { "performance": 2, "efficiency": 4, "threads": 12 },
+    "clocks_ghz": { "base": 3.7, "boost": 4.9 },
+    "power_w": { "base": 15, "max": 30 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
     "id": "amd-ryzen-5-7600",
     "brand": "AMD",
     "name": "Ryzen 5 7600",
@@ -18,5 +1352,3044 @@
     "scores": { "single": 100, "multi": 100 },
     "score_meta": { "method": "reference", "reviewed": "2026-11-20" },
     "notes": ["Chip de referencia de CPU: single = multi = 100 por definición."]
+  },
+  {
+    "id": "amd-ryzen-5-7600x",
+    "brand": "AMD",
+    "name": "Ryzen 5 7600X",
+    "aliases": ["R5 7600X"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2022-09",
+    "architecture": "Zen 4 (Raphael)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 4.7, "boost": 5.3 },
+    "power_w": { "base": 105 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-7600x3d",
+    "brand": "AMD",
+    "name": "Ryzen 5 7600X3D",
+    "aliases": ["R5 7600X3D"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2024-08",
+    "architecture": "Zen 4 (Raphael)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 4.1, "boost": 4.7 },
+    "power_w": { "base": 65 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-7640h",
+    "brand": "AMD",
+    "name": "Ryzen 5 7640H",
+    "aliases": ["R5 7640H"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-04",
+    "architecture": "Zen 4 (Phoenix)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 4.3, "boost": 5 },
+    "power_w": { "base": 35, "max": 54 },
+    "socket": null,
+    "npu_tops": 10,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-7640hs",
+    "brand": "AMD",
+    "name": "Ryzen 5 7640HS",
+    "aliases": ["R5 7640HS"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-04",
+    "architecture": "Zen 4 (Phoenix)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 4.3, "boost": 5 },
+    "power_w": { "base": 35, "max": 54 },
+    "socket": null,
+    "npu_tops": 10,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-7640u",
+    "brand": "AMD",
+    "name": "Ryzen 5 7640U",
+    "aliases": ["R5 7640U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-05",
+    "architecture": "Zen 4 (Phoenix)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.5, "boost": 4.9 },
+    "power_w": { "base": 15, "max": 30 },
+    "socket": null,
+    "npu_tops": 10,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-7645hx",
+    "brand": "AMD",
+    "name": "Ryzen 5 7645HX",
+    "aliases": ["R5 7645HX"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-02",
+    "architecture": "Zen 4 (Dragon Range)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 4, "boost": 5 },
+    "power_w": { "base": 45, "max": 75 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-8400f",
+    "brand": "AMD",
+    "name": "Ryzen 5 8400F",
+    "aliases": ["R5 8400F"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2024-04",
+    "architecture": "Zen 4 (Phoenix)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 4.2, "boost": 4.7 },
+    "power_w": { "base": 65 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-8500g",
+    "brand": "AMD",
+    "name": "Ryzen 5 8500G",
+    "aliases": ["R5 8500G"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2024-01",
+    "architecture": "Zen 4 (Phoenix)",
+    "cores": { "performance": 2, "efficiency": 4, "threads": 12 },
+    "clocks_ghz": { "base": 4.1, "boost": 5 },
+    "power_w": { "base": 65 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-8500ge",
+    "brand": "AMD",
+    "name": "Ryzen 5 8500GE",
+    "aliases": ["R5 8500GE"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2024-04",
+    "architecture": "Zen 4 (Phoenix)",
+    "cores": { "performance": 2, "efficiency": 4, "threads": 12 },
+    "clocks_ghz": { "base": 3.9, "boost": 5 },
+    "power_w": { "base": 35 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-8540u",
+    "brand": "AMD",
+    "name": "Ryzen 5 8540U",
+    "aliases": ["R5 8540U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2024",
+    "architecture": "Zen 4 (Hawk Point)",
+    "cores": { "performance": 2, "efficiency": 4, "threads": 12 },
+    "clocks_ghz": { "base": 3.7, "boost": 4.9 },
+    "power_w": { "base": 15, "max": 30 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-8600g",
+    "brand": "AMD",
+    "name": "Ryzen 5 8600G",
+    "aliases": ["R5 8600G"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2024-01",
+    "architecture": "Zen 4 (Phoenix)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 4.3, "boost": 5 },
+    "power_w": { "base": 65 },
+    "socket": "AM5",
+    "npu_tops": 16,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-8640hs",
+    "brand": "AMD",
+    "name": "Ryzen 5 8640HS",
+    "aliases": ["R5 8640HS"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-12",
+    "architecture": "Zen 4 (Hawk Point)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.5, "boost": 4.9 },
+    "power_w": { "base": 20, "max": 30 },
+    "socket": null,
+    "npu_tops": 16,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-8640u",
+    "brand": "AMD",
+    "name": "Ryzen 5 8640U",
+    "aliases": ["R5 8640U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-12",
+    "architecture": "Zen 4 (Hawk Point)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.5, "boost": 4.9 },
+    "power_w": { "base": 15, "max": 30 },
+    "socket": null,
+    "npu_tops": 16,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-8645hs",
+    "brand": "AMD",
+    "name": "Ryzen 5 8645HS",
+    "aliases": ["R5 8645HS"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-12",
+    "architecture": "Zen 4 (Hawk Point)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 4.3, "boost": 5 },
+    "power_w": { "base": 35, "max": 54 },
+    "socket": null,
+    "npu_tops": 16,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-9500f",
+    "brand": "AMD",
+    "name": "Ryzen 5 9500F",
+    "aliases": ["R5 9500F"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2025-09",
+    "architecture": "Zen 5 (Granite Ridge)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.8, "boost": 5 },
+    "power_w": { "base": 65 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-9600",
+    "brand": "AMD",
+    "name": "Ryzen 5 9600",
+    "aliases": ["R5 9600"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2025-02",
+    "architecture": "Zen 5 (Granite Ridge)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.8, "boost": 5.2 },
+    "power_w": { "base": 65 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-9600x",
+    "brand": "AMD",
+    "name": "Ryzen 5 9600X",
+    "aliases": ["R5 9600X"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2024-08",
+    "architecture": "Zen 5 (Granite Ridge)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.9, "boost": 5.4 },
+    "power_w": { "base": 65 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-pro-215",
+    "brand": "AMD",
+    "name": "Ryzen 5 PRO 215",
+    "aliases": ["R5 PRO 215"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2025-03",
+    "architecture": "Zen 4 (Hawk Point Refresh)",
+    "cores": { "performance": 2, "efficiency": 4, "threads": 12 },
+    "clocks_ghz": { "base": 3.2, "boost": 4.7 },
+    "power_w": { "base": 28, "max": 30 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-pro-5645",
+    "brand": "AMD",
+    "name": "Ryzen 5 PRO 5645",
+    "aliases": ["R5 PRO 5645"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2022-09",
+    "architecture": "Zen 3 (Vermeer)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.7, "boost": 4.6 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-pro-7645",
+    "brand": "AMD",
+    "name": "Ryzen 5 PRO 7645",
+    "aliases": ["R5 PRO 7645"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2023-06",
+    "architecture": "Zen 4 (Raphael)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.8, "boost": 5.1 },
+    "power_w": { "base": 65 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-pro-8600ge",
+    "brand": "AMD",
+    "name": "Ryzen 5 PRO 8600GE",
+    "aliases": ["R5 PRO 8600GE"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2024-04",
+    "architecture": "Zen 4 (Phoenix)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.9, "boost": 5 },
+    "power_w": { "base": 35 },
+    "socket": "AM5",
+    "npu_tops": 16,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-5-pro-9655",
+    "brand": "AMD",
+    "name": "Ryzen 5 PRO 9655",
+    "aliases": ["R5 PRO 9655"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2026-06",
+    "architecture": "Zen 5 (Granite Ridge)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.9, "boost": 5.4 },
+    "power_w": { "base": 120 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-155",
+    "brand": "AMD",
+    "name": "Ryzen 7 155",
+    "aliases": ["R7 155"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2026-06",
+    "architecture": "Zen 4 (Hawk Point Refresh)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3, "boost": 4.7 },
+    "power_w": { "base": 35, "max": 40 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-160",
+    "brand": "AMD",
+    "name": "Ryzen 7 160",
+    "aliases": ["R7 160"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2025-10",
+    "architecture": "Zen 3+ (Rembrandt-R)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 2.7, "boost": 4.75 },
+    "power_w": { "base": 28, "max": 30 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-165",
+    "brand": "AMD",
+    "name": "Ryzen 7 165",
+    "aliases": ["R7 165"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2026-06",
+    "architecture": "Zen 4 (Hawk Point Refresh)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.3, "boost": 4.7 },
+    "power_w": { "base": 28, "max": 30 },
+    "socket": null,
+    "npu_tops": 16,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-170",
+    "brand": "AMD",
+    "name": "Ryzen 7 170",
+    "aliases": ["R7 170"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2025-10",
+    "architecture": "Zen 3+ (Rembrandt-R)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.2, "boost": 4.75 },
+    "power_w": { "base": 45, "max": 54 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-217",
+    "brand": "AMD",
+    "name": "Ryzen 7 217",
+    "aliases": ["R7 217"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2026-06",
+    "architecture": "Zen 4 (Hawk Point Refresh)",
+    "cores": { "performance": 2, "efficiency": 4, "threads": 12 },
+    "clocks_ghz": { "base": 3, "boost": 4.8 },
+    "power_w": { "base": 35, "max": 40 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-249",
+    "brand": "AMD",
+    "name": "Ryzen 7 249",
+    "aliases": ["R7 249"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2026-06",
+    "architecture": "Zen 4 (Hawk Point Refresh)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.1, "boost": 4.9 },
+    "power_w": { "base": 28, "max": 30 },
+    "socket": null,
+    "npu_tops": 16,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-250",
+    "brand": "AMD",
+    "name": "Ryzen 7 250",
+    "aliases": ["R7 250"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2025-02",
+    "architecture": "Zen 4 (Hawk Point Refresh)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.3, "boost": 5.1 },
+    "power_w": { "base": 28, "max": 30 },
+    "socket": null,
+    "npu_tops": 16,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-253",
+    "brand": "AMD",
+    "name": "Ryzen 7 253",
+    "aliases": ["R7 253"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2026-06",
+    "architecture": "Zen 4 (Hawk Point Refresh)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.6, "boost": 4.9 },
+    "power_w": { "base": 45, "max": 54 },
+    "socket": null,
+    "npu_tops": 16,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-260",
+    "brand": "AMD",
+    "name": "Ryzen 7 260",
+    "aliases": ["R7 260"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2025-02",
+    "architecture": "Zen 4 (Hawk Point Refresh)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.8, "boost": 5.1 },
+    "power_w": { "base": 45, "max": 54 },
+    "socket": null,
+    "npu_tops": 16,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-5700",
+    "brand": "AMD",
+    "name": "Ryzen 7 5700",
+    "aliases": ["R7 5700"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2022-01",
+    "architecture": "Zen 3 (Cezanne)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.7, "boost": 4.6 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-5700g",
+    "brand": "AMD",
+    "name": "Ryzen 7 5700G",
+    "aliases": ["R7 5700G"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2021-04",
+    "architecture": "Zen 3 (Cezanne)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.8, "boost": 4.6 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-5700ge",
+    "brand": "AMD",
+    "name": "Ryzen 7 5700GE",
+    "aliases": ["R7 5700GE"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2021-04",
+    "architecture": "Zen 3 (Cezanne)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.2, "boost": 4.6 },
+    "power_w": { "base": 35 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-5700u",
+    "brand": "AMD",
+    "name": "Ryzen 7 5700U",
+    "aliases": ["R7 5700U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2021-01",
+    "architecture": "Zen 2 (Lucienne)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 1.8, "boost": 4.3 },
+    "power_w": { "base": 10, "max": 25 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-5700x",
+    "brand": "AMD",
+    "name": "Ryzen 7 5700X",
+    "aliases": ["R7 5700X"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2022-04",
+    "architecture": "Zen 3 (Vermeer)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.4, "boost": 4.6 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-5700x3d",
+    "brand": "AMD",
+    "name": "Ryzen 7 5700X3D",
+    "aliases": ["R7 5700X3D"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2024-01",
+    "architecture": "Zen 3 (Vermeer)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3, "boost": 4.1 },
+    "power_w": { "base": 105 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-5705g",
+    "brand": "AMD",
+    "name": "Ryzen 7 5705G",
+    "aliases": ["R7 5705G"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2021",
+    "architecture": "Zen 3 (Cezanne)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.8, "boost": 4.6 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-5705ge",
+    "brand": "AMD",
+    "name": "Ryzen 7 5705GE",
+    "aliases": ["R7 5705GE"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2021",
+    "architecture": "Zen 3 (Cezanne)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.2, "boost": 4.6 },
+    "power_w": { "base": 35 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-5800",
+    "brand": "AMD",
+    "name": "Ryzen 7 5800",
+    "aliases": ["R7 5800"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2021-01",
+    "architecture": "Zen 3 (Vermeer)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.4, "boost": 4.6 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-5800h",
+    "brand": "AMD",
+    "name": "Ryzen 7 5800H",
+    "aliases": ["R7 5800H"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2021-01",
+    "architecture": "Zen 3 (Cezanne and Barceló)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.2, "boost": 4.4 },
+    "power_w": { "base": 35, "max": 54 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-5800hs",
+    "brand": "AMD",
+    "name": "Ryzen 7 5800HS",
+    "aliases": ["R7 5800HS"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2021-01",
+    "architecture": "Zen 3 (Cezanne and Barceló)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 2.8, "boost": 4.4 },
+    "power_w": { "base": 35 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-5800u",
+    "brand": "AMD",
+    "name": "Ryzen 7 5800U",
+    "aliases": ["R7 5800U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2021-01",
+    "architecture": "Zen 3 (Cezanne and Barceló)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 1.9, "boost": 4.4 },
+    "power_w": { "base": 10, "max": 25 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-5800x",
+    "brand": "AMD",
+    "name": "Ryzen 7 5800X",
+    "aliases": ["R7 5800X"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2020-11",
+    "architecture": "Zen 3 (Vermeer)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.8, "boost": 4.7 },
+    "power_w": { "base": 105 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-5800x3d",
+    "brand": "AMD",
+    "name": "Ryzen 7 5800X3D",
+    "aliases": ["R7 5800X3D"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2022-04",
+    "architecture": "Zen 3 (Vermeer)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.4, "boost": 4.5 },
+    "power_w": { "base": 105 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-5800xt",
+    "brand": "AMD",
+    "name": "Ryzen 7 5800XT",
+    "aliases": ["R7 5800XT"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2024-07",
+    "architecture": "Zen 3 (Vermeer)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.8, "boost": 4.8 },
+    "power_w": { "base": 105 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-5825u",
+    "brand": "AMD",
+    "name": "Ryzen 7 5825U",
+    "aliases": ["R7 5825U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2022-01",
+    "architecture": "Zen 3 (Cezanne and Barceló)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 2, "boost": 4.5 },
+    "power_w": { "base": 15 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-6800h",
+    "brand": "AMD",
+    "name": "Ryzen 7 6800H",
+    "aliases": ["R7 6800H"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2022-01",
+    "architecture": "Zen 3+ (Rembrandt)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.2, "boost": 4.7 },
+    "power_w": { "base": 45 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-6800hs",
+    "brand": "AMD",
+    "name": "Ryzen 7 6800HS",
+    "aliases": ["R7 6800HS"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2022-01",
+    "architecture": "Zen 3+ (Rembrandt)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.2, "boost": 4.7 },
+    "power_w": { "base": 35 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-6800u",
+    "brand": "AMD",
+    "name": "Ryzen 7 6800U",
+    "aliases": ["R7 6800U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2022-01",
+    "architecture": "Zen 3+ (Rembrandt)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 2.7, "boost": 4.7 },
+    "power_w": { "base": 15, "max": 28 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-7435h",
+    "brand": "AMD",
+    "name": "Ryzen 7 7435H",
+    "aliases": ["R7 7435H"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2024",
+    "architecture": "Zen 3+ (Rembrandt-R)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.1, "boost": 4.5 },
+    "power_w": { "base": 35, "max": 54 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-7435hs",
+    "brand": "AMD",
+    "name": "Ryzen 7 7435HS",
+    "aliases": ["R7 7435HS"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2024",
+    "architecture": "Zen 3+ (Rembrandt-R)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.1, "boost": 4.5 },
+    "power_w": { "base": 35, "max": 54 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-7445hs",
+    "brand": "AMD",
+    "name": "Ryzen 7 7445HS",
+    "aliases": ["R7 7445HS"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-05",
+    "architecture": "Zen 4 (Phoenix)",
+    "cores": { "performance": 2, "efficiency": 4, "threads": 12 },
+    "clocks_ghz": { "base": 3.2, "boost": 4.7 },
+    "power_w": { "base": 20, "max": 40 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-7700",
+    "brand": "AMD",
+    "name": "Ryzen 7 7700",
+    "aliases": ["R7 7700"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2023-01",
+    "architecture": "Zen 4 (Raphael)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.8, "boost": 5.3 },
+    "power_w": { "base": 65 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-7700x",
+    "brand": "AMD",
+    "name": "Ryzen 7 7700X",
+    "aliases": ["R7 7700X"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2022-09",
+    "architecture": "Zen 4 (Raphael)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 4.5, "boost": 5.4 },
+    "power_w": { "base": 105 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-7700x3d",
+    "brand": "AMD",
+    "name": "Ryzen 7 7700X3D",
+    "aliases": ["R7 7700X3D"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2026-07",
+    "architecture": "Zen 4 (Raphael)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 4, "boost": 4.5 },
+    "power_w": { "base": 120 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-7730u",
+    "brand": "AMD",
+    "name": "Ryzen 7 7730U",
+    "aliases": ["R7 7730U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-01",
+    "architecture": "Zen 3 (Barcelo-R)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 2, "boost": 4.5 },
+    "power_w": { "base": 15 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-7735h",
+    "brand": "AMD",
+    "name": "Ryzen 7 7735H",
+    "aliases": ["R7 7735H"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-04",
+    "architecture": "Zen 3+ (Rembrandt-R)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.2, "boost": 4.75 },
+    "power_w": { "base": 35, "max": 54 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-7735hs",
+    "brand": "AMD",
+    "name": "Ryzen 7 7735HS",
+    "aliases": ["R7 7735HS"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-04",
+    "architecture": "Zen 3+ (Rembrandt-R)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.2, "boost": 4.75 },
+    "power_w": { "base": 35, "max": 54 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-7735u",
+    "brand": "AMD",
+    "name": "Ryzen 7 7735U",
+    "aliases": ["R7 7735U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-01",
+    "architecture": "Zen 3+ (Rembrandt-R)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 2.7, "boost": 4.75 },
+    "power_w": { "base": 15, "max": 30 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-7736u",
+    "brand": "AMD",
+    "name": "Ryzen 7 7736U",
+    "aliases": ["R7 7736U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-01",
+    "architecture": "Zen 3+ (Rembrandt-R)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 2.7, "boost": 4.7 },
+    "power_w": { "base": 15, "max": 28 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-7745hx",
+    "brand": "AMD",
+    "name": "Ryzen 7 7745HX",
+    "aliases": ["R7 7745HX"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-02",
+    "architecture": "Zen 4 (Dragon Range)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.6, "boost": 5.1 },
+    "power_w": { "base": 45, "max": 75 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-7800x3d",
+    "brand": "AMD",
+    "name": "Ryzen 7 7800X3D",
+    "aliases": ["R7 7800X3D"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2023-04",
+    "architecture": "Zen 4 (Raphael)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 4.2, "boost": 5 },
+    "power_w": { "base": 120 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-7840h",
+    "brand": "AMD",
+    "name": "Ryzen 7 7840H",
+    "aliases": ["R7 7840H"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-04",
+    "architecture": "Zen 4 (Phoenix)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.8, "boost": 5.1 },
+    "power_w": { "base": 35, "max": 54 },
+    "socket": null,
+    "npu_tops": 10,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-7840hs",
+    "brand": "AMD",
+    "name": "Ryzen 7 7840HS",
+    "aliases": ["R7 7840HS"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-04",
+    "architecture": "Zen 4 (Phoenix)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.8, "boost": 5.1 },
+    "power_w": { "base": 35, "max": 54 },
+    "socket": null,
+    "npu_tops": 10,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-7840hx",
+    "brand": "AMD",
+    "name": "Ryzen 7 7840HX",
+    "aliases": ["R7 7840HX"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2024-01",
+    "architecture": "Zen 4 (Dragon Range)",
+    "cores": { "performance": 12, "efficiency": 0, "threads": 24 },
+    "clocks_ghz": { "base": 2.9, "boost": 5.1 },
+    "power_w": { "base": 45, "max": 75 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-7840u",
+    "brand": "AMD",
+    "name": "Ryzen 7 7840U",
+    "aliases": ["R7 7840U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-05",
+    "architecture": "Zen 4 (Phoenix)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.3, "boost": 5.1 },
+    "power_w": { "base": 15, "max": 30 },
+    "socket": null,
+    "npu_tops": 10,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-8700f",
+    "brand": "AMD",
+    "name": "Ryzen 7 8700F",
+    "aliases": ["R7 8700F"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2024-04",
+    "architecture": "Zen 4 (Phoenix)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 4.1, "boost": 5 },
+    "power_w": { "base": 65 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-8700g",
+    "brand": "AMD",
+    "name": "Ryzen 7 8700G",
+    "aliases": ["R7 8700G"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2024-01",
+    "architecture": "Zen 4 (Phoenix)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 4.2, "boost": 5.1 },
+    "power_w": { "base": 65 },
+    "socket": "AM5",
+    "npu_tops": 16,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-8745h",
+    "brand": "AMD",
+    "name": "Ryzen 7 8745H",
+    "aliases": ["R7 8745H"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2024",
+    "architecture": "Zen 4 (Hawk Point)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.8, "boost": 4.9 },
+    "power_w": { "base": 35, "max": 54 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-8745hs",
+    "brand": "AMD",
+    "name": "Ryzen 7 8745HS",
+    "aliases": ["R7 8745HS"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2024",
+    "architecture": "Zen 4 (Hawk Point)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.8, "boost": 4.9 },
+    "power_w": { "base": 35, "max": 54 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-8745hx",
+    "brand": "AMD",
+    "name": "Ryzen 7 8745HX",
+    "aliases": ["R7 8745HX"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2025-04",
+    "architecture": "Zen 4 (Dragon Range Refresh)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.6, "boost": 5.1 },
+    "power_w": { "base": 45, "max": 75 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-8840hs",
+    "brand": "AMD",
+    "name": "Ryzen 7 8840HS",
+    "aliases": ["R7 8840HS"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-12",
+    "architecture": "Zen 4 (Hawk Point)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.3, "boost": 5.1 },
+    "power_w": { "base": 20, "max": 30 },
+    "socket": null,
+    "npu_tops": 16,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-8840hx",
+    "brand": "AMD",
+    "name": "Ryzen 7 8840HX",
+    "aliases": ["R7 8840HX"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2025-04",
+    "architecture": "Zen 4 (Dragon Range Refresh)",
+    "cores": { "performance": 12, "efficiency": 0, "threads": 24 },
+    "clocks_ghz": { "base": 2.9, "boost": 5.1 },
+    "power_w": { "base": 45, "max": 75 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-8840u",
+    "brand": "AMD",
+    "name": "Ryzen 7 8840U",
+    "aliases": ["R7 8840U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-12",
+    "architecture": "Zen 4 (Hawk Point)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.3, "boost": 5.1 },
+    "power_w": { "base": 15, "max": 30 },
+    "socket": null,
+    "npu_tops": 16,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-8845hs",
+    "brand": "AMD",
+    "name": "Ryzen 7 8845HS",
+    "aliases": ["R7 8845HS"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-12",
+    "architecture": "Zen 4 (Hawk Point)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.8, "boost": 5.1 },
+    "power_w": { "base": 35, "max": 54 },
+    "socket": null,
+    "npu_tops": 16,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-9700f",
+    "brand": "AMD",
+    "name": "Ryzen 7 9700F",
+    "aliases": ["R7 9700F"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2025-09",
+    "architecture": "Zen 5 (Granite Ridge)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.8, "boost": 5.5 },
+    "power_w": { "base": 65 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-9700x",
+    "brand": "AMD",
+    "name": "Ryzen 7 9700X",
+    "aliases": ["R7 9700X"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2024-08",
+    "architecture": "Zen 5 (Granite Ridge)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.8, "boost": 5.5 },
+    "power_w": { "base": 65 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-9800x3d",
+    "brand": "AMD",
+    "name": "Ryzen 7 9800X3D",
+    "aliases": ["R7 9800X3D"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2024-11",
+    "architecture": "Zen 5 (Granite Ridge)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 4.7, "boost": 5.2 },
+    "power_w": { "base": 120 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-9850x3d",
+    "brand": "AMD",
+    "name": "Ryzen 7 9850X3D",
+    "aliases": ["R7 9850X3D"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2026-01",
+    "architecture": "Zen 5 (Granite Ridge)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 4.7, "boost": 5.6 },
+    "power_w": { "base": 120 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-pro-5845",
+    "brand": "AMD",
+    "name": "Ryzen 7 PRO 5845",
+    "aliases": ["R7 PRO 5845"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2022-09",
+    "architecture": "Zen 3 (Vermeer)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.4, "boost": 4.6 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-pro-7745",
+    "brand": "AMD",
+    "name": "Ryzen 7 PRO 7745",
+    "aliases": ["R7 PRO 7745"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2023-06",
+    "architecture": "Zen 4 (Raphael)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.8, "boost": 5.3 },
+    "power_w": { "base": 65 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-pro-8700ge",
+    "brand": "AMD",
+    "name": "Ryzen 7 PRO 8700GE",
+    "aliases": ["R7 PRO 8700GE"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2024-04",
+    "architecture": "Zen 4 (Phoenix)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.6, "boost": 5.1 },
+    "power_w": { "base": 35 },
+    "socket": "AM5",
+    "npu_tops": 16,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-pro-9745",
+    "brand": "AMD",
+    "name": "Ryzen 7 PRO 9745",
+    "aliases": ["R7 PRO 9745"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2025-09",
+    "architecture": "Zen 5 (Granite Ridge)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.8, "boost": 5.4 },
+    "power_w": { "base": 65 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-7-pro-9755",
+    "brand": "AMD",
+    "name": "Ryzen 7 PRO 9755",
+    "aliases": ["R7 PRO 9755"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2026-06",
+    "architecture": "Zen 5 (Granite Ridge)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.8, "boost": 5.4 },
+    "power_w": { "base": 120 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-180",
+    "brand": "AMD",
+    "name": "Ryzen 9 180",
+    "aliases": ["R9 180"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2026-06",
+    "architecture": "Zen 4 (Hawk Point Refresh)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.6, "boost": 4.9 },
+    "power_w": { "base": 45, "max": 54 },
+    "socket": null,
+    "npu_tops": 16,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-270",
+    "brand": "AMD",
+    "name": "Ryzen 9 270",
+    "aliases": ["R9 270"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2025-02",
+    "architecture": "Zen 4 (Hawk Point Refresh)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 4, "boost": 5.2 },
+    "power_w": { "base": 45, "max": 54 },
+    "socket": null,
+    "npu_tops": 16,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-5900",
+    "brand": "AMD",
+    "name": "Ryzen 9 5900",
+    "aliases": ["R9 5900"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2021-01",
+    "architecture": "Zen 3 (Vermeer)",
+    "cores": { "performance": 12, "efficiency": 0, "threads": 24 },
+    "clocks_ghz": { "base": 3, "boost": 4.7 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-5900hs",
+    "brand": "AMD",
+    "name": "Ryzen 9 5900HS",
+    "aliases": ["R9 5900HS"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2021-01",
+    "architecture": "Zen 3 (Cezanne and Barceló)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3, "boost": 4.6 },
+    "power_w": { "base": 35 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-5900hx",
+    "brand": "AMD",
+    "name": "Ryzen 9 5900HX",
+    "aliases": ["R9 5900HX"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2021-01",
+    "architecture": "Zen 3 (Cezanne and Barceló)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.3, "boost": 4.6 },
+    "power_w": { "base": 35, "max": 54 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-5900x",
+    "brand": "AMD",
+    "name": "Ryzen 9 5900X",
+    "aliases": ["R9 5900X"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2020-11",
+    "architecture": "Zen 3 (Vermeer)",
+    "cores": { "performance": 12, "efficiency": 0, "threads": 24 },
+    "clocks_ghz": { "base": 3.7, "boost": 4.8 },
+    "power_w": { "base": 105 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-5900xt",
+    "brand": "AMD",
+    "name": "Ryzen 9 5900XT",
+    "aliases": ["R9 5900XT"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2024-07",
+    "architecture": "Zen 3 (Vermeer)",
+    "cores": { "performance": 16, "efficiency": 0, "threads": 32 },
+    "clocks_ghz": { "base": 3.3, "boost": 4.8 },
+    "power_w": { "base": 105 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-5950x",
+    "brand": "AMD",
+    "name": "Ryzen 9 5950X",
+    "aliases": ["R9 5950X"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2020-11",
+    "architecture": "Zen 3 (Vermeer)",
+    "cores": { "performance": 16, "efficiency": 0, "threads": 32 },
+    "clocks_ghz": { "base": 3.4, "boost": 4.9 },
+    "power_w": { "base": 105 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-5980hs",
+    "brand": "AMD",
+    "name": "Ryzen 9 5980HS",
+    "aliases": ["R9 5980HS"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2021-01",
+    "architecture": "Zen 3 (Cezanne and Barceló)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3, "boost": 4.8 },
+    "power_w": { "base": 35 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-5980hx",
+    "brand": "AMD",
+    "name": "Ryzen 9 5980HX",
+    "aliases": ["R9 5980HX"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2021-01",
+    "architecture": "Zen 3 (Cezanne and Barceló)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.3, "boost": 4.8 },
+    "power_w": { "base": 35, "max": 54 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-6900hs",
+    "brand": "AMD",
+    "name": "Ryzen 9 6900HS",
+    "aliases": ["R9 6900HS"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2022-01",
+    "architecture": "Zen 3+ (Rembrandt)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.3, "boost": 4.9 },
+    "power_w": { "base": 35 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-6900hx",
+    "brand": "AMD",
+    "name": "Ryzen 9 6900HX",
+    "aliases": ["R9 6900HX"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2022-01",
+    "architecture": "Zen 3+ (Rembrandt)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.3, "boost": 4.9 },
+    "power_w": { "base": 45 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-6980hs",
+    "brand": "AMD",
+    "name": "Ryzen 9 6980HS",
+    "aliases": ["R9 6980HS"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2022-01",
+    "architecture": "Zen 3+ (Rembrandt)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.3, "boost": 5 },
+    "power_w": { "base": 35 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-6980hx",
+    "brand": "AMD",
+    "name": "Ryzen 9 6980HX",
+    "aliases": ["R9 6980HX"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2022-01",
+    "architecture": "Zen 3+ (Rembrandt)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.3, "boost": 5 },
+    "power_w": { "base": 45 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-7845hx",
+    "brand": "AMD",
+    "name": "Ryzen 9 7845HX",
+    "aliases": ["R9 7845HX"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-02",
+    "architecture": "Zen 4 (Dragon Range)",
+    "cores": { "performance": 12, "efficiency": 0, "threads": 24 },
+    "clocks_ghz": { "base": 3, "boost": 5.2 },
+    "power_w": { "base": 45, "max": 75 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-7900",
+    "brand": "AMD",
+    "name": "Ryzen 9 7900",
+    "aliases": ["R9 7900"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2023-01",
+    "architecture": "Zen 4 (Raphael)",
+    "cores": { "performance": 12, "efficiency": 0, "threads": 24 },
+    "clocks_ghz": { "base": 3.7, "boost": 5.4 },
+    "power_w": { "base": 65 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-7900x",
+    "brand": "AMD",
+    "name": "Ryzen 9 7900X",
+    "aliases": ["R9 7900X"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2022-09",
+    "architecture": "Zen 4 (Raphael)",
+    "cores": { "performance": 12, "efficiency": 0, "threads": 24 },
+    "clocks_ghz": { "base": 4.7, "boost": 5.6 },
+    "power_w": { "base": 170 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-7900x3d",
+    "brand": "AMD",
+    "name": "Ryzen 9 7900X3D",
+    "aliases": ["R9 7900X3D"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2023-02",
+    "architecture": "Zen 4 (Raphael)",
+    "cores": { "performance": 12, "efficiency": 0, "threads": 24 },
+    "clocks_ghz": { "base": 4.4, "boost": 5.6 },
+    "power_w": { "base": 120 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-7940h",
+    "brand": "AMD",
+    "name": "Ryzen 9 7940H",
+    "aliases": ["R9 7940H"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-04",
+    "architecture": "Zen 4 (Phoenix)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 4, "boost": 5.2 },
+    "power_w": { "base": 35, "max": 54 },
+    "socket": null,
+    "npu_tops": 10,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-7940hs",
+    "brand": "AMD",
+    "name": "Ryzen 9 7940HS",
+    "aliases": ["R9 7940HS"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-04",
+    "architecture": "Zen 4 (Phoenix)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 4, "boost": 5.2 },
+    "power_w": { "base": 35, "max": 54 },
+    "socket": null,
+    "npu_tops": 10,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-7940hx",
+    "brand": "AMD",
+    "name": "Ryzen 9 7940HX",
+    "aliases": ["R9 7940HX"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2024-01",
+    "architecture": "Zen 4 (Dragon Range)",
+    "cores": { "performance": 16, "efficiency": 0, "threads": 32 },
+    "clocks_ghz": { "base": 2.4, "boost": 5.2 },
+    "power_w": { "base": 55, "max": 75 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-7945hx",
+    "brand": "AMD",
+    "name": "Ryzen 9 7945HX",
+    "aliases": ["R9 7945HX"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-02",
+    "architecture": "Zen 4 (Dragon Range)",
+    "cores": { "performance": 16, "efficiency": 0, "threads": 32 },
+    "clocks_ghz": { "base": 2.5, "boost": 5.4 },
+    "power_w": { "base": 55, "max": 75 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-7945hx3d",
+    "brand": "AMD",
+    "name": "Ryzen 9 7945HX3D",
+    "aliases": ["R9 7945HX3D"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-07",
+    "architecture": "Zen 4 (Dragon Range)",
+    "cores": { "performance": 16, "efficiency": 0, "threads": 32 },
+    "clocks_ghz": { "base": 2.3, "boost": 5.4 },
+    "power_w": { "base": 55, "max": 75 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-7950x",
+    "brand": "AMD",
+    "name": "Ryzen 9 7950X",
+    "aliases": ["R9 7950X"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2022-09",
+    "architecture": "Zen 4 (Raphael)",
+    "cores": { "performance": 16, "efficiency": 0, "threads": 32 },
+    "clocks_ghz": { "base": 4.5, "boost": 5.7 },
+    "power_w": { "base": 170 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-7950x3d",
+    "brand": "AMD",
+    "name": "Ryzen 9 7950X3D",
+    "aliases": ["R9 7950X3D"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2023-02",
+    "architecture": "Zen 4 (Raphael)",
+    "cores": { "performance": 16, "efficiency": 0, "threads": 32 },
+    "clocks_ghz": { "base": 4.2, "boost": 5.7 },
+    "power_w": { "base": 120 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-8940hx",
+    "brand": "AMD",
+    "name": "Ryzen 9 8940HX",
+    "aliases": ["R9 8940HX"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2025-04",
+    "architecture": "Zen 4 (Dragon Range Refresh)",
+    "cores": { "performance": 16, "efficiency": 0, "threads": 32 },
+    "clocks_ghz": { "base": 2.4, "boost": 5.3 },
+    "power_w": { "base": 55, "max": 75 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-8945hs",
+    "brand": "AMD",
+    "name": "Ryzen 9 8945HS",
+    "aliases": ["R9 8945HS"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-12",
+    "architecture": "Zen 4 (Hawk Point)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 4, "boost": 5.2 },
+    "power_w": { "base": 35, "max": 54 },
+    "socket": null,
+    "npu_tops": 16,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-8945hx",
+    "brand": "AMD",
+    "name": "Ryzen 9 8945HX",
+    "aliases": ["R9 8945HX"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2025-04",
+    "architecture": "Zen 4 (Dragon Range Refresh)",
+    "cores": { "performance": 16, "efficiency": 0, "threads": 32 },
+    "clocks_ghz": { "base": 2.5, "boost": 5.4 },
+    "power_w": { "base": 55, "max": 75 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-9850hx",
+    "brand": "AMD",
+    "name": "Ryzen 9 9850HX",
+    "aliases": ["R9 9850HX"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2025",
+    "architecture": "Zen 5 (Fire Range)",
+    "cores": { "performance": 12, "efficiency": 0, "threads": 24 },
+    "clocks_ghz": { "base": 3, "boost": 5.2 },
+    "power_w": { "base": 45, "max": 75 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-9900x",
+    "brand": "AMD",
+    "name": "Ryzen 9 9900X",
+    "aliases": ["R9 9900X"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2024-08",
+    "architecture": "Zen 5 (Granite Ridge)",
+    "cores": { "performance": 12, "efficiency": 0, "threads": 24 },
+    "clocks_ghz": { "base": 4.4, "boost": 5.6 },
+    "power_w": { "base": 120 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-9900x3d",
+    "brand": "AMD",
+    "name": "Ryzen 9 9900X3D",
+    "aliases": ["R9 9900X3D"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2025-03",
+    "architecture": "Zen 5 (Granite Ridge)",
+    "cores": { "performance": 12, "efficiency": 0, "threads": 24 },
+    "clocks_ghz": { "base": 4.4, "boost": 5.5 },
+    "power_w": { "base": 120 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-9950x",
+    "brand": "AMD",
+    "name": "Ryzen 9 9950X",
+    "aliases": ["R9 9950X"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2024-08",
+    "architecture": "Zen 5 (Granite Ridge)",
+    "cores": { "performance": 16, "efficiency": 0, "threads": 32 },
+    "clocks_ghz": { "base": 4.3, "boost": 5.7 },
+    "power_w": { "base": 170 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-9950x3d",
+    "brand": "AMD",
+    "name": "Ryzen 9 9950X3D",
+    "aliases": ["R9 9950X3D"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2025-03",
+    "architecture": "Zen 5 (Granite Ridge)",
+    "cores": { "performance": 16, "efficiency": 0, "threads": 32 },
+    "clocks_ghz": { "base": 4.3, "boost": 5.7 },
+    "power_w": { "base": 170 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-9950x3d2-dual-edition",
+    "brand": "AMD",
+    "name": "Ryzen 9 9950X3D2 Dual Edition",
+    "aliases": ["R9 9950X3D2 Dual Edition"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2026-04",
+    "architecture": "Zen 5 (Granite Ridge)",
+    "cores": { "performance": 16, "efficiency": 0, "threads": 32 },
+    "clocks_ghz": { "base": 4.3, "boost": 5.6 },
+    "power_w": { "base": 200 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-9955hx",
+    "brand": "AMD",
+    "name": "Ryzen 9 9955HX",
+    "aliases": ["R9 9955HX"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2025",
+    "architecture": "Zen 5 (Fire Range)",
+    "cores": { "performance": 16, "efficiency": 0, "threads": 32 },
+    "clocks_ghz": { "base": 2.5, "boost": 5.4 },
+    "power_w": { "base": 55, "max": 75 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-9955hx3d",
+    "brand": "AMD",
+    "name": "Ryzen 9 9955HX3D",
+    "aliases": ["R9 9955HX3D"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2025",
+    "architecture": "Zen 5 (Fire Range)",
+    "cores": { "performance": 16, "efficiency": 0, "threads": 32 },
+    "clocks_ghz": { "base": 2.3, "boost": 5.4 },
+    "power_w": { "base": 55, "max": 75 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-pro-5945",
+    "brand": "AMD",
+    "name": "Ryzen 9 PRO 5945",
+    "aliases": ["R9 PRO 5945"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2022-09",
+    "architecture": "Zen 3 (Vermeer)",
+    "cores": { "performance": 12, "efficiency": 0, "threads": 24 },
+    "clocks_ghz": { "base": 3, "boost": 4.7 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-pro-7945",
+    "brand": "AMD",
+    "name": "Ryzen 9 PRO 7945",
+    "aliases": ["R9 PRO 7945"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2023-06",
+    "architecture": "Zen 4 (Raphael)",
+    "cores": { "performance": 12, "efficiency": 0, "threads": 24 },
+    "clocks_ghz": { "base": 3.7, "boost": 5.4 },
+    "power_w": { "base": 65 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-pro-9945",
+    "brand": "AMD",
+    "name": "Ryzen 9 PRO 9945",
+    "aliases": ["R9 PRO 9945"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2025-09",
+    "architecture": "Zen 5 (Granite Ridge)",
+    "cores": { "performance": 12, "efficiency": 0, "threads": 24 },
+    "clocks_ghz": { "base": 3.4, "boost": 5.4 },
+    "power_w": { "base": 65 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-pro-9955",
+    "brand": "AMD",
+    "name": "Ryzen 9 PRO 9955",
+    "aliases": ["R9 PRO 9955"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2026-06",
+    "architecture": "Zen 5 (Granite Ridge)",
+    "cores": { "performance": 12, "efficiency": 0, "threads": 24 },
+    "clocks_ghz": { "base": 3.4, "boost": 5.4 },
+    "power_w": { "base": 120 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-pro-9965",
+    "brand": "AMD",
+    "name": "Ryzen 9 PRO 9965",
+    "aliases": ["R9 PRO 9965"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2026-06",
+    "architecture": "Zen 5 (Granite Ridge)",
+    "cores": { "performance": 16, "efficiency": 0, "threads": 32 },
+    "clocks_ghz": { "base": 4.3, "boost": 5.5 },
+    "power_w": { "base": 170 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-9-pro-9965x3d",
+    "brand": "AMD",
+    "name": "Ryzen 9 PRO 9965X3D",
+    "aliases": ["R9 PRO 9965X3D"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2026-06",
+    "architecture": "Zen 5 (Granite Ridge)",
+    "cores": { "performance": 16, "efficiency": 0, "threads": 32 },
+    "clocks_ghz": { "base": 4.3, "boost": 5.5 },
+    "power_w": { "base": 170 },
+    "socket": "AM5",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-ai-5-330",
+    "brand": "AMD",
+    "name": "Ryzen AI 5 330",
+    "aliases": [],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2025-07",
+    "architecture": "Zen 5 (Strix Point and Krackan Point)",
+    "cores": { "performance": 1, "efficiency": 3, "threads": 8 },
+    "clocks_ghz": { "base": 2, "boost": 4.5 },
+    "power_w": { "base": 28 },
+    "socket": null,
+    "npu_tops": 50,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-ai-5-340",
+    "brand": "AMD",
+    "name": "Ryzen AI 5 340",
+    "aliases": [],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2025-02",
+    "architecture": "Zen 5 (Strix Point and Krackan Point)",
+    "cores": { "performance": 3, "efficiency": 3, "threads": 12 },
+    "clocks_ghz": { "base": 2, "boost": 4.8 },
+    "power_w": { "base": 28, "max": 54 },
+    "socket": null,
+    "npu_tops": 50,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-ai-5-430",
+    "brand": "AMD",
+    "name": "Ryzen AI 5 430",
+    "aliases": [],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2026-01",
+    "architecture": "Zen 5 (Gorgon Point)",
+    "cores": { "performance": 1, "efficiency": 3, "threads": 8 },
+    "clocks_ghz": { "base": 2, "boost": 4.5 },
+    "power_w": { "base": 15, "max": 28 },
+    "socket": null,
+    "npu_tops": 50,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-ai-5-435",
+    "brand": "AMD",
+    "name": "Ryzen AI 5 435",
+    "aliases": [],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2026-01",
+    "architecture": "Zen 5 (Gorgon Point)",
+    "cores": { "performance": 2, "efficiency": 4, "threads": 12 },
+    "clocks_ghz": { "base": 2, "boost": 4.5 },
+    "power_w": { "base": 15, "max": 54 },
+    "socket": null,
+    "npu_tops": 50,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-ai-5-435g",
+    "brand": "AMD",
+    "name": "Ryzen AI 5 435G",
+    "aliases": [],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2026-03",
+    "architecture": "Zen 5 (Gorgon Point AM5)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 2, "boost": 4.5 },
+    "power_w": { "base": 65 },
+    "socket": "AM5",
+    "npu_tops": 50,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-ai-5-435ge",
+    "brand": "AMD",
+    "name": "Ryzen AI 5 435GE",
+    "aliases": [],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2026-03",
+    "architecture": "Zen 5 (Gorgon Point AM5)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 2, "boost": 4.5 },
+    "power_w": { "base": 35 },
+    "socket": "AM5",
+    "npu_tops": 50,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-ai-5-440g",
+    "brand": "AMD",
+    "name": "Ryzen AI 5 440G",
+    "aliases": [],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2026-03",
+    "architecture": "Zen 5 (Gorgon Point AM5)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 2, "boost": 4.8 },
+    "power_w": { "base": 65 },
+    "socket": "AM5",
+    "npu_tops": 50,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-ai-5-440ge",
+    "brand": "AMD",
+    "name": "Ryzen AI 5 440GE",
+    "aliases": [],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2026-03",
+    "architecture": "Zen 5 (Gorgon Point AM5)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 2, "boost": 4.8 },
+    "power_w": { "base": 35 },
+    "socket": "AM5",
+    "npu_tops": 50,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-ai-5-pro-440",
+    "brand": "AMD",
+    "name": "Ryzen AI 5 PRO 440",
+    "aliases": [],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2026-01",
+    "architecture": "Zen 5 (Gorgon Point)",
+    "cores": { "performance": 3, "efficiency": 3, "threads": 12 },
+    "clocks_ghz": { "base": 2, "boost": 4.8 },
+    "power_w": { "base": 15, "max": 54 },
+    "socket": null,
+    "npu_tops": 50,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-ai-7-350",
+    "brand": "AMD",
+    "name": "Ryzen AI 7 350",
+    "aliases": [],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2025-02",
+    "architecture": "Zen 5 (Strix Point and Krackan Point)",
+    "cores": { "performance": 4, "efficiency": 4, "threads": 16 },
+    "clocks_ghz": { "base": 2, "boost": 5 },
+    "power_w": { "base": 28, "max": 54 },
+    "socket": null,
+    "npu_tops": 50,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-ai-7-445",
+    "brand": "AMD",
+    "name": "Ryzen AI 7 445",
+    "aliases": [],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2026-01",
+    "architecture": "Zen 5 (Gorgon Point)",
+    "cores": { "performance": 2, "efficiency": 4, "threads": 12 },
+    "clocks_ghz": { "base": 2, "boost": 4.6 },
+    "power_w": { "base": 15, "max": 54 },
+    "socket": null,
+    "npu_tops": 50,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-ai-7-450",
+    "brand": "AMD",
+    "name": "Ryzen AI 7 450",
+    "aliases": [],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2026-01",
+    "architecture": "Zen 5 (Gorgon Point)",
+    "cores": { "performance": 4, "efficiency": 4, "threads": 16 },
+    "clocks_ghz": { "base": 2, "boost": 5.1 },
+    "power_w": { "base": 15, "max": 54 },
+    "socket": null,
+    "npu_tops": 50,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-ai-7-450g",
+    "brand": "AMD",
+    "name": "Ryzen AI 7 450G",
+    "aliases": [],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2026-03",
+    "architecture": "Zen 5 (Gorgon Point AM5)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 2, "boost": 5.1 },
+    "power_w": { "base": 65 },
+    "socket": "AM5",
+    "npu_tops": 50,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-ai-7-450ge",
+    "brand": "AMD",
+    "name": "Ryzen AI 7 450GE",
+    "aliases": [],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2026-03",
+    "architecture": "Zen 5 (Gorgon Point AM5)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 2, "boost": 5.1 },
+    "power_w": { "base": 35 },
+    "socket": "AM5",
+    "npu_tops": 50,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-ai-7-pro-360",
+    "brand": "AMD",
+    "name": "Ryzen AI 7 PRO 360",
+    "aliases": [],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2024-10",
+    "architecture": "Zen 5 (Strix Point and Krackan Point)",
+    "cores": { "performance": 3, "efficiency": 5, "threads": 16 },
+    "clocks_ghz": { "base": 2, "boost": 5 },
+    "power_w": { "base": 28, "max": 54 },
+    "socket": null,
+    "npu_tops": 50,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-ai-9-365",
+    "brand": "AMD",
+    "name": "Ryzen AI 9 365",
+    "aliases": [],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2024-06",
+    "architecture": "Zen 5 (Strix Point and Krackan Point)",
+    "cores": { "performance": 4, "efficiency": 6, "threads": 20 },
+    "clocks_ghz": { "base": 2, "boost": 5 },
+    "power_w": { "base": 28, "max": 54 },
+    "socket": null,
+    "npu_tops": 50,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-ai-9-465",
+    "brand": "AMD",
+    "name": "Ryzen AI 9 465",
+    "aliases": [],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2026-01",
+    "architecture": "Zen 5 (Gorgon Point)",
+    "cores": { "performance": 4, "efficiency": 6, "threads": 20 },
+    "clocks_ghz": { "base": 2, "boost": 5 },
+    "power_w": { "base": 15, "max": 54 },
+    "socket": null,
+    "npu_tops": 50,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-ai-9-hx-370",
+    "brand": "AMD",
+    "name": "Ryzen AI 9 HX 370",
+    "aliases": [],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2024-06",
+    "architecture": "Zen 5 (Strix Point and Krackan Point)",
+    "cores": { "performance": 4, "efficiency": 8, "threads": 24 },
+    "clocks_ghz": { "base": 2, "boost": 5.1 },
+    "power_w": { "base": 28, "max": 54 },
+    "socket": null,
+    "npu_tops": 50,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-ai-9-hx-375",
+    "brand": "AMD",
+    "name": "Ryzen AI 9 HX 375",
+    "aliases": [],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2024-06",
+    "architecture": "Zen 5 (Strix Point and Krackan Point)",
+    "cores": { "performance": 4, "efficiency": 8, "threads": 24 },
+    "clocks_ghz": { "base": 2, "boost": 5.1 },
+    "power_w": { "base": 28, "max": 54 },
+    "socket": null,
+    "npu_tops": 55,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-ai-9-hx-470",
+    "brand": "AMD",
+    "name": "Ryzen AI 9 HX 470",
+    "aliases": [],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2026-01",
+    "architecture": "Zen 5 (Gorgon Point)",
+    "cores": { "performance": 4, "efficiency": 8, "threads": 24 },
+    "clocks_ghz": { "base": 2, "boost": 5.2 },
+    "power_w": { "base": 15, "max": 54 },
+    "socket": null,
+    "npu_tops": 55,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-ai-9-hx-475",
+    "brand": "AMD",
+    "name": "Ryzen AI 9 HX 475",
+    "aliases": [],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2026-01",
+    "architecture": "Zen 5 (Gorgon Point)",
+    "cores": { "performance": 4, "efficiency": 8, "threads": 24 },
+    "clocks_ghz": { "base": 2, "boost": 5.2 },
+    "power_w": { "base": 15, "max": 54 },
+    "socket": null,
+    "npu_tops": 60,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-ai-max-385",
+    "brand": "AMD",
+    "name": "Ryzen AI MAX 385",
+    "aliases": [],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2025",
+    "architecture": "Zen 5 (Strix Halo)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.6, "boost": 5 },
+    "power_w": { "base": 45, "max": 120 },
+    "socket": null,
+    "npu_tops": 50,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-ai-max-388",
+    "brand": "AMD",
+    "name": "Ryzen AI MAX+ 388",
+    "aliases": [],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2026",
+    "architecture": "Zen 5 (Strix Halo)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.6, "boost": 5 },
+    "power_w": { "base": 45, "max": 120 },
+    "socket": null,
+    "npu_tops": 50,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-ai-max-390",
+    "brand": "AMD",
+    "name": "Ryzen AI MAX 390",
+    "aliases": [],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2025",
+    "architecture": "Zen 5 (Strix Halo)",
+    "cores": { "performance": 12, "efficiency": 0, "threads": 24 },
+    "clocks_ghz": { "base": 3.2, "boost": 5 },
+    "power_w": { "base": 45, "max": 120 },
+    "socket": null,
+    "npu_tops": 50,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-ai-max-392",
+    "brand": "AMD",
+    "name": "Ryzen AI MAX+ 392",
+    "aliases": [],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2026",
+    "architecture": "Zen 5 (Strix Halo)",
+    "cores": { "performance": 12, "efficiency": 0, "threads": 24 },
+    "clocks_ghz": { "base": 3.2, "boost": 5 },
+    "power_w": { "base": 45, "max": 120 },
+    "socket": null,
+    "npu_tops": 50,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-ai-max-395",
+    "brand": "AMD",
+    "name": "Ryzen AI MAX+ 395",
+    "aliases": [],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2025",
+    "architecture": "Zen 5 (Strix Halo)",
+    "cores": { "performance": 16, "efficiency": 0, "threads": 32 },
+    "clocks_ghz": { "base": 3, "boost": 5.1 },
+    "power_w": { "base": 45, "max": 120 },
+    "socket": null,
+    "npu_tops": 50,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-ai-max-pro-380",
+    "brand": "AMD",
+    "name": "Ryzen AI MAX PRO 380",
+    "aliases": [],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2025",
+    "architecture": "Zen 5 (Strix Halo)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.6, "boost": 4.9 },
+    "power_w": { "base": 45, "max": 120 },
+    "socket": null,
+    "npu_tops": 50,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-ai-max-pro-485",
+    "brand": "AMD",
+    "name": "Ryzen AI MAX PRO 485",
+    "aliases": [],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2026",
+    "architecture": "Zen 5 (Gorgon Halo)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.6, "boost": 5 },
+    "power_w": { "base": 55, "max": 120 },
+    "socket": null,
+    "npu_tops": 50,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-ai-max-pro-490",
+    "brand": "AMD",
+    "name": "Ryzen AI MAX PRO 490",
+    "aliases": [],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2026",
+    "architecture": "Zen 5 (Gorgon Halo)",
+    "cores": { "performance": 12, "efficiency": 0, "threads": 24 },
+    "clocks_ghz": { "base": 3.2, "boost": 5 },
+    "power_w": { "base": 55, "max": 120 },
+    "socket": null,
+    "npu_tops": 50,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "amd-ryzen-ai-max-pro-495",
+    "brand": "AMD",
+    "name": "Ryzen AI MAX+ PRO 495",
+    "aliases": [],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2026",
+    "architecture": "Zen 5 (Gorgon Halo)",
+    "cores": { "performance": 16, "efficiency": 0, "threads": 32 },
+    "clocks_ghz": { "base": 3.1, "boost": 5.2 },
+    "power_w": { "base": 55, "max": 120 },
+    "socket": null,
+    "npu_tops": 55,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" }
   }
 ]

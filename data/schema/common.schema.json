@@ -3,6 +3,12 @@
   "$id": "common.schema.json",
   "title": "Definiciones compartidas",
   "$defs": {
+    "sources": {
+      "description": "URLs de donde salen los datos (idealmente enlaces a una revisión fija).",
+      "type": "array",
+      "items": { "type": "string", "format": "uri" },
+      "uniqueItems": true
+    },
     "index": {
       "description": "Índice relativo a la referencia (= 100). null mientras no se haya estimado.",
       "type": ["number", "null"],
@@ -45,7 +51,7 @@
           "enum": ["reference", "anchor", "interpolated", "pending"]
         },
         "based_on": { "type": "array", "items": { "type": "string" } },
-        "sources": { "type": "array", "items": { "type": "string", "format": "uri" } },
+        "sources": { "$ref": "#/$defs/sources" },
         "reviewed": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
       }
     }
