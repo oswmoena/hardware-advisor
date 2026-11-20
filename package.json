@@ -10,12 +10,27 @@
   "scripts": {
     "validate": "node scripts/validate.mjs",
     "fetch:wikipedia": "node scripts/fetch-wikipedia.mjs",
-    "import:cpus": "node scripts/import-cpus.mjs"
+    "import:cpus": "node scripts/import-cpus.mjs",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "node --experimental-strip-types --no-warnings --test src/lib/*.test.ts",
+    "types:gen": "node scripts/gen-types.mjs"
   },
   "license": "MIT",
   "dependencies": {
     "ajv": "8.20.0",
     "ajv-formats": "3.0.1",
-    "cheerio": "1.0.0"
+    "cheerio": "1.0.0",
+    "next": "16.4.5",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "json-schema-to-typescript": "16.0.0",
+    "typescript": "6.0.3"
   }
 }

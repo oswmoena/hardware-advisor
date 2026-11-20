@@ -22,6 +22,29 @@ porque una misma GPU rinde muy distinto según cómo la configure el fabricante.
 Las notas de 0 a 10 por uso **no se guardan**: se calculan con `scoring/profiles.json`
 (curvas índice → nota, pesos por uso y reglas que limitan la nota y agregan advertencias).
 
+## Sitio web (Next.js)
+
+```sh
+npm install
+npm run dev          # http://localhost:3000
+npm run build        # genera una página estática por chip + sitemap
+npm test             # tests del motor de puntuación y la búsqueda
+```
+
+En producción define `NEXT_PUBLIC_SITE_URL` (p. ej. `https://midominio.cl`): se usa para
+las URLs canónicas, el sitemap y los datos estructurados.
+
+| Ruta | Qué es |
+|---|---|
+| `/` | búsqueda en vivo de CPUs y GPUs |
+| `/cpu/[id]`, `/gpu/[id]` | ficha estática e indexable de cada chip |
+| `/buscar?q=` | resultados sin JavaScript (no indexada) |
+| `/sitemap.xml`, `/robots.txt` | SEO |
+
+El código de la app está en `src/`: `src/lib/scoring.ts` (motor de puntuación, lógica pura),
+`src/lib/data.ts` (lectura de `data/` en build) y `src/lib/data-types.ts`, generado desde los
+JSON Schema con `npm run types:gen`.
+
 ## Estructura
 
 ```

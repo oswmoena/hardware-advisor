@@ -1,0 +1,344 @@
+/* ---------- Tokens (claro / oscuro) ---------- */
+:root {
+  --bg-light: oklch(98.5% 0.004 250);
+  --bg-dark: oklch(17% 0.01 260);
+  --surface-light: oklch(100% 0 0);
+  --surface-dark: oklch(22% 0.012 260);
+  --text-light: oklch(22% 0.02 260);
+  --text-dark: oklch(93% 0.01 260);
+  --muted-light: oklch(45% 0.02 260);
+  --muted-dark: oklch(72% 0.015 260);
+  --border-light: oklch(88% 0.01 260);
+  --border-dark: oklch(34% 0.015 260);
+  --accent-light: oklch(48% 0.19 265);
+  --accent-dark: oklch(78% 0.13 250);
+  --good-light: oklch(46% 0.13 150);
+  --good-dark: oklch(78% 0.14 150);
+  --ok-light: oklch(50% 0.12 75);
+  --ok-dark: oklch(82% 0.13 80);
+  --poor-light: oklch(50% 0.18 28);
+  --poor-dark: oklch(75% 0.14 28);
+
+  --bg: var(--bg-light);
+  --surface: var(--surface-light);
+  --text: var(--text-light);
+  --muted: var(--muted-light);
+  --border: var(--border-light);
+  --accent: var(--accent-light);
+  --good: var(--good-light);
+  --ok: var(--ok-light);
+  --poor: var(--poor-light);
+
+  --radius: 0.75rem;
+  --gutter: clamp(1rem, 0.5rem + 2.5vw, 2rem);
+  --measure: 72rem;
+
+  color-scheme: light dark;
+  accent-color: var(--accent);
+}
+
+/* Fallback obligatorio para navegadores sin light-dark() */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: var(--bg-dark);
+    --surface: var(--surface-dark);
+    --text: var(--text-dark);
+    --muted: var(--muted-dark);
+    --border: var(--border-dark);
+    --accent: var(--accent-dark);
+    --good: var(--good-dark);
+    --ok: var(--ok-dark);
+    --poor: var(--poor-dark);
+  }
+}
+
+@supports (color: light-dark(white, black)) {
+  :root {
+    --bg: light-dark(var(--bg-light), var(--bg-dark));
+    --surface: light-dark(var(--surface-light), var(--surface-dark));
+    --text: light-dark(var(--text-light), var(--text-dark));
+    --muted: light-dark(var(--muted-light), var(--muted-dark));
+    --border: light-dark(var(--border-light), var(--border-dark));
+    --accent: light-dark(var(--accent-light), var(--accent-dark));
+    --good: light-dark(var(--good-light), var(--good-dark));
+    --ok: light-dark(var(--ok-light), var(--ok-dark));
+    --poor: light-dark(var(--poor-light), var(--poor-dark));
+  }
+}
+
+/* ---------- Base ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.15;
+  text-wrap: balance;
+}
+h1 {
+  font-size: clamp(1.75rem, 1.2rem + 2.2vw, 2.75rem);
+  margin-block: 0 0.5rem;
+}
+h2 {
+  font-size: clamp(1.25rem, 1.05rem + 0.8vw, 1.6rem);
+  margin-block: 2.5rem 1rem;
+}
+p {
+  text-wrap: pretty;
+  max-inline-size: 70ch;
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 0.15em;
+}
+
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip-path: inset(50%);
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+}
+
+/* ---------- Layout ---------- */
+.container {
+  max-inline-size: var(--measure);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.site-header {
+  border-block-end: 1px solid var(--border);
+  background: var(--surface);
+}
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 0.875rem;
+}
+.brand {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--text);
+  text-decoration: none;
+}
+
+main {
+  padding-block: clamp(1.5rem, 1rem + 2vw, 3rem) 4rem;
+}
+
+.site-footer {
+  border-block-start: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.875rem;
+  padding-block: 1.5rem;
+}
+
+.lead {
+  font-size: 1.125rem;
+  color: var(--muted);
+}
+.muted {
+  color: var(--muted);
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+.breadcrumbs li + li::before {
+  content: "/";
+  margin-inline-end: 0.5rem;
+}
+
+/* ---------- Búsqueda ---------- */
+.search-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  max-inline-size: 40rem;
+}
+.search-row {
+  display: flex;
+  gap: 0.5rem;
+}
+.search-row input {
+  flex: 1;
+  min-inline-size: 0;
+}
+input[type="search"],
+.button {
+  font: inherit;
+  font-size: max(1rem, 1em);
+  min-block-size: 48px;
+  border-radius: var(--radius);
+  border: 1px solid var(--muted);
+  padding: 0.625rem 0.875rem;
+  background: var(--surface);
+  color: var(--text);
+}
+.button {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--bg);
+  font-weight: 600;
+  cursor: pointer;
+}
+.hint {
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.results {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: grid;
+  gap: 0.5rem;
+  max-inline-size: 40rem;
+}
+.results a {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+}
+.results a:hover {
+  border-color: var(--accent);
+}
+.tag {
+  font-size: 0.8125rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+/* ---------- Ficha ---------- */
+.chip-header {
+  margin-block-end: 1.5rem;
+}
+.chip-header .tag {
+  font-size: 0.9375rem;
+}
+
+.summary {
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  border-inline-start: 4px solid var(--accent);
+  background: var(--surface);
+  max-inline-size: 70ch;
+}
+.summary p {
+  margin: 0;
+}
+
+.scores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: 1rem;
+}
+.score-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 1.125rem 1.25rem;
+}
+.score-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+.score-value {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin: 0 0 0.5rem;
+}
+.score-number {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.score-card[data-band="good"] .score-number { color: var(--good); }
+.score-card[data-band="ok"] .score-number { color: var(--ok); }
+.score-card[data-band="poor"] .score-number { color: var(--poor); }
+.score-card meter {
+  inline-size: 100%;
+  block-size: 0.5rem;
+}
+.warnings {
+  margin: 0.75rem 0 0;
+  padding-inline-start: 1.125rem;
+  font-size: 0.9rem;
+}
+.warnings li + li {
+  margin-block-start: 0.25rem;
+}
+
+.specs {
+  border-collapse: separate;
+  border-spacing: 0;
+  inline-size: 100%;
+  max-inline-size: 44rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.specs th,
+.specs td {
+  text-align: start;
+  padding: 0.625rem 1rem;
+  vertical-align: top;
+}
+.specs tr + tr > * {
+  border-block-start: 1px solid var(--border);
+}
+.specs th {
+  font-weight: 600;
+  inline-size: 40%;
+  color: var(--muted);
+}
+
+.note {
+  font-size: 0.875rem;
+  color: var(--muted);
+}
