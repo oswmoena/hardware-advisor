@@ -9,7 +9,8 @@
   },
   "scripts": {
     "validate": "node scripts/validate.mjs",
-    "fetch:wikipedia": "node scripts/fetch-wikipedia.mjs"
+    "fetch:wikipedia": "node scripts/fetch-wikipedia.mjs",
+    "import:cpus": "node scripts/import-cpus.mjs"
   },
   "license": "MIT",
   "dependencies": {

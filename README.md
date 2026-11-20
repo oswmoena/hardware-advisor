@@ -35,6 +35,7 @@ scoring/
 scripts/
   validate.mjs         valida los datos contra el schema y reglas de consistencia
   fetch-wikipedia.mjs  descarga tablas de especificaciones desde la API de Wikipedia
+  import-cpus.mjs      convierte esas tablas en fichas de CPU (sin puntuar)
 ```
 
 ## Uso
@@ -44,7 +45,13 @@ npm install
 npm run validate                    # validar data/ y scoring/
 npm run fetch:wikipedia             # descargar todas las páginas a data/raw/
 npm run fetch:wikipedia -- Raptor   # solo las páginas que contengan "Raptor"
+npm run import:cpus                 # agregar a data/cpus/ las CPUs que aún no estén
+npm run import:cpus -- --dry        # ver qué agregaría, sin escribir
 ```
+
+El importador nunca modifica una ficha que ya existe (mismo `id`): lo curado a mano manda.
+Qué secciones de Wikipedia se importan (y con qué plataforma, socket y año por defecto)
+se define al inicio de `scripts/import-cpus.mjs`.
 
 ## Agregar o puntuar un chip
 
