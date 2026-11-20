@@ -1,0 +1,43 @@
+{
+  "$comment": "Valores iniciales, para calibrar con casos reales. Las curvas convierten un índice (referencia = 100) o los GB de RAM en una nota de 0 a 10 por interpolación lineal entre puntos [valor, nota].",
+  "curves": {
+    "cpu_single": [[30, 2], [60, 5], [100, 8], [130, 10]],
+    "cpu_multi": [[20, 2], [50, 5], [100, 8], [200, 10]],
+    "gpu_gaming": [[5, 0], [20, 2], [50, 4.5], [100, 7], [200, 9.5], [250, 10]],
+    "ram_gb": [[4, 1], [8, 4], [16, 7.5], [32, 9.5], [64, 10]]
+  },
+  "verdicts": [
+    { "min": 8, "label": "Excelente" },
+    { "min": 6.5, "label": "Bueno" },
+    { "min": 5, "label": "Suficiente" },
+    { "min": 3.5, "label": "Justo" },
+    { "min": 0, "label": "No recomendable" }
+  ],
+  "profiles": {
+    "gaming": {
+      "label": "Juegos",
+      "weights": { "gpu_gaming": 0.65, "cpu_single": 0.2, "ram_gb": 0.15 },
+      "rules": [
+        { "metric": "ram_gb", "op": "<", "value": 16, "max_score": 6, "warning": "16 GB de RAM es el mínimo recomendado para jugar hoy." },
+        { "metric": "vram_gb", "op": "<", "value": 8, "max_score": 7, "warning": "Menos de 8 GB de VRAM: en juegos nuevos tendrás que bajar las texturas." },
+        { "metric": "gpu_type", "op": "==", "value": "integrated", "warning": "Gráfica integrada: solo juegos livianos o antiguos, en calidad baja." },
+        { "metric": "isa", "op": "==", "value": "arm", "warning": "Procesador ARM: muchos juegos (sobre todo con anti-cheat) no funcionan o corren emulados." }
+      ]
+    },
+    "programming": {
+      "label": "Programación",
+      "weights": { "cpu_multi": 0.5, "cpu_single": 0.2, "ram_gb": 0.3 },
+      "rules": [
+        { "metric": "ram_gb", "op": "<", "value": 16, "max_score": 6, "warning": "Con IDE, navegador y Docker, 8 GB se quedan cortos rápido." },
+        { "metric": "isa", "op": "==", "value": "arm", "warning": "ARM: revisa que tus herramientas tengan versión nativa (la mayoría ya la tiene)." }
+      ]
+    },
+    "office": {
+      "label": "Ofimática",
+      "weights": { "cpu_single": 0.5, "ram_gb": 0.3, "cpu_multi": 0.2 },
+      "rules": [
+        { "metric": "ram_gb", "op": "<", "value": 8, "max_score": 5, "warning": "Menos de 8 GB: el navegador con varias pestañas se pondrá lento." }
+      ]
+    }
+  }
+}

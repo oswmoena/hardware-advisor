@@ -1,0 +1,20 @@
+{
+  "name": "hardware-advisor",
+  "version": "0.1.0",
+  "description": "Consulta de rendimiento de CPUs y GPUs (laptops y desktops) con puntuación según el uso.",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "fetch:wikipedia": "node scripts/fetch-wikipedia.mjs"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "ajv": "8.20.0",
+    "ajv-formats": "3.0.1",
+    "cheerio": "1.0.0"
+  }
+}

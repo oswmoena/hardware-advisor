@@ -1,0 +1,22 @@
+[
+  {
+    "id": "amd-ryzen-5-7600",
+    "brand": "AMD",
+    "name": "Ryzen 5 7600",
+    "aliases": ["R5 7600", "Ryzen 5 7600 6-Core"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2023-01",
+    "architecture": "Zen 4 (Raphael)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.8, "boost": 5.1 },
+    "power_w": { "base": 65, "max": 88 },
+    "memory": { "types": ["DDR5-5200"] },
+    "socket": "AM5",
+    "igpu": "amd-radeon-graphics-2cu-rdna2",
+    "npu_tops": null,
+    "scores": { "single": 100, "multi": 100 },
+    "score_meta": { "method": "reference", "reviewed": "2026-11-20" },
+    "notes": ["Chip de referencia de CPU: single = multi = 100 por definición."]
+  }
+]

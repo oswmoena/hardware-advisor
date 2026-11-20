@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cpu.schema.json",
+  "title": "CPU",
+  "description": "Ficha de un procesador. Índices de rendimiento relativos a la referencia AMD Ryzen 5 7600 = 100.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "brand", "name", "aliases", "platform", "isa", "release", "architecture", "cores", "scores", "score_meta"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "brand": { "enum": ["Intel", "AMD", "Apple", "Qualcomm"] },
+    "name": { "type": "string", "minLength": 1 },
+    "aliases": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "platform": { "enum": ["desktop", "mobile"] },
+    "isa": { "enum": ["x86", "arm"] },
+    "release": { "type": "string", "pattern": "^\\d{4}(-\\d{2})?$" },
+    "architecture": { "type": "string" },
+    "cores": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["performance", "efficiency", "threads"],
+      "properties": {
+        "performance": { "type": "integer", "minimum": 1 },
+        "efficiency": { "type": "integer", "minimum": 0 },
+        "threads": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "clocks_ghz": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "base": { "type": "number", "exclusiveMinimum": 0 },
+        "boost": { "type": "number", "exclusiveMinimum": 0 }
+      }
+    },
+    "power_w": {
+      "description": "Desktop: base = TDP, max = PPT/PL2. Mobile: rango configurable por el fabricante del equipo.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "base": { "type": "number", "exclusiveMinimum": 0 },
+        "max": { "type": "number", "exclusiveMinimum": 0 }
+      }
+    },
+    "memory": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "types": { "type": "array", "items": { "type": "string" } },
+        "max_gb": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "socket": { "type": ["string", "null"], "description": "Solo desktop (AM5, LGA1700, LGA1851...). null en mobile." },
+    "igpu": { "type": ["string", "null"], "description": "id de la GPU integrada en data/gpus, o null si no tiene." },
+    "npu_tops": { "type": ["number", "null"] },
+    "scores": { "$ref": "common.schema.json#/$defs/cpuScores" },
+    "score_meta": { "$ref": "common.schema.json#/$defs/scoreMeta" },
+    "notes": { "type": "array", "items": { "type": "string" } }
+  }
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "intel-core-i7-13620h",
+    "brand": "Intel",
+    "name": "Core i7-13620H",
+    "aliases": ["i7-13620H", "i7 13620H", "Core i7 13620H"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2023-01",
+    "architecture": "Raptor Lake",
+    "cores": { "performance": 6, "efficiency": 4, "threads": 16 },
+    "clocks_ghz": { "base": 2.4, "boost": 4.9 },
+    "power_w": { "base": 45, "max": 115 },
+    "memory": { "types": ["DDR5-5200", "DDR4-3200", "LPDDR5-5200", "LPDDR4x-4267"] },
+    "socket": null,
+    "igpu": "intel-uhd-graphics-64eu",
+    "npu_tops": null,
+    "scores": { "single": null, "multi": null },
+    "score_meta": { "method": "pending" },
+    "notes": []
+  }
+]

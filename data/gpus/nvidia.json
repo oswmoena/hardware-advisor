@@ -1,0 +1,32 @@
+[
+  {
+    "id": "nvidia-geforce-rtx-4060",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 4060",
+    "aliases": ["RTX 4060", "RTX4060"],
+    "type": "desktop",
+    "release": "2023-06",
+    "architecture": "Ada Lovelace",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 115, "max": 115 },
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": true },
+    "scores": { "gaming": { "at_min_power": 100, "at_max_power": 100 }, "compute": 100 },
+    "score_meta": { "method": "reference", "reviewed": "2026-11-20" },
+    "notes": ["Chip de referencia de GPU: gaming = compute = 100 por definición."]
+  },
+  {
+    "id": "nvidia-geforce-rtx-4060-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 4060 Laptop",
+    "aliases": ["RTX 4060 Laptop", "RTX 4060 Mobile", "RTX 4060 Max-Q", "RTX 4060 Laptop GPU"],
+    "type": "mobile",
+    "release": "2023-02",
+    "architecture": "Ada Lovelace",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 35, "max": 115 },
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": true },
+    "scores": { "gaming": { "at_min_power": null, "at_max_power": null }, "compute": null },
+    "score_meta": { "method": "pending" },
+    "notes": ["El rendimiento real depende mucho del TGP configurado por el fabricante de la laptop."]
+  }
+]

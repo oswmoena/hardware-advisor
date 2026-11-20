@@ -1,0 +1,15 @@
+[
+  {
+    "id": "intel-uhd-graphics-64eu",
+    "brand": "Intel",
+    "name": "UHD Graphics (64 EU, Xe-LP)",
+    "aliases": ["Intel UHD Graphics", "UHD Graphics"],
+    "type": "integrated",
+    "release": "2023-01",
+    "architecture": "Xe-LP",
+    "vram": null,
+    "scores": { "gaming": { "at_min_power": null, "at_max_power": null } },
+    "score_meta": { "method": "pending" },
+    "notes": []
+  }
+]

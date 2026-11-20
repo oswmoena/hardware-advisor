@@ -1,0 +1,15 @@
+[
+  {
+    "id": "amd-radeon-graphics-2cu-rdna2",
+    "brand": "AMD",
+    "name": "Radeon Graphics (2 CU, RDNA 2)",
+    "aliases": ["AMD Radeon Graphics", "Radeon Graphics"],
+    "type": "integrated",
+    "release": "2022-09",
+    "architecture": "RDNA 2",
+    "vram": null,
+    "scores": { "gaming": { "at_min_power": null, "at_max_power": null } },
+    "score_meta": { "method": "pending" },
+    "notes": ["Integrada básica de los Ryzen 7000/9000 de escritorio: sirve para video y escritorio, no para jugar."]
+  }
+]

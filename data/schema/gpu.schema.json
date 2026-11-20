@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gpu.schema.json",
+  "title": "GPU",
+  "description": "Ficha de una GPU (dedicada desktop, dedicada laptop o integrada). Índice gaming relativo a NVIDIA GeForce RTX 4060 (desktop) = 100.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "brand", "name", "aliases", "type", "release", "architecture", "scores", "score_meta"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "brand": { "enum": ["NVIDIA", "AMD", "Intel", "Apple", "Qualcomm"] },
+    "name": { "type": "string", "minLength": 1 },
+    "aliases": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "type": { "enum": ["desktop", "mobile", "integrated"] },
+    "release": { "type": "string", "pattern": "^\\d{4}(-\\d{2})?$" },
+    "architecture": { "type": "string" },
+    "vram": {
+      "description": "null en integradas (usan la RAM del sistema).",
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["gb"],
+      "properties": {
+        "gb": { "type": "number", "exclusiveMinimum": 0 },
+        "type": { "type": "string" },
+        "bus_bits": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "power_w": {
+      "description": "Desktop: min = max = consumo de la tarjeta (TBP). Mobile: rango de TGP permitido por el fabricante.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["min", "max"],
+      "properties": {
+        "min": { "type": "number", "exclusiveMinimum": 0 },
+        "max": { "type": "number", "exclusiveMinimum": 0 }
+      }
+    },
+    "features": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ray_tracing": { "type": "boolean" },
+        "upscaling": { "type": "array", "items": { "type": "string" } },
+        "frame_generation": { "type": "boolean" }
+      }
+    },
+    "scores": { "$ref": "common.schema.json#/$defs/gpuScores" },
+    "score_meta": { "$ref": "common.schema.json#/$defs/scoreMeta" },
+    "notes": { "type": "array", "items": { "type": "string" } }
+  }
+}
