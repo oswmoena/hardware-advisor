@@ -32,6 +32,14 @@
         { "metric": "isa", "op": "==", "value": "arm", "warning": "ARM: revisa que tus herramientas tengan versión nativa (la mayoría ya la tiene)." }
       ]
     },
+    "multitasking": {
+      "label": "Multitarea",
+      "$comment": "Muchas aplicaciones y pestañas abiertas a la vez (navegador, Office, videollamadas, música...). Pesan más la RAM y los núcleos.",
+      "weights": { "cpu_multi": 0.45, "ram_gb": 0.4, "cpu_single": 0.15 },
+      "rules": [
+        { "metric": "ram_gb", "op": "<", "value": 16, "max_score": 5.5, "warning": "Para tener muchas apps y pestañas abiertas a la vez, 16 GB es el mínimo y 32 GB lo cómodo." }
+      ]
+    },
     "office": {
       "label": "Ofimática",
       "weights": { "cpu_single": 0.5, "ram_gb": 0.3, "cpu_multi": 0.2 },

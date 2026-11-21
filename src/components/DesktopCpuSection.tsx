@@ -9,6 +9,7 @@ import {
   rankGpus, ramTypeFor, type Balance, type BuildMock, type Pairing, type Resolution,
 } from "@/lib/pairing.ts";
 import { scoreSystem, type ProfilesConfig } from "@/lib/scoring.ts";
+import { listEs } from "@/lib/text.ts";
 import { EstimateNotice } from "./EstimateNotice.tsx";
 import { ScoreCard } from "./ScoreCard.tsx";
 
@@ -46,7 +47,7 @@ export function DesktopCpuSection({ cpu, igpu, gpus, config }: { cpu: CPU; igpu:
 
       <p role="status" className="recommended-line">
         {recommended.length
-          ? <>Con {ramText}: <strong>recomendable para {recommended.join(" y ")}</strong>.</>
+          ? <>Con {ramText}: <strong>recomendable para {listEs(recommended)}</strong>.</>
           : <>Con {ramText}: no es especialmente recomendable para programar ni para ofimática exigente.</>}
       </p>
 

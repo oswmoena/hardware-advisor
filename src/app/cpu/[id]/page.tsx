@@ -6,6 +6,7 @@ import { DesktopCpuSection } from "@/components/DesktopCpuSection.tsx";
 import { LaptopCpuScores } from "@/components/LaptopCpuScores.tsx";
 import { ScoreCard } from "@/components/ScoreCard.tsx";
 import type { CPU, GPU } from "@/lib/data-types.ts";
+import { listEs } from "@/lib/text.ts";
 import { getCpu, getCpus, getGpu, getGpus, getProfiles, getReferenceCpu } from "@/lib/data.ts";
 import { ASSUMED_RAM_GB, SITE_URL, cpuTag, formatIndex, formatRelease, recommendedFor, scoreCpuAlone } from "@/lib/present.ts";
 
@@ -86,7 +87,7 @@ export default async function CpuPage({ params }: Props) {
           </p>
         ) : recommended.length ? (
           <p>
-            <strong>Recomendable para {recommended.join(" y ")}</strong> (con {ASSUMED_RAM_GB} GB de RAM). Para juegos,
+            <strong>Recomendable para {listEs(recommended)}</strong> (con {ASSUMED_RAM_GB} GB de RAM). Para juegos,
             lo que más pesa es la tarjeta gráfica.
           </p>
         ) : (
