@@ -51,6 +51,18 @@ test("multitarea: pesa la RAM y los núcleos; con 8 GB queda limitada y advierte
   assert.ok(low.multitasking.warnings.some((w) => w.includes("16 GB")));
 });
 
+test("con 4 GB de RAM todas las notas quedan bajas y con advertencia, aunque el resto sea bueno", () => {
+  const r = byKey(scoreSystem({ cpu: cpu({ scores: { single: 150, multi: 300 } }), gpu: gpu(), ramGb: 4 }, config));
+  assert.ok(r.gaming.score! <= 4 && r.programming.score! <= 4, `${r.gaming.score} / ${r.programming.score}`);
+  assert.ok(r.multitasking.score! <= 3.5 && r.office.score! <= 3.5, `${r.multitasking.score} / ${r.office.score}`);
+  for (const key of ["gaming", "programming", "multitasking", "office"]) {
+    assert.ok(r[key].warnings.some((w) => /menos de 8 GB|4 GB/i.test(w)), key);
+  }
+  // Solo la advertencia de la regla más estricta, no también la de "< 16 GB".
+  assert.ok(!r.gaming.warnings.some((w) => w.includes("16 GB de RAM es el mínimo")));
+  assert.equal(r.programming.warnings.filter((w) => /GB/.test(w)).length, 1);
+});
+
 test("una puntuación faltante devuelve null y explica qué falta", () => {
   const r = byKey(scoreSystem({ cpu: cpu({ scores: { single: null, multi: null } }), gpu: gpu(), ramGb: 16 }, config));
   assert.equal(r.office.score, null);

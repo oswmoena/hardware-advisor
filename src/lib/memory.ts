@@ -17,7 +17,7 @@ export interface LaptopMemory {
 }
 
 /** Cantidades de RAM habituales en laptops. */
-export const LAPTOP_RAM_GB = [8, 12, 16, 24, 32, 64];
+export const LAPTOP_RAM_GB = [4, 6, 8, 12, 16, 24, 32, 48, 64];
 const SOLDERED_CAPACITIES: [RegExp, number[]][] = [
   [/Lunar Lake/, [16, 32]],
   [/Strix Halo|Gorgon Halo/, [32, 64, 128]],

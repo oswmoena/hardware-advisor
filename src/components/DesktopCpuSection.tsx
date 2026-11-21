@@ -16,7 +16,8 @@ import { EstimateNotice } from "./EstimateNotice.tsx";
 import { ScoreCard } from "./ScoreCard.tsx";
 
 const VISIBLE = 10;
-const RAM_OPTIONS = [8, 16, 32, 64];
+/** Desde 4 GB por los equipos más antiguos; 24 y 48 GB son comunes con módulos DDR5 actuales. */
+const RAM_OPTIONS = [4, 8, 12, 16, 24, 32, 48, 64];
 const PSU_OPTIONS = [450, 550, 650, 750, 850, 1000, 1200];
 const BALANCE_TEXT: Record<Balance, string> = {
   balanced: "Equilibrada",
