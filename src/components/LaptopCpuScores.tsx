@@ -242,7 +242,7 @@ export function LaptopCpuScores({
             <span className="badge">{BALANCE_TEXT[combo.balance]}</span>
           </p>
           <p className="note">
-            {BALANCE_HINT[combo.balance]} Índice de la GPU {tgp === "" ? "" : `a ${tgp} W`}:{" "}
+            {BALANCE_HINT[combo.balance]} Índice de la GPU{tgp === "" ? "" : ` a ${tgp} W`}:{" "}
             {combo.gpuRange
               ? `${relative(combo.gpuRange[0], topGpu)}–${relative(combo.gpuRange[1], topGpu)} / 100 según el TGP`
               : `${relative(combo.gpuIndex, topGpu)} / 100`}{" "}
