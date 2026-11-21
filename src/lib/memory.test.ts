@@ -1,7 +1,14 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import type { CPU } from "./data-types.ts";
-import { adjustCpuForMemory, defaultRamGb, laptopMemory, memoryLabel } from "./memory.ts";
+import { adjustCpuForMemory, adjustCpuForMemorySpeed, defaultRamGb, laptopMemory, memoryLabel } from "./memory.ts";
+
+test("escritorio: la velocidad de la RAM se compara contra la base de su tipo (DDR4-3200 / DDR5-6000)", () => {
+  const c = cpu("Zen 3 (Vermeer)");
+  assert.deepEqual(adjustCpuForMemorySpeed(c, 3200, 3200).scores, { single: 100, multi: 100 });
+  assert.ok(adjustCpuForMemorySpeed(c, 2666, 3200).scores.multi! < 100);
+  assert.ok(adjustCpuForMemorySpeed(c, 3600, 3200).scores.multi! > 100);
+});
 
 const cpu = (architecture: string): CPU => ({
   id: "x", brand: "Intel", name: "Test", aliases: [], platform: "mobile", isa: "x86", release: "2023", architecture,

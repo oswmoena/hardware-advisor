@@ -66,10 +66,14 @@ const SINGLE_SENSITIVITY = 0.06;
 const MULTI_SENSITIVITY = 0.12;
 const clamp = (n: number) => Math.min(Math.max(n, 0.9), 1.06);
 
-/** Índices de la CPU ajustados por la velocidad de la memoria, respecto de la opción por defecto. */
+/** Índices de la CPU de laptop ajustados por la memoria, respecto de la opción típica. */
 export function adjustCpuForMemory(cpu: CPU, memory: MemoryOption): CPU {
-  const base = laptopMemory(cpu).default.mts;
-  const rel = Math.log(memory.mts / base);
+  return adjustCpuForMemorySpeed(cpu, memory.mts, laptopMemory(cpu).default.mts);
+}
+
+/** Índices de la CPU ajustados por la velocidad de la RAM respecto de una velocidad base. */
+export function adjustCpuForMemorySpeed(cpu: CPU, mts: number, baselineMts: number): CPU {
+  const rel = Math.log(mts / baselineMts);
   const { single, multi } = cpu.scores;
   return {
     ...cpu,
