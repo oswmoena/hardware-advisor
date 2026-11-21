@@ -37,6 +37,20 @@ test("la GPU de referencia da 100 y el escalado es sublineal", () => {
   assert.ok(double.at_max_power > 150 && double.at_max_power < 200, String(double.at_max_power));
 });
 
+test("generaciones 2019-2020: Zen+, Skylake e Ice Lake se reconocen y quedan bajo Zen 4", () => {
+  for (const architecture of ["Zen+ (Picasso)", "Coffee Lake Refresh", "Comet Lake", "Ice Lake"]) {
+    const r = estimateCpu({ ...refCpu, architecture }, refCpu);
+    assert.ok(r && r.single < 100, `${architecture}: ${JSON.stringify(r)}`);
+  }
+});
+
+test("Turing con GDDR5 rinde menos que con GDDR6 a igual TFLOPS", () => {
+  const turing = { type: "desktop", architecture: "Turing", fp32_tflops: 3, power_w: { min: 75, max: 75 } };
+  const gddr5 = estimateGpu({ ...turing, vram: { gb: 4, type: "GDDR5" } }, refGpu);
+  const gddr6 = estimateGpu({ ...turing, vram: { gb: 4, type: "GDDR6" } }, refGpu);
+  assert.ok(gddr5.at_max_power < gddr6.at_max_power);
+});
+
 test("GPU de laptop: menor potencia mínima → menor índice a potencia mínima", () => {
   const laptop = { ...refGpu, type: "mobile", power_w: { min: 35, max: 115 } };
   const r = estimateGpu(laptop, refGpu);

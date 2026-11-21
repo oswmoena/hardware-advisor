@@ -1,5 +1,42 @@
 [
   {
+    "id": "amd-4700s",
+    "brand": "AMD",
+    "name": "AMD 4700S",
+    "aliases": [],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2021",
+    "architecture": "Zen 2 (Renoir)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.6, "boost": 4 },
+    "power_w": { "base": 75 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 63, "multi": 87 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-4800s",
+    "brand": "AMD",
+    "name": "AMD 4800S",
+    "aliases": [],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2022",
+    "architecture": "Zen 2 (Renoir)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.6, "boost": 4 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 63, "multi": 84 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
     "id": "amd-ryzen-3-30",
     "brand": "AMD",
     "name": "Ryzen 3 30",
@@ -73,6 +110,196 @@
       "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
     ],
     "scores": { "single": 88, "multi": 38 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-3-3100",
+    "brand": "AMD",
+    "name": "Ryzen 3 3100",
+    "aliases": ["R3 3100"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2020-04",
+    "architecture": "Zen 2 (Matisse)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 3.6, "boost": 3.9 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 61, "multi": 41 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-3-3200g",
+    "brand": "AMD",
+    "name": "Ryzen 3 3200G",
+    "aliases": ["R3 3200G"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2019-07",
+    "architecture": "Zen+ (Picasso)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 4 },
+    "clocks_ghz": { "base": 3.6, "boost": 4 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 55, "multi": 29 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-3-3200ge",
+    "brand": "AMD",
+    "name": "Ryzen 3 3200GE",
+    "aliases": ["R3 3200GE"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2019-07",
+    "architecture": "Zen+ (Picasso)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 4 },
+    "clocks_ghz": { "base": 3.3, "boost": 3.8 },
+    "power_w": { "base": 35 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 52, "multi": 28 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-3-3300u",
+    "brand": "AMD",
+    "name": "Ryzen 3 3300U",
+    "aliases": ["R3 3300U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2019-01",
+    "architecture": "Zen+ (Picasso)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 4 },
+    "clocks_ghz": { "base": 2.1, "boost": 3.5 },
+    "power_w": { "base": 15 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 46, "multi": 18 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-3-3300x",
+    "brand": "AMD",
+    "name": "Ryzen 3 3300X",
+    "aliases": ["R3 3300X"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2020-04",
+    "architecture": "Zen 2 (Matisse)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 3.8, "boost": 4.3 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 67, "multi": 45 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-3-3350u",
+    "brand": "AMD",
+    "name": "Ryzen 3 3350U",
+    "aliases": ["R3 3350U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2019-01",
+    "architecture": "Zen+ (Picasso)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 4 },
+    "clocks_ghz": { "base": 2.1, "boost": 3.5 },
+    "power_w": { "base": 15 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 46, "multi": 18 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-3-4100",
+    "brand": "AMD",
+    "name": "Ryzen 3 4100",
+    "aliases": ["R3 4100"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2022-04",
+    "architecture": "Zen 2 (Renoir)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 3.8, "boost": 4 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 63, "multi": 42 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-3-4300g",
+    "brand": "AMD",
+    "name": "Ryzen 3 4300G",
+    "aliases": ["R3 4300G"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2020-07",
+    "architecture": "Zen 2 (Renoir)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 3.8, "boost": 4 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 63, "multi": 42 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-3-4300ge",
+    "brand": "AMD",
+    "name": "Ryzen 3 4300GE",
+    "aliases": ["R3 4300GE"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2020-07",
+    "architecture": "Zen 2 (Renoir)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 3.5, "boost": 4 },
+    "power_w": { "base": 35 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 63, "multi": 42 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-3-4300u",
+    "brand": "AMD",
+    "name": "Ryzen 3 4300U",
+    "aliases": ["R3 4300U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2020-03",
+    "architecture": "Zen 2 (Renoir)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 4 },
+    "clocks_ghz": { "base": 2.7, "boost": 3.7 },
+    "power_w": { "base": 10, "max": 25 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 55, "multi": 20 },
     "score_meta": { "method": "estimated" }
   },
   {
@@ -380,6 +607,44 @@
     "score_meta": { "method": "estimated" }
   },
   {
+    "id": "amd-ryzen-3-pro-3200g",
+    "brand": "AMD",
+    "name": "Ryzen 3 PRO 3200G",
+    "aliases": ["R3 PRO 3200G"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2019-09",
+    "architecture": "Zen+ (Picasso)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 4 },
+    "clocks_ghz": { "base": 3.6, "boost": 4 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 55, "multi": 29 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-3-pro-3200ge",
+    "brand": "AMD",
+    "name": "Ryzen 3 PRO 3200GE",
+    "aliases": ["R3 PRO 3200GE"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2019-09",
+    "architecture": "Zen+ (Picasso)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 4 },
+    "clocks_ghz": { "base": 3.3, "boost": 3.8 },
+    "power_w": { "base": 35 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 52, "multi": 28 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
     "id": "amd-ryzen-5-40",
     "brand": "AMD",
     "name": "Ryzen 5 40",
@@ -571,6 +836,367 @@
       "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
     ],
     "scores": { "single": 93, "multi": 91 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-5-3400g",
+    "brand": "AMD",
+    "name": "Ryzen 5 3400G",
+    "aliases": ["R5 3400G"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2019-07",
+    "architecture": "Zen+ (Picasso)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 3.7, "boost": 4.2 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 58, "multi": 38 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-5-3450u",
+    "brand": "AMD",
+    "name": "Ryzen 5 3450U",
+    "aliases": ["R5 3450U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2020-06",
+    "architecture": "Zen+ (Picasso)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 2.1, "boost": 3.5 },
+    "power_w": { "base": 15 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 46, "multi": 22 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-5-3500",
+    "brand": "AMD",
+    "name": "Ryzen 5 3500",
+    "aliases": ["R5 3500"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2019-11",
+    "architecture": "Zen 2 (Matisse)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 6 },
+    "clocks_ghz": { "base": 3.6, "boost": 4.1 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 64, "multi": 51 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-5-3500c",
+    "brand": "AMD",
+    "name": "Ryzen 5 3500C",
+    "aliases": ["R5 3500C"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2020-09",
+    "architecture": "Zen+ (Picasso)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 2.1, "boost": 3.7 },
+    "power_w": { "base": 15 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 48, "multi": 23 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-5-3500u",
+    "brand": "AMD",
+    "name": "Ryzen 5 3500U",
+    "aliases": ["R5 3500U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2019-01",
+    "architecture": "Zen+ (Picasso)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 2.1, "boost": 3.7 },
+    "power_w": { "base": 15 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 48, "multi": 23 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-5-3500x",
+    "brand": "AMD",
+    "name": "Ryzen 5 3500X",
+    "aliases": ["R5 3500X"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2019-10",
+    "architecture": "Zen 2 (Matisse)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 6 },
+    "clocks_ghz": { "base": 3.6, "boost": 4.1 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 64, "multi": 51 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-5-3550h",
+    "brand": "AMD",
+    "name": "Ryzen 5 3550H",
+    "aliases": ["R5 3550H"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2019-01",
+    "architecture": "Zen+ (Picasso)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 2.1, "boost": 3.7 },
+    "power_w": { "base": 35 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 48, "multi": 29 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-5-3580u",
+    "brand": "AMD",
+    "name": "Ryzen 5 3580U",
+    "aliases": ["R5 3580U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2019-10",
+    "architecture": "Zen+ (Picasso)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 2.1, "boost": 3.7 },
+    "power_w": { "base": 15 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 48, "multi": 23 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-5-3600",
+    "brand": "AMD",
+    "name": "Ryzen 5 3600",
+    "aliases": ["R5 3600"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2019-07",
+    "architecture": "Zen 2 (Matisse)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.6, "boost": 4.2 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 66, "multi": 66 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-5-3600x",
+    "brand": "AMD",
+    "name": "Ryzen 5 3600X",
+    "aliases": ["R5 3600X"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2019-07",
+    "architecture": "Zen 2 (Matisse)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.8, "boost": 4.4 },
+    "power_w": { "base": 95 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 69, "multi": 72 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-5-3600xt",
+    "brand": "AMD",
+    "name": "Ryzen 5 3600XT",
+    "aliases": ["R5 3600XT"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2020-07",
+    "architecture": "Zen 2 (Matisse)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.8, "boost": 4.5 },
+    "power_w": { "base": 95 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 71, "multi": 74 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-5-4500",
+    "brand": "AMD",
+    "name": "Ryzen 5 4500",
+    "aliases": ["R5 4500"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2022-04",
+    "architecture": "Zen 2 (Renoir)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.6, "boost": 4.1 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 64, "multi": 64 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-5-4500u",
+    "brand": "AMD",
+    "name": "Ryzen 5 4500U",
+    "aliases": ["R5 4500U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2020-03",
+    "architecture": "Zen 2 (Renoir)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 6 },
+    "clocks_ghz": { "base": 2.3, "boost": 4 },
+    "power_w": { "base": 10, "max": 25 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 60, "multi": 33 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-5-4600g",
+    "brand": "AMD",
+    "name": "Ryzen 5 4600G",
+    "aliases": ["R5 4600G"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2020-04",
+    "architecture": "Zen 2 (Renoir)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.7, "boost": 4.2 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 66, "multi": 66 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-5-4600ge",
+    "brand": "AMD",
+    "name": "Ryzen 5 4600GE",
+    "aliases": ["R5 4600GE"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2020-07",
+    "architecture": "Zen 2 (Renoir)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3.3, "boost": 4.2 },
+    "power_w": { "base": 35 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 66, "multi": 66 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-5-4600h",
+    "brand": "AMD",
+    "name": "Ryzen 5 4600H",
+    "aliases": ["R5 4600H"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2020-03",
+    "architecture": "Zen 2 (Renoir)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3, "boost": 4 },
+    "power_w": { "base": 35, "max": 54 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 60, "multi": 53 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-5-4600hs",
+    "brand": "AMD",
+    "name": "Ryzen 5 4600HS",
+    "aliases": ["R5 4600HS"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2020-03",
+    "architecture": "Zen 2 (Renoir)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 3, "boost": 4 },
+    "power_w": { "base": 35 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 60, "multi": 53 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-5-4600u",
+    "brand": "AMD",
+    "name": "Ryzen 5 4600U",
+    "aliases": ["R5 4600U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2020-03",
+    "architecture": "Zen 2 (Renoir)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 2.1, "boost": 4 },
+    "power_w": { "base": 10, "max": 25 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 60, "multi": 41 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-5-4680u",
+    "brand": "AMD",
+    "name": "Ryzen 5 4680U",
+    "aliases": ["R5 4680U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2021-04",
+    "architecture": "Zen 2 (Renoir)",
+    "cores": { "performance": 6, "efficiency": 0, "threads": 12 },
+    "clocks_ghz": { "base": 2.1, "boost": 4 },
+    "power_w": { "base": 10, "max": 25 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 60, "multi": 41 },
     "score_meta": { "method": "estimated" }
   },
   {
@@ -1703,6 +2329,82 @@
     "score_meta": { "method": "estimated" }
   },
   {
+    "id": "amd-ryzen-5-pro-3350g",
+    "brand": "AMD",
+    "name": "Ryzen 5 PRO 3350G",
+    "aliases": ["R5 PRO 3350G"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2020-07",
+    "architecture": "Zen+ (Picasso)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 3.6, "boost": 4 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 55, "multi": 37 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-5-pro-3350ge",
+    "brand": "AMD",
+    "name": "Ryzen 5 PRO 3350GE",
+    "aliases": ["R5 PRO 3350GE"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2020-07",
+    "architecture": "Zen+ (Picasso)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 4 },
+    "clocks_ghz": { "base": 3.3, "boost": 3.9 },
+    "power_w": { "base": 35 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 54, "multi": 29 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-5-pro-3400g",
+    "brand": "AMD",
+    "name": "Ryzen 5 PRO 3400G",
+    "aliases": ["R5 PRO 3400G"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2019-09",
+    "architecture": "Zen+ (Picasso)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 3.7, "boost": 4.2 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 58, "multi": 38 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-5-pro-3400ge",
+    "brand": "AMD",
+    "name": "Ryzen 5 PRO 3400GE",
+    "aliases": ["R5 PRO 3400GE"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2019-09",
+    "architecture": "Zen+ (Picasso)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 3.3, "boost": 4 },
+    "power_w": { "base": 35 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 55, "multi": 37 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
     "id": "amd-ryzen-5-pro-5645",
     "brand": "AMD",
     "name": "Ryzen 5 PRO 5645",
@@ -1953,6 +2655,291 @@
       "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
     ],
     "scores": { "single": 95, "multi": 123 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-7-3700c",
+    "brand": "AMD",
+    "name": "Ryzen 7 3700C",
+    "aliases": ["R7 3700C"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2020-09",
+    "architecture": "Zen+ (Picasso)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 2.3, "boost": 4 },
+    "power_w": { "base": 15 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 52, "multi": 25 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-7-3700u",
+    "brand": "AMD",
+    "name": "Ryzen 7 3700U",
+    "aliases": ["R7 3700U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2019-01",
+    "architecture": "Zen+ (Picasso)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 2.3, "boost": 4 },
+    "power_w": { "base": 15 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 52, "multi": 25 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-7-3700x",
+    "brand": "AMD",
+    "name": "Ryzen 7 3700X",
+    "aliases": ["R7 3700X"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2019-07",
+    "architecture": "Zen 2 (Matisse)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.6, "boost": 4.4 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 69, "multi": 92 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-7-3750h",
+    "brand": "AMD",
+    "name": "Ryzen 7 3750H",
+    "aliases": ["R7 3750H"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2019-01",
+    "architecture": "Zen+ (Picasso)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 2.3, "boost": 4 },
+    "power_w": { "base": 35 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 52, "multi": 31 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-7-3780u",
+    "brand": "AMD",
+    "name": "Ryzen 7 3780U",
+    "aliases": ["R7 3780U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2019-10",
+    "architecture": "Zen+ (Picasso)",
+    "cores": { "performance": 4, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 2.3, "boost": 4 },
+    "power_w": { "base": 15 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 52, "multi": 25 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-7-3800x",
+    "brand": "AMD",
+    "name": "Ryzen 7 3800X",
+    "aliases": ["R7 3800X"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2019-07",
+    "architecture": "Zen 2 (Matisse)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.9, "boost": 4.5 },
+    "power_w": { "base": 105 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 71, "multi": 98 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-7-3800xt",
+    "brand": "AMD",
+    "name": "Ryzen 7 3800XT",
+    "aliases": ["R7 3800XT"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2020-07",
+    "architecture": "Zen 2 (Matisse)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.9, "boost": 4.7 },
+    "power_w": { "base": 105 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 74, "multi": 103 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-7-4700g",
+    "brand": "AMD",
+    "name": "Ryzen 7 4700G",
+    "aliases": ["R7 4700G"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2020-07",
+    "architecture": "Zen 2 (Renoir)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.6, "boost": 4.4 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 69, "multi": 92 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-7-4700ge",
+    "brand": "AMD",
+    "name": "Ryzen 7 4700GE",
+    "aliases": ["R7 4700GE"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2020-07",
+    "architecture": "Zen 2 (Renoir)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.1, "boost": 4.3 },
+    "power_w": { "base": 35 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 67, "multi": 90 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-7-4700le",
+    "brand": "AMD",
+    "name": "Ryzen 7 4700LE",
+    "aliases": ["R7 4700LE"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2026-03",
+    "architecture": "Zen 2 (Renoir)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.6, "boost": 4.2 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 66, "multi": 88 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-7-4700u",
+    "brand": "AMD",
+    "name": "Ryzen 7 4700U",
+    "aliases": ["R7 4700U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2020-03",
+    "architecture": "Zen 2 (Renoir)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 8 },
+    "clocks_ghz": { "base": 2, "boost": 4.1 },
+    "power_w": { "base": 10, "max": 25 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 61, "multi": 44 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-7-4800h",
+    "brand": "AMD",
+    "name": "Ryzen 7 4800H",
+    "aliases": ["R7 4800H"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2020-03",
+    "architecture": "Zen 2 (Renoir)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 2.9, "boost": 4.2 },
+    "power_w": { "base": 35, "max": 54 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 63, "multi": 74 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-7-4800hs",
+    "brand": "AMD",
+    "name": "Ryzen 7 4800HS",
+    "aliases": ["R7 4800HS"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2020-03",
+    "architecture": "Zen 2 (Renoir)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 2.9, "boost": 4.2 },
+    "power_w": { "base": 35 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 63, "multi": 74 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-7-4800u",
+    "brand": "AMD",
+    "name": "Ryzen 7 4800U",
+    "aliases": ["R7 4800U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2020-03",
+    "architecture": "Zen 2 (Renoir)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 1.8, "boost": 4.2 },
+    "power_w": { "base": 10, "max": 25 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 63, "multi": 57 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-7-4980u",
+    "brand": "AMD",
+    "name": "Ryzen 7 4980U",
+    "aliases": ["R7 4980U"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2021-04",
+    "architecture": "Zen 2 (Renoir)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 2, "boost": 4.4 },
+    "power_w": { "base": 10, "max": 25 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 66, "multi": 60 },
     "score_meta": { "method": "estimated" }
   },
   {
@@ -3027,6 +4014,120 @@
       "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
     ],
     "scores": { "single": 97, "multi": 126 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-9-3900",
+    "brand": "AMD",
+    "name": "Ryzen 9 3900",
+    "aliases": ["R9 3900"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2019-10",
+    "architecture": "Zen 2 (Matisse)",
+    "cores": { "performance": 12, "efficiency": 0, "threads": 24 },
+    "clocks_ghz": { "base": 3.1, "boost": 4.3 },
+    "power_w": { "base": 65 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 67, "multi": 135 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-9-3900x",
+    "brand": "AMD",
+    "name": "Ryzen 9 3900X",
+    "aliases": ["R9 3900X"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2019-07",
+    "architecture": "Zen 2 (Matisse)",
+    "cores": { "performance": 12, "efficiency": 0, "threads": 24 },
+    "clocks_ghz": { "base": 3.8, "boost": 4.6 },
+    "power_w": { "base": 105 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 72, "multi": 151 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-9-3900xt",
+    "brand": "AMD",
+    "name": "Ryzen 9 3900XT",
+    "aliases": ["R9 3900XT"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2020-07",
+    "architecture": "Zen 2 (Matisse)",
+    "cores": { "performance": 12, "efficiency": 0, "threads": 24 },
+    "clocks_ghz": { "base": 3.8, "boost": 4.7 },
+    "power_w": { "base": 105 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 74, "multi": 154 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-9-3950x",
+    "brand": "AMD",
+    "name": "Ryzen 9 3950X",
+    "aliases": ["R9 3950X"],
+    "platform": "desktop",
+    "isa": "x86",
+    "release": "2019-11",
+    "architecture": "Zen 2 (Matisse)",
+    "cores": { "performance": 16, "efficiency": 0, "threads": 32 },
+    "clocks_ghz": { "base": 3.5, "boost": 4.7 },
+    "power_w": { "base": 105 },
+    "socket": "AM4",
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 74, "multi": 206 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-9-4900h",
+    "brand": "AMD",
+    "name": "Ryzen 9 4900H",
+    "aliases": ["R9 4900H"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2020-03",
+    "architecture": "Zen 2 (Renoir)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3.3, "boost": 4.4 },
+    "power_w": { "base": 35, "max": 54 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 66, "multi": 78 },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-ryzen-9-4900hs",
+    "brand": "AMD",
+    "name": "Ryzen 9 4900HS",
+    "aliases": ["R9 4900HS"],
+    "platform": "mobile",
+    "isa": "x86",
+    "release": "2020-03",
+    "architecture": "Zen 2 (Renoir)",
+    "cores": { "performance": 8, "efficiency": 0, "threads": 16 },
+    "clocks_ghz": { "base": 3, "boost": 4.3 },
+    "power_w": { "base": 35 },
+    "socket": null,
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_Ryzen_processors&oldid=1386451693"
+    ],
+    "scores": { "single": 64, "multi": 76 },
     "score_meta": { "method": "estimated" }
   },
   {

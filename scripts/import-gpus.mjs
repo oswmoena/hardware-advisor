@@ -19,7 +19,15 @@ const INTEL = "list-of-intel-graphics-processing-units";
 
 // `occurrence`: algunas páginas repiten el nombre de sección (escritorio y luego laptop).
 const RTX = (upscaling, fg) => ({ ray_tracing: true, upscaling, frame_generation: fg });
+const NO_RT = (upscaling, fg) => ({ ray_tracing: false, upscaling, frame_generation: fg });
 const RULES = [
+  // 2019 en adelante: Turing (GTX 16 y RTX 20) y RDNA 1 (RX 5000)
+  { brand: "NVIDIA", file: NV, section: /^GeForce GTX 16 series$/, occurrence: 1, type: "desktop", arch: "Turing", features: NO_RT([], false) },
+  { brand: "NVIDIA", file: NV, section: /^GeForce 16 series$/, occurrence: 1, type: "mobile", arch: "Turing", features: NO_RT([], false) },
+  { brand: "NVIDIA", file: NV, section: /^GeForce RTX 20 series$/, occurrence: 1, type: "desktop", arch: "Turing", features: RTX(["DLSS"], false) },
+  { brand: "NVIDIA", file: NV, section: /^GeForce RTX 20 series$/, occurrence: 2, type: "mobile", arch: "Turing", features: RTX(["DLSS"], false) },
+  { brand: "AMD", file: AMD, section: /^Radeon RX 5000 series$/, occurrence: 1, type: "desktop", arch: "RDNA 1", features: NO_RT(["FSR"], true) },
+  { brand: "AMD", file: AMD, section: /^Radeon RX 5000M series$/, occurrence: 1, type: "mobile", arch: "RDNA 1", features: NO_RT(["FSR"], true) },
   { brand: "NVIDIA", file: NV, section: /^GeForce RTX 30 series$/, occurrence: 1, type: "desktop", arch: "Ampere", features: RTX(["DLSS"], false) },
   { brand: "NVIDIA", file: NV, section: /^GeForce RTX 40 series$/, occurrence: 1, type: "desktop", arch: "Ada Lovelace", features: RTX(["DLSS"], true) },
   { brand: "NVIDIA", file: NV, section: /^GeForce RTX 50 series$/, occurrence: 1, type: "desktop", arch: "Blackwell", features: RTX(["DLSS"], true) },
@@ -55,8 +63,10 @@ function gpuName(rule, row, headers) {
   let name = clean(row[col(/^Model/i)]);
   if (rule.namePrefix && !name.startsWith(rule.namePrefix.trim())) name = rule.namePrefix + name;
   name = name
-    .replace(/\s*\((Navi|GA|AD|GB)[^)]*\)/gi, "") // código de chip: "Radeon RX 7600 (Navi 33)"
+    .replace(/^Geforce\b/, "GeForce") // así aparece en algunas tablas de Wikipedia
+    .replace(/\s*\((Navi|GA|AD|GB|TU)[^)]*\)/gi, "") // código de chip: "Radeon RX 7600 (Navi 33)"
     .replace(/\s*Mobile\s*\/\s*Laptop/i, " Laptop")
+    .replace(/\s*\(Laptop\)/i, " Laptop")
     .replace(/\s+Mobile$/i, " Laptop")
     .trim();
   if (rule.type === "mobile" && rule.brand === "NVIDIA" && !/Laptop$/.test(name)) name += " Laptop";
@@ -73,6 +83,8 @@ function rowToGpu(rule, headers, row, source) {
   if (!name || /^(—|-|n\/a)/i.test(name)) return { skip: "sin nombre" };
   // Versiones que no se venden sueltas: OEM, solo China ("D", "D V2") o integradas en consolas.
   if (/\bOEM\b|Steam Machine| D( V2)?$/i.test(name)) return { skip: "no se vende al público" };
+  // La GTX 1630 es solo de escritorio; Wikipedia la repite por error en la tabla de laptops.
+  if (rule.type === "mobile" && /GTX 1630/.test(name)) return { skip: "no existe en laptops" };
 
   const release = parseRelease(cell((h) => /^(launch|release)/i.test(h)));
   if (!release) return { skip: "sin fecha" };
@@ -101,6 +113,7 @@ function rowToGpu(rule, headers, row, source) {
   const fpIdx = find((h) => /single|fp32/i.test(h) && !/double/i.test(h));
   let tflops = fpIdx >= 0 ? Math.max(...allNums(row[fpIdx]), 0) : 0;
   if (fpIdx >= 0 && /GFLOPS/i.test(headers[fpIdx])) tflops /= 1000;
+  if (tflops > 300) tflops /= 1000; // fila escrita en GFLOPS dentro de una columna de TFLOPS
 
   if (rule.type !== "integrated" && !gb) return { skip: "sin VRAM" };
 

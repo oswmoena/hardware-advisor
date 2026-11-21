@@ -15,6 +15,253 @@
     ]
   },
   {
+    "id": "amd-radeon-rx-5300",
+    "brand": "AMD",
+    "name": "Radeon RX 5300",
+    "aliases": ["RX 5300"],
+    "type": "desktop",
+    "release": "2020-08",
+    "architecture": "RDNA 1",
+    "vram": { "gb": 3, "type": "GDDR6", "bus_bits": 96 },
+    "power_w": { "min": 100, "max": 100 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 4.63,
+    "features": { "ray_tracing": false, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 55, "at_max_power": 55 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-5300-xt",
+    "brand": "AMD",
+    "name": "Radeon RX 5300 XT",
+    "aliases": ["RX 5300 XT"],
+    "type": "desktop",
+    "release": "2019-10",
+    "architecture": "RDNA 1",
+    "vram": { "gb": 4, "type": "GDDR5", "bus_bits": 128 },
+    "power_w": { "min": 100, "max": 100 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 5.2,
+    "features": { "ray_tracing": false, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 60, "at_max_power": 60 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-5300m",
+    "brand": "AMD",
+    "name": "Radeon RX 5300M",
+    "aliases": ["RX 5300M"],
+    "type": "mobile",
+    "release": "2019-11",
+    "architecture": "RDNA 1",
+    "vram": { "gb": 3, "type": "GDDR6", "bus_bits": 96 },
+    "power_w": { "min": 65, "max": 65 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 4.07,
+    "features": { "ray_tracing": false, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 45, "at_max_power": 45 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-5500",
+    "brand": "AMD",
+    "name": "Radeon RX 5500",
+    "aliases": ["RX 5500"],
+    "type": "desktop",
+    "release": "2019-10",
+    "architecture": "RDNA 1",
+    "vram": { "gb": 4, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 150, "max": 150 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 5.2,
+    "features": { "ray_tracing": false, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 60, "at_max_power": 60 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-5500-xt",
+    "brand": "AMD",
+    "name": "Radeon RX 5500 XT",
+    "aliases": ["RX 5500 XT"],
+    "type": "desktop",
+    "release": "2019-12",
+    "architecture": "RDNA 1",
+    "vram": { "gb": 4, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 130, "max": 130 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 5.2,
+    "features": { "ray_tracing": false, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 60, "at_max_power": 60 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-5500m",
+    "brand": "AMD",
+    "name": "Radeon RX 5500M",
+    "aliases": ["RX 5500M"],
+    "type": "mobile",
+    "release": "2019-10",
+    "architecture": "RDNA 1",
+    "vram": { "gb": 4, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 85, "max": 85 },
+    "pcie": { "gen": 4, "lanes": 8 },
+    "fp32_tflops": 4.63,
+    "features": { "ray_tracing": false, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 50, "at_max_power": 50 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-5600",
+    "brand": "AMD",
+    "name": "Radeon RX 5600",
+    "aliases": ["RX 5600"],
+    "type": "desktop",
+    "release": "2020-01",
+    "architecture": "RDNA 1",
+    "vram": { "gb": 6, "type": "GDDR6", "bus_bits": 192 },
+    "power_w": { "min": 150, "max": 150 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 6.39,
+    "features": { "ray_tracing": false, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 69, "at_max_power": 69 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-5600-xt",
+    "brand": "AMD",
+    "name": "Radeon RX 5600 XT",
+    "aliases": ["RX 5600 XT"],
+    "type": "desktop",
+    "release": "2020-01",
+    "architecture": "RDNA 1",
+    "vram": { "gb": 6, "type": "GDDR6", "bus_bits": 192 },
+    "power_w": { "min": 160, "max": 160 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 7.19,
+    "features": { "ray_tracing": false, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 75, "at_max_power": 75 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-5600m",
+    "brand": "AMD",
+    "name": "Radeon RX 5600M",
+    "aliases": ["RX 5600M"],
+    "type": "mobile",
+    "release": "2020-07",
+    "architecture": "RDNA 1",
+    "vram": { "gb": 6, "type": "GDDR6", "bus_bits": 192 },
+    "power_w": { "min": 85, "max": 85 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 5.83,
+    "features": { "ray_tracing": false, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 58, "at_max_power": 58 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-5700",
+    "brand": "AMD",
+    "name": "Radeon RX 5700",
+    "aliases": ["RX 5700"],
+    "type": "desktop",
+    "release": "2019-07",
+    "architecture": "RDNA 1",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 180, "max": 180 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 7.95,
+    "features": { "ray_tracing": false, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 81, "at_max_power": 81 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-5700-xt",
+    "brand": "AMD",
+    "name": "Radeon RX 5700 XT",
+    "aliases": ["RX 5700 XT"],
+    "type": "desktop",
+    "release": "2019-07",
+    "architecture": "RDNA 1",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 225, "max": 225 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 9.75,
+    "features": { "ray_tracing": false, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 93, "at_max_power": 93 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-5700-xt-50th-anniversary-edition",
+    "brand": "AMD",
+    "name": "Radeon RX 5700 XT 50th Anniversary Edition",
+    "aliases": ["RX 5700 XT 50th Anniversary Edition"],
+    "type": "desktop",
+    "release": "2019-07",
+    "architecture": "RDNA 1",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 235, "max": 235 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 10.14,
+    "features": { "ray_tracing": false, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 96, "at_max_power": 96 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "amd-radeon-rx-5700m",
+    "brand": "AMD",
+    "name": "Radeon RX 5700M",
+    "aliases": ["RX 5700M"],
+    "type": "mobile",
+    "release": "2020-03",
+    "architecture": "RDNA 1",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 120, "max": 120 },
+    "pcie": { "gen": 4, "lanes": 16 },
+    "fp32_tflops": 7.93,
+    "features": { "ray_tracing": false, "upscaling": ["FSR"], "frame_generation": true },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_AMD_graphics_processing_units&oldid=1385626444"
+    ],
+    "scores": { "gaming": { "at_min_power": 73, "at_max_power": 73 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
     "id": "amd-radeon-rx-6300",
     "brand": "AMD",
     "name": "Radeon RX 6300",

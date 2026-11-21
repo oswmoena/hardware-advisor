@@ -21,6 +21,13 @@ const verbose = process.argv.includes("--verbose");
 // Cada regla: página (archivo en data/raw), regex de la sección, y datos que la
 // tabla no trae. `release` es el año por defecto si la fila no tiene fecha.
 const INTEL = [
+  // 2019-2020: 9.ª y 10.ª gen (núcleos Skylake mejorados) e Ice Lake
+  { file: "coffee-lake", section: /^Coffee Lake-S \(desktop processors\)$/, platform: "desktop", socket: "LGA1151", arch: "Coffee Lake Refresh", release: "2019" },
+  { file: "coffee-lake", section: /Coffee Lake-H Refresh/, platform: "mobile", arch: "Coffee Lake Refresh", release: "2019" },
+  { file: "comet-lake", section: /^Comet Lake-S$/, platform: "desktop", socket: "LGA1200", arch: "Comet Lake", release: "2020" },
+  { file: "comet-lake", section: /^Desktop processors$/, platform: "desktop", socket: "LGA1200", arch: "Comet Lake Refresh", release: "2021" },
+  { file: "comet-lake", section: /^Comet Lake-(H|U)/, platform: "mobile", arch: "Comet Lake", release: "2020" },
+  { file: "ice-lake-microprocessor", section: /^Ice Lake \(mobile\)$/, platform: "mobile", arch: "Ice Lake", release: "2019" },
   { file: "tiger-lake", section: /^Mobile processors \(Tiger Lake-H\)$/, platform: "mobile", arch: "Tiger Lake", release: "2021" },
   { file: "tiger-lake", section: /Tiger Lake-H35/, platform: "mobile", arch: "Tiger Lake", release: "2021" },
   { file: "tiger-lake", section: /^Mobile processors \(UP3-class\)$/, platform: "mobile", arch: "Tiger Lake", release: "2020" },
@@ -43,6 +50,12 @@ const INTEL = [
 
 const RYZEN = "list-of-amd-ryzen-processors";
 const AMD = [
+  // 2019-2020: Ryzen 3000 (Zen 2 y APUs Zen+) y Ryzen 4000 (Renoir)
+  { section: /^Matisse \(3000 series/, platform: "desktop", socket: "AM4", release: "2019" },
+  { section: /^Picasso \(3000 series with Radeon/, platform: "desktop", socket: "AM4", release: "2019" },
+  { section: /^Renoir \(4000 series/, platform: "desktop", socket: "AM4", release: "2020" },
+  { section: /^Picasso \(Zen\+/, platform: "mobile", release: "2019" },
+  { section: /^Renoir \(Zen 2/, platform: "mobile", release: "2020" },
   { section: /^Vermeer \(5000 series/, platform: "desktop", socket: "AM4" },
   { section: /^Cezanne \(5000 series/, platform: "desktop", socket: "AM4", release: "2021" },
   { section: /^Raphael \(7000 series/, platform: "desktop", socket: "AM5" },
@@ -84,6 +97,7 @@ function rowToCpu(headers, row, rule, brand, source) {
   // también está, ambos generan el mismo id y se deduplican.
   const model = clean(first((h) => /^(Model|SKU)( |$)|branding and model \(2\)/i.test(h))).replace(/\s*\(with IPU\)/i, "");
   if (!branding || !model || /^(—|-|n\/a)/i.test(model)) return { skip: "sin nombre" };
+  if (/^Xeon/i.test(branding)) return { skip: "servidor / estación de trabajo" };
   const name = /^Core i\d$/.test(branding) ? `${branding}-${model}` : `${branding} ${model}`;
 
   // Núcleos
@@ -162,11 +176,11 @@ function rowToCpu(headers, row, rule, brand, source) {
   return { cpu };
 }
 
-// "Raphael (7000 series, Zen 4/RDNA2 based)" → "Zen 4 (Raphael)"
+// "Raphael (7000 series, Zen 4/RDNA2 based)" → "Zen 4 (Raphael)"; "Picasso (…, Zen+/GCN5 based)" → "Zen+ (Picasso)"
 function amdArch(section) {
   const codename = section.split(" (")[0].trim();
-  const zen = section.match(/Zen ?(\d)(\+?)/);
-  return zen ? `Zen ${zen[1]}${zen[2]} (${codename})` : codename;
+  const zen = section.match(/Zen ?(\d)?(\+)?/);
+  return zen ? `Zen${zen[1] ? ` ${zen[1]}` : ""}${zen[2] ?? ""} (${codename})` : codename;
 }
 
 // --- Importación ------------------------------------------------------------
