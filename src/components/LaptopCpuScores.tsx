@@ -4,8 +4,9 @@ import Link from "next/link";
 import { useId, useMemo, useState } from "react";
 import type { CPU, GPU } from "@/lib/data-types.ts";
 import { adjustCpuForMemory, defaultRamGb, laptopMemory, memoryLabel } from "@/lib/memory.ts";
-import { laptopCombo, type Balance, type Resolution } from "@/lib/pairing.ts";
+import { laptopCombo, suggestLaptopGpu, type Balance, type Resolution } from "@/lib/pairing.ts";
 import { scoreSystem, type ProfilesConfig } from "@/lib/scoring.ts";
+import { listEs } from "@/lib/text.ts";
 import { ScoreCard } from "./ScoreCard.tsx";
 
 const RESOLUTIONS: [Resolution, string][] = [
@@ -39,7 +40,12 @@ export function LaptopCpuScores({ cpu, igpu, gpus, config }: { cpu: CPU; igpu: G
   const memory = useMemo(() => laptopMemory(cpu), [cpu]);
   const [ramGb, setRamGb] = useState(() => defaultRamGb(memory));
   const [memLabel, setMemLabel] = useState(memoryLabel(memory.default));
-  const [gpuId, setGpuId] = useState("");
+  // GPU común que mejor se equilibra con este procesador (con la memoria típica), preseleccionada como ejemplo.
+  const suggested = useMemo(
+    () => suggestLaptopGpu(adjustCpuForMemory(cpu, memory.default), gpus, config),
+    [cpu, memory, gpus, config],
+  );
+  const [gpuId, setGpuId] = useState(() => suggested?.id ?? "");
   const [tgp, setTgp] = useState<number | "">("");
   const [resolution, setResolution] = useState<Resolution>("1080p");
   const id = useId();
@@ -61,7 +67,8 @@ export function LaptopCpuScores({ cpu, igpu, gpus, config }: { cpu: CPU; igpu: G
   const results = combo ? [...usage, combo.gaming] : usage;
   const recommended = results.filter((r) => r.score !== null && r.score >= 6.5).map((r) => r.label.toLowerCase());
   const memText = `${ramGb} GB ${memoryLabel(selectedMemory)}`;
-  const setupText = gpu ? `${memText} y ${gpu.name}` : memText;
+  const isSuggested = gpu !== null && gpu.id === suggested?.id;
+  const setupText = gpu ? `${memText} y ${gpu.name}${isSuggested ? " (sugerida)" : ""}` : memText;
 
   // GPUs agrupadas por marca, de mayor a menor rendimiento.
   const groups = useMemo(() => {
@@ -121,14 +128,26 @@ export function LaptopCpuScores({ cpu, igpu, gpus, config }: { cpu: CPU; igpu: G
                   setGpuId(e.target.value);
                   setTgp("");
                 }}
+                aria-describedby={`${id}-gpu-hint`}
               >
                 <option value="">Sin GPU dedicada</option>
                 {groups.map(([brand, list]) => (
                   <optgroup key={brand} label={brand}>
-                    {list.map((g) => <option key={g.id} value={g.id}>{g.name}</option>)}
+                    {list.map((g) => (
+                      <option key={g.id} value={g.id}>
+                        {g.name}{g.id === suggested?.id ? " (sugerida)" : ""}
+                      </option>
+                    ))}
                   </optgroup>
                 ))}
               </select>
+              <span id={`${id}-gpu-hint`} className="hint">
+                {suggested
+                  ? isSuggested
+                    ? "Preseleccionamos una GPU común que se equilibra bien con este procesador. Cámbiala por la de la laptop que estás mirando."
+                    : `Sugerida para este procesador: ${suggested.name}.`
+                  : "Los procesadores de bajo consumo rara vez vienen con GPU dedicada."}
+              </span>
             </div>
             {gpu && (
               <div className="field">
@@ -166,7 +185,7 @@ export function LaptopCpuScores({ cpu, igpu, gpus, config }: { cpu: CPU; igpu: G
 
       <p role="status" className="recommended-line">
         {recommended.length
-          ? <>Con {setupText}: <strong>recomendable para {recommended.join(", ")}</strong>.</>
+          ? <>Con {setupText}: <strong>recomendable para {listEs(recommended)}</strong>.</>
           : <>Con {setupText}: no es especialmente recomendable para programar, ofimática exigente ni juegos.</>}
       </p>
 

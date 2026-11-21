@@ -3,7 +3,18 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import type { CPU, GPU } from "./data-types.ts";
 import type { ProfilesConfig } from "./scoring.ts";
-import { buildWarnings, defaultBuild, laptopCombo, pairGpu, ramSpeedFactor, rankGpus, type BuildMock } from "./pairing.ts";
+import { buildWarnings, defaultBuild, laptopCombo, pairGpu, ramSpeedFactor, rankGpus, suggestLaptopGpu, type BuildMock } from "./pairing.ts";
+
+test("sugerencia de GPU de laptop: la común más equilibrada; ninguna en CPUs de bajo consumo", () => {
+  const common = (n: string, max: number) =>
+    gpu(`nvidia-geforce-rtx-${n}-laptop`, 0, { type: "mobile", release: "2023", power_w: { min: 35, max: 115 }, scores: { gaming: { at_min_power: max * 0.5, at_max_power: max } } });
+  const list = [common("4050", 77), common("4060", 87), common("4070", 110), gpu("rara-laptop", 0, { type: "mobile", scores: { gaming: { at_min_power: 60, at_max_power: 90 } } })];
+  const hCpu = cpu({ platform: "mobile", socket: null, power_w: { base: 45 }, scores: { single: 95, multi: 115 } });
+  const uCpu = cpu({ platform: "mobile", socket: null, power_w: { base: 15 }, scores: { single: 82, multi: 53 } });
+  const suggested = suggestLaptopGpu(hCpu, list, config);
+  assert.ok(suggested && suggested.id !== "rara-laptop", "solo GPUs comunes");
+  assert.equal(suggestLaptopGpu(uCpu, list, config), null);
+});
 
 const laptopCpu = (): CPU => cpu({ platform: "mobile", socket: null, scores: { single: 95, multi: 115 } });
 const laptopGpu = (over: Partial<GPU> = {}): GPU =>

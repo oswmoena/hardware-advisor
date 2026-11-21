@@ -206,6 +206,38 @@ export function laptopCombo(cpu: CPU, gpu: GPU, setup: LaptopSetup, config: Prof
   return { gpuIndex: index.value, gpuRange: index.powerUnknown ? index.range : undefined, effective, ratio, balance, gaming: { ...gaming, warnings }, warnings };
 }
 
+/** GPUs de laptop más comunes en el mercado, candidatas a sugerencia. */
+const COMMON_LAPTOP_GPUS = ["3050", "3050-ti", "3060", "4050", "4060", "4070", "5050", "5060", "5070"].map(
+  (n) => `nvidia-geforce-rtx-${n}-laptop`,
+);
+/** Equilibrio buscado para la sugerencia (con TGP desconocido, a 1080p): las HX suelen ir con GPUs de gama alta. */
+const SUGGESTION_TARGET_RATIO = 0.5;
+const SUGGESTION_TARGET_RATIO_HX = 0.8;
+const HX_MIN_WATTS = 55;
+/** Por debajo de este consumo base (U, N, Lunar Lake) casi nunca hay GPU dedicada. */
+const MIN_CPU_WATTS_FOR_DGPU = 20;
+
+/**
+ * GPU de laptop común que mejor se equilibra con esta CPU, para preseleccionarla como ejemplo.
+ * null si la CPU es de bajo consumo (rara vez trae GPU dedicada) o no hay candidatas puntuadas.
+ */
+export function suggestLaptopGpu(cpu: CPU, gpus: GPU[], config: ProfilesConfig): GPU | null {
+  const watts = cpu.power_w?.base ?? 45;
+  if (watts < MIN_CPU_WATTS_FOR_DGPU) return null;
+  const target = watts >= HX_MIN_WATTS ? SUGGESTION_TARGET_RATIO_HX : SUGGESTION_TARGET_RATIO;
+  const candidates = gpus
+    .filter((g) => COMMON_LAPTOP_GPUS.includes(g.id))
+    .map((gpu) => ({ gpu, combo: laptopCombo(cpu, gpu, { ramGb: 16, resolution: "1080p" }, config) }))
+    .filter((c) => c.combo !== null)
+    .map(({ gpu, combo }) => ({ gpu, distance: Math.abs(combo!.ratio - target) }));
+  if (!candidates.length) return null;
+  const minDistance = Math.min(...candidates.map((c) => c.distance));
+  // Entre las que quedan a ±0,05 del mejor equilibrio, la más nueva.
+  return candidates
+    .filter((c) => c.distance <= minDistance + 0.05)
+    .sort((a, b) => b.gpu.release.localeCompare(a.gpu.release) || a.distance - b.distance)[0].gpu;
+}
+
 /** Advertencias del equipo que no dependen de la GPU (p. ej. poca RAM). */
 export function buildWarnings(build: BuildMock, config: ProfilesConfig): string[] {
   return config.profiles.gaming.rules
