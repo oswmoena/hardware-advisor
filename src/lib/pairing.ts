@@ -1,7 +1,7 @@
 // Emparejamiento CPU ↔ GPU para un PC de escritorio: qué tarjetas gráficas aprovechan mejor
 // un procesador, con un equipo de ejemplo editable. Lógica pura, sin E/S.
 import type { CPU, GPU } from "./data-types.ts";
-import { compare, scoreSystem, type ProfileResult, type ProfilesConfig } from "./scoring.ts";
+import { compare, gpuGamingIndex, scoreSystem, type ProfileResult, type ProfilesConfig } from "./scoring.ts";
 
 export type Resolution = "1080p" | "1440p" | "4k";
 export interface BuildMock {
@@ -149,6 +149,61 @@ export function rankGpus(cpu: CPU, gpus: GPU[], build: BuildMock, config: Profil
       .sort((a, b) => round(b.effective) - round(a.effective) || a.ratio - b.ratio),
     overkill: all.filter((p) => p.balance === "cpu-limited").sort((a, b) => a.ratio - b.ratio),
   };
+}
+
+// --- Laptops ------------------------------------------------------------------
+/** En juegos, la CPU de una laptop comparte presupuesto térmico y de potencia con la GPU. */
+const LAPTOP_CPU_SUSTAINED = 0.8;
+/** Las GPUs de laptop son mucho más modestas: solo es "la GPU es el límite" si queda muy por debajo. */
+const LAPTOP_BALANCED_MIN = 0.4;
+export interface LaptopSetup {
+  ramGb: number;
+  resolution: Resolution;
+  /** TGP de la GPU en esta laptop; undefined si no se conoce. */
+  gpuPowerW?: number;
+}
+export interface LaptopCombo {
+  /** Índice de la GPU a esa potencia (o punto medio si no se conoce). */
+  gpuIndex: number;
+  /** Rango posible del índice cuando el TGP es desconocido. */
+  gpuRange?: [number, number];
+  effective: number;
+  ratio: number;
+  balance: Balance;
+  gaming: ProfileResult;
+  warnings: string[];
+}
+
+/**
+ * Qué tal es la combinación CPU + GPU de una laptop para jugar. `cpu` ya debe venir ajustada por
+ * la memoria de la laptop (adjustCpuForMemory). En laptops no hay fuente ni ranura que elegir:
+ * lo que manda es el TGP con que el fabricante configuró la GPU.
+ */
+export function laptopCombo(cpu: CPU, gpu: GPU, setup: LaptopSetup, config: ProfilesConfig): LaptopCombo | null {
+  const cpuGaming = cpuGamingIndex(cpu);
+  const index = gpuGamingIndex(gpu, setup.gpuPowerW);
+  if (cpuGaming === null || index.value === null) return null;
+
+  const load = RESOLUTION_LOAD[setup.resolution];
+  const gpuAtRes = index.value / load;
+  const cpuCap = cpuGaming * CPU_FEEDS_GPU * LAPTOP_CPU_SUSTAINED;
+  const effective = Math.min(gpuAtRes, cpuCap);
+  const ratio = gpuAtRes / cpuCap;
+  const balance: Balance = ratio > BALANCED_MAX ? "cpu-limited" : ratio < LAPTOP_BALANCED_MIN ? "gpu-limited" : "balanced";
+
+  const effectiveGpu: GPU = { ...gpu, scores: { ...gpu.scores, gaming: { at_min_power: effective, at_max_power: effective } } };
+  const gaming = scoreSystem({ cpu, gpu: effectiveGpu, ramGb: setup.ramGb }, config).find((r) => r.key === "gaming")!;
+
+  const warnings = gaming.warnings.filter((w) => !w.includes("VRAM")); // la de VRAM se evalúa por resolución abajo
+  if (index.powerUnknown && index.range) {
+    warnings.push(
+      `Sin el TGP, usamos un valor intermedio: según la laptop, esta GPU puede rendir entre ${Math.round(index.range[0])} y ${Math.round(index.range[1])} de índice.`,
+    );
+  }
+  if (gpu.vram && gpu.vram.gb < VRAM_MIN[setup.resolution]) {
+    warnings.push(`${gpu.vram.gb} GB de VRAM se quedan cortos en ${setup.resolution} con juegos nuevos.`);
+  }
+  return { gpuIndex: index.value, gpuRange: index.powerUnknown ? index.range : undefined, effective, ratio, balance, gaming: { ...gaming, warnings }, warnings };
 }
 
 /** Advertencias del equipo que no dependen de la GPU (p. ej. poca RAM). */

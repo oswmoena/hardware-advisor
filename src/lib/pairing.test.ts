@@ -3,7 +3,41 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import type { CPU, GPU } from "./data-types.ts";
 import type { ProfilesConfig } from "./scoring.ts";
-import { buildWarnings, defaultBuild, pairGpu, ramSpeedFactor, rankGpus, type BuildMock } from "./pairing.ts";
+import { buildWarnings, defaultBuild, laptopCombo, pairGpu, ramSpeedFactor, rankGpus, type BuildMock } from "./pairing.ts";
+
+const laptopCpu = (): CPU => cpu({ platform: "mobile", socket: null, scores: { single: 95, multi: 115 } });
+const laptopGpu = (over: Partial<GPU> = {}): GPU =>
+  gpu("rtx-laptop", 0, { type: "mobile", vram: { gb: 8 }, power_w: { min: 35, max: 115 }, scores: { gaming: { at_min_power: 45, at_max_power: 87 } }, ...over });
+
+test("laptop: más TGP da mejor nota de juegos; sin TGP se usa el punto medio y se avisa", () => {
+  const low = laptopCombo(laptopCpu(), laptopGpu(), { ramGb: 16, resolution: "1080p", gpuPowerW: 35 }, config)!;
+  const high = laptopCombo(laptopCpu(), laptopGpu(), { ramGb: 16, resolution: "1080p", gpuPowerW: 115 }, config)!;
+  const unknown = laptopCombo(laptopCpu(), laptopGpu(), { ramGb: 16, resolution: "1080p" }, config)!;
+  assert.ok(low.gaming.score! < high.gaming.score!);
+  assert.equal(low.gpuIndex, 45);
+  assert.equal(unknown.gpuIndex, 66);
+  assert.deepEqual(unknown.gpuRange, [45, 87]);
+  assert.ok(unknown.warnings.some((w) => w.includes("TGP")));
+  assert.ok(!high.warnings.some((w) => w.includes("TGP")));
+});
+
+test("laptop: GPU muy potente para la CPU queda limitada; GPU débil queda como límite", () => {
+  const strong = laptopGpu({ scores: { gaming: { at_min_power: 300, at_max_power: 300 } }, power_w: { min: 150, max: 150 } });
+  const weak = laptopGpu({ scores: { gaming: { at_min_power: 40, at_max_power: 40 } }, power_w: { min: 50, max: 50 } });
+  assert.equal(laptopCombo(laptopCpu(), strong, { ramGb: 16, resolution: "1080p" }, config)!.balance, "cpu-limited");
+  assert.equal(laptopCombo(laptopCpu(), weak, { ramGb: 16, resolution: "1080p" }, config)!.balance, "gpu-limited");
+});
+
+test("laptop: una CPU H con una GPU de gama media a TGP alto se considera equilibrada", () => {
+  const combo = laptopCombo(laptopCpu(), laptopGpu(), { ramGb: 16, resolution: "1080p", gpuPowerW: 115 }, config)!;
+  assert.equal(combo.balance, "balanced");
+});
+
+test("laptop: advierte VRAM corta según la resolución y poca RAM", () => {
+  const combo = laptopCombo(laptopCpu(), laptopGpu({ vram: { gb: 8 } }), { ramGb: 8, resolution: "1440p", gpuPowerW: 100 }, config)!;
+  assert.ok(combo.warnings.some((w) => w.includes("VRAM")));
+  assert.ok(combo.warnings.some((w) => w.includes("16 GB")));
+});
 
 const config: ProfilesConfig = JSON.parse(readFileSync(new URL("../../scoring/profiles.json", import.meta.url), "utf8"));
 
