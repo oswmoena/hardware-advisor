@@ -44,6 +44,16 @@ test("laptop: una CPU H con una GPU de gama media a TGP alto se considera equili
   assert.equal(combo.balance, "balanced");
 });
 
+test("laptop: TGP sobre el oficial (Dynamic Boost) se evalúa como el máximo y se avisa", () => {
+  const g = laptopGpu({ power_w: { min: 35, max: 80 }, scores: { gaming: { at_min_power: 32, at_max_power: 51 } } });
+  const atMax = laptopCombo(laptopCpu(), g, { ramGb: 16, resolution: "1080p", gpuPowerW: 80 }, config)!;
+  const boosted = laptopCombo(laptopCpu(), g, { ramGb: 16, resolution: "1080p", gpuPowerW: 96 }, config)!;
+  assert.equal(boosted.gpuIndex, atMax.gpuIndex);
+  assert.equal(boosted.gaming.score, atMax.gaming.score);
+  assert.ok(boosted.warnings.some((w) => w.includes("Dynamic Boost")));
+  assert.ok(!atMax.warnings.some((w) => w.includes("Dynamic Boost")));
+});
+
 test("laptop: advierte VRAM corta según la resolución y poca RAM", () => {
   const combo = laptopCombo(laptopCpu(), laptopGpu({ vram: { gb: 8 } }), { ramGb: 8, resolution: "1440p", gpuPowerW: 100 }, config)!;
   assert.ok(combo.warnings.some((w) => w.includes("VRAM")));
