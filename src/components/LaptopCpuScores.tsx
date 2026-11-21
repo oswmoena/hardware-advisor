@@ -7,6 +7,7 @@ import { adjustCpuForMemory, defaultRamGb, laptopMemory, memoryLabel } from "@/l
 import { laptopCombo, suggestLaptopGpu, type Balance, type Resolution } from "@/lib/pairing.ts";
 import { scoreSystem, type ProfilesConfig } from "@/lib/scoring.ts";
 import { matchGpu } from "@/lib/search.ts";
+import { relative, type Top } from "@/lib/scale.ts";
 import { listEs } from "@/lib/text.ts";
 import { ScoreCard } from "./ScoreCard.tsx";
 
@@ -38,7 +39,9 @@ function tgpSteps(gpu: GPU): number[] {
 }
 
 // Notas por uso de una CPU de laptop con memoria editable y GPU opcional para evaluar la combinación.
-export function LaptopCpuScores({ cpu, igpu, gpus, config }: { cpu: CPU; igpu: GPU | null; gpus: GPU[]; config: ProfilesConfig }) {
+export function LaptopCpuScores({
+  cpu, igpu, gpus, config, topGpu,
+}: { cpu: CPU; igpu: GPU | null; gpus: GPU[]; config: ProfilesConfig; topGpu: Top }) {
   const memory = useMemo(() => laptopMemory(cpu), [cpu]);
   const [ramGb, setRamGb] = useState(() => defaultRamGb(memory));
   const [memLabel, setMemLabel] = useState(memoryLabel(memory.default));
@@ -215,9 +218,9 @@ export function LaptopCpuScores({ cpu, igpu, gpus, config }: { cpu: CPU; igpu: G
           <p className="note">
             {BALANCE_HINT[combo.balance]} Índice de la GPU {tgp === "" ? "" : `a ${tgp} W`}:{" "}
             {combo.gpuRange
-              ? `${Math.round(combo.gpuRange[0])}–${Math.round(combo.gpuRange[1])} según el TGP`
-              : Math.round(combo.gpuIndex)}{" "}
-            (100 = RTX 4060 de escritorio).
+              ? `${relative(combo.gpuRange[0], topGpu)}–${relative(combo.gpuRange[1], topGpu)} / 100 según el TGP`
+              : `${relative(combo.gpuIndex, topGpu)} / 100`}{" "}
+            (100 = {topGpu.name}, la más potente actual).
           </p>
         </div>
       )}

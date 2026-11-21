@@ -1,10 +1,11 @@
 import { ChipSearch } from "@/components/ChipSearch.tsx";
-import { getCpus, getGpus } from "@/lib/data.ts";
+import { getCpus, getGpus, getTops } from "@/lib/data.ts";
 import { toSearchItem } from "@/lib/present.ts";
 
 export default function Home() {
   const cpus = getCpus();
   const gpus = getGpus();
+  const tops = getTops();
   const items = [...cpus.map((c) => toSearchItem(c, "cpu")), ...gpus.map((g) => toSearchItem(g, "gpu"))];
 
   return (
@@ -18,9 +19,14 @@ export default function Home() {
 
       <h2>Cómo leer las notas</h2>
       <p>
-        Cada chip tiene un <strong>índice de rendimiento</strong> donde 100 es un chip de referencia de gama media: el AMD
-        Ryzen 5 7600 para procesadores y la NVIDIA GeForce RTX 4060 para tarjetas gráficas. Con esos índices calculamos
-        una nota de 0 a 10 para cada uso.
+        Cada chip tiene un <strong>índice de rendimiento</strong> donde 100 es el mejor actual: hoy, el{" "}
+        {tops.cpuGaming.name} para jugar y la {tops.gpuGaming.name} entre las tarjetas gráficas. Cuando salga una
+        generación más potente, pasará a ser el 100 y el resto se ajustará.
+      </p>
+      <p>
+        Aparte está la <strong>nota de 0 a 10</strong> para cada uso (juegos, programación, multitarea, ofimática). Esa
+        nota no baja con los lanzamientos nuevos: mide qué tan bien anda el equipo hoy con los programas y juegos
+        actuales.
       </p>
       <p className="muted">
         Hoy tenemos {cpus.length} procesadores y {gpus.length} tarjetas gráficas. Las notas se van completando: si un

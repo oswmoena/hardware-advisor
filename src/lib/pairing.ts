@@ -37,13 +37,18 @@ const BALANCED_MIN = 0.55;
 
 /** Bono para juegos de las CPUs con caché 3D. */
 export const X3D_GAMING_BONUS = 0.2;
+/** En las X3D de dos chiplets (más de 8 núcleos) solo uno lleva la caché 3D: en juegos rinden algo menos. */
+export const X3D_DUAL_CCD_GAMING_BONUS = 0.17;
 export const isX3D = (cpu: CPU) => /X3D/.test(cpu.name);
+/** Bono para juegos de una CPU X3D (0 si no lo es). */
+export const x3dBonus = (cpu: CPU) =>
+  !isX3D(cpu) ? 0 : cpu.cores.performance + cpu.cores.efficiency > 8 ? X3D_DUAL_CCD_GAMING_BONUS : X3D_GAMING_BONUS;
 
 /** Capacidad de la CPU para juegos: sobre todo single-core; la caché 3D (X3D) ayuda mucho. */
 export function cpuGamingIndex(cpu: CPU): number | null {
   const { single, multi } = cpu.scores;
   if (single === null || multi === null) return null;
-  return (0.8 * single + 0.2 * Math.min(multi, 150)) * (isX3D(cpu) ? 1 + X3D_GAMING_BONUS : 1);
+  return (0.8 * single + 0.2 * Math.min(multi, 150)) * (1 + x3dBonus(cpu));
 }
 
 // --- Velocidad de la RAM ------------------------------------------------------
@@ -197,7 +202,7 @@ export function laptopCombo(cpu: CPU, gpu: GPU, setup: LaptopSetup, config: Prof
   const warnings = gaming.warnings.filter((w) => !w.includes("VRAM")); // la de VRAM se evalúa por resolución abajo
   if (index.powerUnknown && index.range) {
     warnings.push(
-      `Sin el TGP, usamos un valor intermedio: según la laptop, esta GPU puede rendir entre ${Math.round(index.range[0])} y ${Math.round(index.range[1])} de índice.`,
+      "Sin el TGP usamos un valor intermedio: según cómo la configure cada laptop, esta GPU puede rendir bastante más o bastante menos.",
     );
   }
   if (gpu.vram && gpu.vram.gb < VRAM_MIN[setup.resolution]) {

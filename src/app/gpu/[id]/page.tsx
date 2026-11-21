@@ -4,8 +4,9 @@ import { Breadcrumbs } from "@/components/Breadcrumbs.tsx";
 import { EstimateNotice } from "@/components/EstimateNotice.tsx";
 import { ScoreCard } from "@/components/ScoreCard.tsx";
 import type { GPU } from "@/lib/data-types.ts";
-import { getGpu, getGpus, getProfiles, getReferenceCpu, getReferenceGpu } from "@/lib/data.ts";
-import { ASSUMED_RAM_GB, SITE_URL, formatIndex, formatRelease, scoreGpuAlone } from "@/lib/present.ts";
+import { getGpu, getGpus, getProfiles, getReferenceCpu, getTops } from "@/lib/data.ts";
+import { ASSUMED_RAM_GB, SITE_URL, formatPoints, formatRelease, scoreGpuAlone } from "@/lib/present.ts";
+import { relative } from "@/lib/scale.ts";
 import { gpuGamingIndex } from "@/lib/scoring.ts";
 
 type Props = { params: Promise<{ id: string }> };
@@ -32,14 +33,14 @@ export default async function GpuPage({ params }: Props) {
   const gpu = getGpu((await params).id);
   if (!gpu) notFound();
   const referenceCpu = getReferenceCpu();
-  const referenceGpu = getReferenceGpu();
+  const top = getTops().gpuGaming;
   const gaming = scoreGpuAlone(gpu, referenceCpu, getProfiles());
   const index = gpuGamingIndex(gpu);
   const pending = gpu.score_meta.method === "pending";
 
   const indexText = index.range
-    ? `${formatIndex(index.range[0])} a ${formatIndex(index.range[1])} según el TGP`
-    : formatIndex(index.value);
+    ? `${relative(index.range[0], top)} a ${relative(index.range[1], top)} / 100 según el TGP`
+    : formatPoints(relative(index.value, top));
 
   const specs: [string, string | null | undefined][] = [
     ["Marca", gpu.brand],
@@ -102,7 +103,8 @@ export default async function GpuPage({ params }: Props) {
         </tbody>
       </table>
       <p className="note">
-        100 = {referenceGpu.name} (escritorio).
+        100 = {top.name}, la tarjeta gráfica más potente actual (las de laptop se miden contra ella). Cuando salga una
+        mejor, pasará a ser el 100 y el resto se ajustará.
         {gpu.score_meta.method === "estimated" && " Estimación automática (ver aviso más arriba)."}
       </p>
 

@@ -1,20 +1,31 @@
 # hardware-advisor
 
 Consulta de rendimiento de CPUs y GPUs (laptops y desktops) con una nota por uso
-(juegos, programación, ofimática), advertencias concretas y un "recomendable para…".
+(juegos, programación, multitarea, ofimática), advertencias concretas y un "recomendable para…".
 Más adelante: comparación lado a lado y guía para armar PC.
 
 ## Cómo se puntúa
 
-Cada chip tiene un **índice relativo a un chip de referencia = 100**:
+Hay dos escalas:
 
-| Categoría | Referencia | Índices |
+**1. Índice interno (lo que se guarda en `data/`)**, relativo a una referencia de
+calibración fija = 100:
+
+| Categoría | Referencia interna | Índices |
 |---|---|---|
 | CPU | AMD Ryzen 5 7600 (desktop) | `single`, `multi` |
 | GPU | NVIDIA GeForce RTX 4060 (desktop) | `gaming`, `compute` |
 
-Un índice de 150 rinde un 50% más que la referencia; uno de 60, un 40% menos.
-Los chips nuevos simplemente superan 100, sin recalcular nada.
+Esta escala no cambia con los lanzamientos: sobre ella se calibran las notas y el
+emparejamiento CPU ↔ GPU.
+
+**2. Índice visible (lo que muestra el sitio)**: 100 = el mejor chip actual de la base en
+cada métrica (`src/lib/scale.ts`). Se calcula en cada build, así que cuando entra una
+generación más potente pasa a ser el 100 y el resto baja proporcionalmente (lo que hoy
+es 100 puede pasar a 95). Los topes actuales: Ryzen 7 9850X3D para juegos y RTX 5090
+entre las GPUs (las de laptop se miden contra la mejor de escritorio).
+
+Las **notas de 0 a 10** son absolutas: no bajan con los lanzamientos nuevos.
 
 Las GPUs de laptop guardan la puntuación con la potencia (TGP) mínima y máxima,
 porque una misma GPU rinde muy distinto según cómo la configure el fabricante.

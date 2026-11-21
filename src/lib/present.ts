@@ -40,4 +40,5 @@ export function recommendedFor(results: ProfileResult[]): string[] {
   return results.filter((r) => r.score !== null && r.score >= 6.5).map((r) => r.label.toLowerCase());
 }
 
-export const formatIndex = (value: number | null) => (value === null ? "Pendiente" : String(Math.round(value)));
+/** Puntos en la escala visible (100 = el mejor actual). */
+export const formatPoints = (points: number | null) => (points === null ? "Pendiente" : `${points} / 100`);

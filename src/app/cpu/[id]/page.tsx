@@ -7,8 +7,10 @@ import { LaptopCpuScores } from "@/components/LaptopCpuScores.tsx";
 import { ScoreCard } from "@/components/ScoreCard.tsx";
 import type { CPU, GPU } from "@/lib/data-types.ts";
 import { listEs } from "@/lib/text.ts";
-import { getCpu, getCpus, getGpu, getGpus, getProfiles, getReferenceCpu } from "@/lib/data.ts";
-import { ASSUMED_RAM_GB, SITE_URL, cpuTag, formatIndex, formatRelease, recommendedFor, scoreCpuAlone } from "@/lib/present.ts";
+import { getCpu, getCpus, getGpu, getGpus, getProfiles, getTops } from "@/lib/data.ts";
+import { cpuGamingIndex } from "@/lib/pairing.ts";
+import { ASSUMED_RAM_GB, SITE_URL, formatPoints, formatRelease, recommendedFor, scoreCpuAlone } from "@/lib/present.ts";
+import { relative } from "@/lib/scale.ts";
 
 type Props = { params: Promise<{ id: string }> };
 
@@ -45,7 +47,7 @@ export default async function CpuPage({ params }: Props) {
   const igpu = cpu.igpu ? (getGpu(cpu.igpu) ?? null) : null;
   const results = scoreCpuAlone(cpu, igpu, getProfiles());
   const recommended = recommendedFor(results);
-  const reference = getReferenceCpu();
+  const tops = getTops();
   const pending = cpu.score_meta.method === "pending";
   const kind = cpu.platform === "mobile" ? "Procesador de laptop" : "Procesador de escritorio";
   // Al cliente solo lo que necesita para calcular (sin fuentes ni notas).
@@ -108,7 +110,7 @@ export default async function CpuPage({ params }: Props) {
           ))}
         </div>
       ) : cpu.platform === "mobile" ? (
-        <LaptopCpuScores cpu={clientCpu} igpu={igpu} gpus={scoredGpus("mobile")} config={getProfiles()} />
+        <LaptopCpuScores cpu={clientCpu} igpu={igpu} gpus={scoredGpus("mobile")} config={getProfiles()} topGpu={tops.gpuGaming} />
       ) : (
         <DesktopCpuSection cpu={clientCpu} igpu={igpu} gpus={scoredGpus("desktop")} config={getProfiles()} />
       )}
@@ -118,17 +120,23 @@ export default async function CpuPage({ params }: Props) {
         <caption className="visually-hidden">Índices de rendimiento de {cpu.name}</caption>
         <tbody>
           <tr>
+            <th scope="row">Para juegos</th>
+            <td>{formatPoints(relative(cpuGamingIndex(cpu), tops.cpuGaming))}</td>
+          </tr>
+          <tr>
             <th scope="row">Single-core</th>
-            <td>{formatIndex(cpu.scores.single)}</td>
+            <td>{formatPoints(relative(cpu.scores.single, tops.cpuSingle))}</td>
           </tr>
           <tr>
             <th scope="row">Multi-core</th>
-            <td>{formatIndex(cpu.scores.multi)}</td>
+            <td>{formatPoints(relative(cpu.scores.multi, tops.cpuMulti))}</td>
           </tr>
         </tbody>
       </table>
       <p className="note">
-        100 = {reference.name}. Un índice de 150 rinde un 50 % más; uno de 60, un 40 % menos.
+        100 = el mejor procesador actual en cada métrica: {tops.cpuGaming.name} para juegos, {tops.cpuSingle.name} en
+        single-core y {tops.cpuMulti.name} en multi-core. Cuando salga uno mejor, pasará a ser el 100 y el resto se
+        ajustará.
         {cpu.score_meta.method === "estimated" && " Estimación automática (ver aviso más arriba)."}
       </p>
 
