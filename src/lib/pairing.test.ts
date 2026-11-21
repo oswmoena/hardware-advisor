@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import type { CPU, GPU } from "./data-types.ts";
 import type { ProfilesConfig } from "./scoring.ts";
-import { buildWarnings, defaultBuild, pairGpu, rankGpus, type BuildMock } from "./pairing.ts";
+import { buildWarnings, defaultBuild, pairGpu, ramSpeedFactor, rankGpus, type BuildMock } from "./pairing.ts";
 
 const config: ProfilesConfig = JSON.parse(readFileSync(new URL("../../scoring/profiles.json", import.meta.url), "utf8"));
 
@@ -17,7 +17,7 @@ const gpu = (id: string, index: number, over: Partial<GPU> = {}): GPU => ({
   vram: { gb: 12 }, power_w: { min: 200, max: 200 }, pcie: { gen: 4, lanes: 16 },
   scores: { gaming: { at_min_power: index, at_max_power: index } }, score_meta: { method: "estimated" }, ...over,
 });
-const build = (over: Partial<BuildMock> = {}): BuildMock => ({ ramGb: 16, resolution: "1080p", psuW: 750, boardPcieGen: 4, ...over });
+const build = (over: Partial<BuildMock> = {}): BuildMock => ({ ramGb: 16, ramMts: 3200, resolution: "1080p", psuW: 750, boardPcieGen: 4, ...over });
 
 test("las GPUs que la CPU no aprovecha van aparte; las recomendadas se ordenan por rendimiento real", () => {
   const { recommended, overkill } = rankGpus(cpu(), [gpu("tope", 330), gpu("baja", 50), gpu("justa", 140), gpu("media", 100)], build(), config);
@@ -54,8 +54,27 @@ test("ignora GPUs de laptop o sin puntuación", () => {
 });
 
 test("equipo por defecto según plataforma y advertencia de RAM", () => {
-  assert.deepEqual(defaultBuild(cpu()), { ramGb: 16, resolution: "1080p", psuW: 650, boardPcieGen: 4 });
+  assert.deepEqual(defaultBuild(cpu()), { ramGb: 16, ramMts: 3200, resolution: "1080p", psuW: 650, boardPcieGen: 4 });
   assert.equal(defaultBuild(cpu({ socket: "AM5" })).ramGb, 32);
+  assert.equal(defaultBuild(cpu({ socket: "AM5" })).ramMts, 6000);
   assert.ok(buildWarnings(build({ ramGb: 8 }), config).length > 0);
   assert.equal(buildWarnings(build({ ramGb: 32 }), config).length, 0);
+});
+
+test("RAM más rápida sube el techo de la CPU en juegos; más lenta lo baja", () => {
+  const top = gpu("tope", 330); // limitada por la CPU: el techo manda
+  const slow = pairGpu(cpu(), top, build({ ramMts: 2666 }), config)!;
+  const base = pairGpu(cpu(), top, build({ ramMts: 3200 }), config)!;
+  const fast = pairGpu(cpu(), top, build({ ramMts: 3600 }), config)!;
+  assert.ok(slow.effective < base.effective && base.effective < fast.effective);
+  const gain = fast.effective / base.effective - 1;
+  assert.ok(gain > 0.02 && gain < 0.06, `DDR4-3600 vs 3200: ${(gain * 100).toFixed(1)} %`);
+});
+
+test("las CPUs X3D dependen menos de la velocidad de la RAM y el efecto está acotado", () => {
+  const x3d = cpu({ name: "Ryzen 7 5800X3D" });
+  assert.ok(ramSpeedFactor(x3d, 2400) > ramSpeedFactor(cpu(), 2400));
+  assert.ok(ramSpeedFactor(cpu(), 1000) >= 0.85);
+  assert.ok(ramSpeedFactor(cpu({ socket: "AM5" }), 9000) <= 1.08);
+  assert.equal(ramSpeedFactor(cpu({ socket: "AM5" }), 6000), 1);
 });

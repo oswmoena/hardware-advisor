@@ -6,6 +6,8 @@ import { compare, scoreSystem, type ProfileResult, type ProfilesConfig } from ".
 export type Resolution = "1080p" | "1440p" | "4k";
 export interface BuildMock {
   ramGb: number;
+  /** Velocidad de la RAM en MT/s (p. ej. 3200 para DDR4-3200). */
+  ramMts: number;
   resolution: Resolution;
   psuW: number;
   /** Generación PCIe de la ranura de la GPU en la placa madre. */
@@ -33,11 +35,30 @@ const CPU_FEEDS_GPU = 1.7;
 const BALANCED_MAX = 1.15;
 const BALANCED_MIN = 0.55;
 
+/** Bono para juegos de las CPUs con caché 3D. */
+export const X3D_GAMING_BONUS = 0.2;
+export const isX3D = (cpu: CPU) => /X3D/.test(cpu.name);
+
 /** Capacidad de la CPU para juegos: sobre todo single-core; la caché 3D (X3D) ayuda mucho. */
 export function cpuGamingIndex(cpu: CPU): number | null {
   const { single, multi } = cpu.scores;
   if (single === null || multi === null) return null;
-  return (0.8 * single + 0.2 * Math.min(multi, 150)) * (/X3D/.test(cpu.name) ? 1.2 : 1);
+  return (0.8 * single + 0.2 * Math.min(multi, 150)) * (isX3D(cpu) ? 1 + X3D_GAMING_BONUS : 1);
+}
+
+// --- Velocidad de la RAM ------------------------------------------------------
+/** Velocidad de referencia (factor 1) por tipo de memoria. */
+export const RAM_BASELINE_MTS = { DDR4: 3200, DDR5: 6000 } as const;
+export const RAM_SPEED_OPTIONS = { DDR4: [2400, 2666, 3000, 3200, 3600, 4000], DDR5: [4800, 5200, 5600, 6000, 6400, 7200] } as const;
+/** Sensibilidad del rendimiento en juegos limitados por CPU a la velocidad de la RAM (logarítmica). */
+const RAM_SENSITIVITY = 0.35;
+const RAM_SENSITIVITY_X3D = 0.15; // la caché 3D amortigua la dependencia de la RAM
+
+/** Multiplicador sobre la capacidad de la CPU en juegos según la velocidad de la RAM. */
+export function ramSpeedFactor(cpu: CPU, mts: number): number {
+  const baseline = RAM_BASELINE_MTS[ramTypeFor(cpu)];
+  const k = isX3D(cpu) ? RAM_SENSITIVITY_X3D : RAM_SENSITIVITY;
+  return Math.min(Math.max(1 + k * Math.log(mts / baseline), 0.85), 1.08);
 }
 
 /** Generación PCIe máxima que ofrece la CPU para la GPU. */
@@ -57,13 +78,14 @@ export function defaultBuild(cpu: CPU): BuildMock {
   const modern = cpu.socket === "AM5" || cpu.socket === "LGA1700" || cpu.socket === "LGA1851";
   return {
     ramGb: modern ? 32 : 16,
+    ramMts: RAM_BASELINE_MTS[ramTypeFor(cpu)],
     resolution: modern ? "1440p" : "1080p",
     psuW: modern ? 750 : 650,
     boardPcieGen: Math.min(cpuPcieGen(cpu), 4), // la mayoría de placas de gama media: ranura PCIe 4.0
   };
 }
 
-export const ramTypeFor = (cpu: CPU) => (cpu.socket === "AM4" || cpu.socket === "LGA1200" ? "DDR4" : "DDR5");
+export const ramTypeFor = (cpu: CPU): "DDR4" | "DDR5" => (cpu.socket === "AM4" || cpu.socket === "LGA1200" ? "DDR4" : "DDR5");
 
 /** Pérdida por usar una GPU de pocas líneas PCIe en una ranura de generación anterior. */
 function pcieFactor(gpu: GPU, slotGen: number): number {
@@ -85,7 +107,7 @@ export function pairGpu(cpu: CPU, gpu: GPU, build: BuildMock, config: ProfilesCo
   const pcie = pcieFactor(gpu, slotGen);
   const load = RESOLUTION_LOAD[build.resolution];
   const gpuAtRes = (gpuIndex * pcie) / load;
-  const cpuCap = cpuGaming * CPU_FEEDS_GPU;
+  const cpuCap = cpuGaming * ramSpeedFactor(cpu, build.ramMts) * CPU_FEEDS_GPU;
   const effective = Math.min(gpuAtRes, cpuCap);
   const ratio = gpuAtRes / cpuCap;
   const balance: Balance = ratio > BALANCED_MAX ? "cpu-limited" : ratio < BALANCED_MIN ? "gpu-limited" : "balanced";

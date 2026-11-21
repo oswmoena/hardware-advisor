@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs.tsx";
+import { EstimateNotice } from "@/components/EstimateNotice.tsx";
 import { ScoreCard } from "@/components/ScoreCard.tsx";
 import type { GPU } from "@/lib/data-types.ts";
 import { getGpu, getGpus, getProfiles, getReferenceCpu, getReferenceGpu } from "@/lib/data.ts";
@@ -78,6 +79,8 @@ export default async function GpuPage({ params }: Props) {
         )}
       </section>
 
+      {gpu.score_meta.method === "estimated" && <EstimateNotice context="chip" />}
+
       <h2>Nota para juegos</h2>
       <div className="scores">
         {gaming && (
@@ -100,7 +103,7 @@ export default async function GpuPage({ params }: Props) {
       </table>
       <p className="note">
         100 = {referenceGpu.name} (escritorio).
-        {gpu.score_meta.method === "estimated" && " Estimación automática a partir de las especificaciones (provisional)."}
+        {gpu.score_meta.method === "estimated" && " Estimación automática (ver aviso más arriba)."}
       </p>
 
       <h2>Especificaciones</h2>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs.tsx";
+import { EstimateNotice } from "@/components/EstimateNotice.tsx";
 import { GpuPairing } from "@/components/GpuPairing.tsx";
 import { ScoreCard } from "@/components/ScoreCard.tsx";
 import type { CPU, GPU } from "@/lib/data-types.ts";
@@ -90,6 +91,8 @@ export default async function CpuPage({ params }: Props) {
         )}
       </section>
 
+      {cpu.score_meta.method === "estimated" && <EstimateNotice context="chip" />}
+
       <h2>Nota por uso</h2>
       <div className="scores">
         {results.map((r) => (
@@ -120,7 +123,7 @@ export default async function CpuPage({ params }: Props) {
       </table>
       <p className="note">
         100 = {reference.name}. Un índice de 150 rinde un 50 % más; uno de 60, un 40 % menos.
-        {cpu.score_meta.method === "estimated" && " Estimación automática a partir de las especificaciones (provisional)."}
+        {cpu.score_meta.method === "estimated" && " Estimación automática (ver aviso más arriba)."}
       </p>
 
       <h2>Especificaciones</h2>

@@ -5,9 +5,10 @@ import { useId, useMemo, useState } from "react";
 import type { CPU, GPU } from "@/lib/data-types.ts";
 import type { ProfilesConfig } from "@/lib/scoring.ts";
 import {
-  RESOLUTION_LABEL, buildWarnings, defaultBuild, rankGpus, ramTypeFor,
-  type Balance, type BuildMock, type Pairing, type Resolution,
+  RAM_BASELINE_MTS, RAM_SPEED_OPTIONS, RESOLUTION_LABEL, X3D_GAMING_BONUS, buildWarnings, defaultBuild, isX3D,
+  rankGpus, ramTypeFor, type Balance, type BuildMock, type Pairing, type Resolution,
 } from "@/lib/pairing.ts";
+import { EstimateNotice } from "./EstimateNotice.tsx";
 
 const VISIBLE = 10;
 const RAM_OPTIONS = [8, 16, 32, 64];
@@ -30,6 +31,8 @@ export function GpuPairing({ cpu, gpus, config }: { cpu: CPU; gpus: GPU[]; confi
   const systemWarnings = buildWarnings(build, config);
   const id = useId();
   const set = <K extends keyof BuildMock>(key: K, value: BuildMock[K]) => setBuild((b) => ({ ...b, [key]: value }));
+  const ramType = ramTypeFor(cpu);
+  const estimated = cpu.score_meta.method === "estimated" || gpus.some((g) => g.score_meta.method === "estimated");
 
   return (
     <section aria-labelledby={`${id}-title`} className="pairing">
@@ -44,10 +47,29 @@ export function GpuPairing({ cpu, gpus, config }: { cpu: CPU; gpus: GPU[]; confi
           <legend>Equipo de ejemplo</legend>
           <div className="build-grid">
             <div className="field">
-              <label htmlFor={`${id}-ram`}>Memoria RAM ({ramTypeFor(cpu)})</label>
+              <label htmlFor={`${id}-ram`}>Memoria RAM ({ramType})</label>
               <select id={`${id}-ram`} name="ram" value={build.ramGb} onChange={(e) => set("ramGb", Number(e.target.value))}>
                 {RAM_OPTIONS.map((gb) => <option key={gb} value={gb}>{gb} GB</option>)}
               </select>
+            </div>
+            <div className="field">
+              <label htmlFor={`${id}-mts`}>Velocidad de la RAM</label>
+              <select
+                id={`${id}-mts`}
+                name="ramMts"
+                value={build.ramMts}
+                onChange={(e) => set("ramMts", Number(e.target.value))}
+                aria-describedby={`${id}-mts-hint`}
+              >
+                {RAM_SPEED_OPTIONS[ramType].map((mts) => (
+                  <option key={mts} value={mts}>
+                    {ramType}-{mts}{mts === RAM_BASELINE_MTS[ramType] ? " (típica)" : ""}
+                  </option>
+                ))}
+              </select>
+              <span id={`${id}-mts-hint`} className="hint">
+                Sobre la velocidad oficial del procesador hay que activar XMP/EXPO en la BIOS.
+              </span>
             </div>
             <div className="field">
               <label htmlFor={`${id}-psu`}>Fuente de poder</label>
@@ -77,6 +99,10 @@ export function GpuPairing({ cpu, gpus, config }: { cpu: CPU; gpus: GPU[]; confi
           </button>
         </fieldset>
       </form>
+
+      {(estimated || isX3D(cpu)) && (
+        <EstimateNotice context="pairing" x3dBonus={isX3D(cpu) ? X3D_GAMING_BONUS : undefined} />
+      )}
 
       {systemWarnings.length > 0 && (
         <ul className="warnings">{systemWarnings.map((w) => <li key={w}>{w}</li>)}</ul>
@@ -112,10 +138,6 @@ export function GpuPairing({ cpu, gpus, config }: { cpu: CPU; gpus: GPU[]; confi
           <ol className="pairings">{overkill.map((p) => <PairingItem key={p.gpu.id} p={p} />)}</ol>
         </details>
       )}
-      <p className="note">
-        Índices provisionales estimados desde especificaciones: el orden es orientativo y se irá afinando con datos
-        curados.
-      </p>
     </section>
   );
 }
