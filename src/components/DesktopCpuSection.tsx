@@ -5,7 +5,7 @@ import { useId, useMemo, useState } from "react";
 import type { CPU, GPU } from "@/lib/data-types.ts";
 import { adjustCpuForMemorySpeed } from "@/lib/memory.ts";
 import {
-  RAM_BASELINE_MTS, RAM_SPEED_OPTIONS, RESOLUTION_LABEL, X3D_GAMING_BONUS, buildWarnings, defaultBuild, isX3D,
+  RAM_BASELINE_MTS, RAM_SPEED_OPTIONS, RESOLUTION_LABEL, buildWarnings, defaultBuild, isX3D, x3dBonus,
   rankGpus, ramTypeFor, type Balance, type BuildMock, type Pairing, type Resolution,
 } from "@/lib/pairing.ts";
 import { scoreSystem, type ProfilesConfig } from "@/lib/scoring.ts";
@@ -145,7 +145,7 @@ function GpuRanking({ cpu, gpus, build, config }: { cpu: CPU; gpus: GPU[]; build
       <h2 id={`${id}-title`}>Tarjetas gráficas recomendadas para el {cpu.name}</h2>
       <p>Ordenadas de la que mejor aprovecha este procesador a la que peor, para jugar con el equipo de ejemplo de arriba.</p>
 
-      {(estimated || isX3D(cpu)) && <EstimateNotice context="pairing" x3dBonus={isX3D(cpu) ? X3D_GAMING_BONUS : undefined} />}
+      {(estimated || isX3D(cpu)) && <EstimateNotice context="pairing" x3dBonus={isX3D(cpu) ? x3dBonus(cpu) : undefined} />}
 
       {systemWarnings.length > 0 && <ul className="warnings">{systemWarnings.map((w) => <li key={w}>{w}</li>)}</ul>}
 

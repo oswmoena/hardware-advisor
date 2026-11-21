@@ -29,7 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="site-footer">
           <div className="container">
             <p>
-              Las notas son estimaciones propias: índice 100 = AMD Ryzen 5 7600 (CPU) y NVIDIA GeForce RTX 4060 (GPU).
+              Las notas son estimaciones propias. En los índices, 100 = el mejor procesador o tarjeta gráfica actual.
             </p>
           </div>
         </footer>

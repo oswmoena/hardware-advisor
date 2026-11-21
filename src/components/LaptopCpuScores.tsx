@@ -6,6 +6,8 @@ import type { CPU, GPU } from "@/lib/data-types.ts";
 import { adjustCpuForMemory, defaultRamGb, laptopMemory, memoryLabel } from "@/lib/memory.ts";
 import { laptopCombo, suggestLaptopGpu, type Balance, type Resolution } from "@/lib/pairing.ts";
 import { scoreSystem, type ProfilesConfig } from "@/lib/scoring.ts";
+import { matchGpu } from "@/lib/search.ts";
+import { relative, type Top } from "@/lib/scale.ts";
 import { listEs } from "@/lib/text.ts";
 import { ScoreCard } from "./ScoreCard.tsx";
 
@@ -24,19 +26,32 @@ const BALANCE_HINT: Record<Balance, string> = {
   "gpu-limited": "El procesador daría para una tarjeta gráfica más potente.",
 };
 
-/** Pasos de TGP dentro del rango de la GPU (incluye mínimo y máximo). */
+/** Margen por sobre el TGP oficial que suelen anunciar las laptops con Dynamic Boost incluido. */
+const DYNAMIC_BOOST_EXTRA_W = 25;
+
+/** Pasos de TGP de 5 W: rango oficial y, por sobre el máximo, valores con Dynamic Boost. */
 function tgpSteps(gpu: GPU): number[] {
-  if (!gpu.power_w || gpu.power_w.min === gpu.power_w.max) return [];
+  if (!gpu.power_w) return [];
   const { min, max } = gpu.power_w;
-  const step = max - min > 40 ? 10 : 5;
-  const steps = new Set<number>([min]);
-  for (let w = Math.ceil(min / step) * step; w < max; w += step) steps.add(w);
-  steps.add(max);
+  const steps = new Set<number>([min, max]);
+  for (let w = Math.ceil(min / 5) * 5; w <= max + DYNAMIC_BOOST_EXTRA_W; w += 5) steps.add(w);
   return [...steps].sort((a, b) => a - b);
 }
 
+/** Texto del campo de TGP → vatios; "" = no lo sabe; null = no es un número válido. */
+function parseTgp(text: string): number | "" | null {
+  const t = text.trim();
+  if (!t) return "";
+  const m = t.replace(",", ".").match(/^(\d{1,3}(?:\.\d+)?)\s*w?$/i);
+  if (!m) return null;
+  const w = Math.round(Number(m[1]));
+  return w > 0 && w <= 400 ? w : null;
+}
+
 // Notas por uso de una CPU de laptop con memoria editable y GPU opcional para evaluar la combinación.
-export function LaptopCpuScores({ cpu, igpu, gpus, config }: { cpu: CPU; igpu: GPU | null; gpus: GPU[]; config: ProfilesConfig }) {
+export function LaptopCpuScores({
+  cpu, igpu, gpus, config, topGpu,
+}: { cpu: CPU; igpu: GPU | null; gpus: GPU[]; config: ProfilesConfig; topGpu: Top }) {
   const memory = useMemo(() => laptopMemory(cpu), [cpu]);
   const [ramGb, setRamGb] = useState(() => defaultRamGb(memory));
   const [memLabel, setMemLabel] = useState(memoryLabel(memory.default));
@@ -45,14 +60,18 @@ export function LaptopCpuScores({ cpu, igpu, gpus, config }: { cpu: CPU; igpu: G
     () => suggestLaptopGpu(adjustCpuForMemory(cpu, memory.default), gpus, config),
     [cpu, memory, gpus, config],
   );
-  const [gpuId, setGpuId] = useState(() => suggested?.id ?? "");
-  const [tgp, setTgp] = useState<number | "">("");
+  const [gpuQuery, setGpuQuery] = useState(() => suggested?.name ?? "");
+  const [tgpText, setTgpText] = useState("");
+  const parsedTgp = parseTgp(tgpText);
+  // Un texto inválido se trata como "no lo sé" mientras se corrige (la pista lo indica).
+  const tgp: number | "" = parsedTgp === null ? "" : parsedTgp;
   const [resolution, setResolution] = useState<Resolution>("1080p");
   const id = useId();
 
   const selectedMemory = memory.options.find((o) => memoryLabel(o) === memLabel) ?? memory.default;
   const adjustedCpu = useMemo(() => adjustCpuForMemory(cpu, selectedMemory), [cpu, selectedMemory]);
-  const gpu = gpus.find((g) => g.id === gpuId) ?? null;
+  const findGpu = (query: string) => matchGpu(gpus, query);
+  const gpu = useMemo(() => matchGpu(gpus, gpuQuery), [gpus, gpuQuery]);
   const steps = gpu ? tgpSteps(gpu) : [];
 
   const usage = useMemo(
@@ -70,14 +89,11 @@ export function LaptopCpuScores({ cpu, igpu, gpus, config }: { cpu: CPU; igpu: G
   const isSuggested = gpu !== null && gpu.id === suggested?.id;
   const setupText = gpu ? `${memText} y ${gpu.name}${isSuggested ? " (sugerida)" : ""}` : memText;
 
-  // GPUs agrupadas por marca, de mayor a menor rendimiento.
-  const groups = useMemo(() => {
-    const byBrand = new Map<string, GPU[]>();
-    for (const g of [...gpus].sort((a, b) => (b.scores.gaming.at_max_power ?? 0) - (a.scores.gaming.at_max_power ?? 0))) {
-      byBrand.set(g.brand, [...(byBrand.get(g.brand) ?? []), g]);
-    }
-    return [...byBrand.entries()];
-  }, [gpus]);
+  // Sugerencias del campo de GPU: de mayor a menor rendimiento.
+  const sortedGpus = useMemo(
+    () => [...gpus].sort((a, b) => (b.scores.gaming.at_max_power ?? 0) - (a.scores.gaming.at_max_power ?? 0)),
+    [gpus],
+  );
 
   return (
     <>
@@ -120,51 +136,79 @@ export function LaptopCpuScores({ cpu, igpu, gpus, config }: { cpu: CPU; igpu: G
           <div className="build-grid">
             <div className="field">
               <label htmlFor={`${id}-gpu`}>GPU dedicada</label>
-              <select
+              <input
                 id={`${id}-gpu`}
+                type="search"
                 name="gpu"
-                value={gpuId}
+                list={`${id}-gpu-list`}
+                value={gpuQuery}
+                placeholder="Ej.: RTX 4060, RX 7600S, Arc A770M"
                 onChange={(e) => {
-                  setGpuId(e.target.value);
-                  setTgp("");
+                  const next = findGpu(e.target.value);
+                  if (next?.id !== gpu?.id) setTgpText("");
+                  setGpuQuery(e.target.value);
                 }}
                 aria-describedby={`${id}-gpu-hint`}
-              >
-                <option value="">Sin GPU dedicada</option>
-                {groups.map(([brand, list]) => (
-                  <optgroup key={brand} label={brand}>
-                    {list.map((g) => (
-                      <option key={g.id} value={g.id}>
-                        {g.name}{g.id === suggested?.id ? " (sugerida)" : ""}
-                      </option>
-                    ))}
-                  </optgroup>
+                aria-invalid={gpuQuery.trim() !== "" && !gpu ? true : undefined}
+                autoComplete="off"
+                autoCorrect="off"
+                autoCapitalize="none"
+                spellCheck={false}
+                enterKeyHint="done"
+              />
+              <datalist id={`${id}-gpu-list`}>
+                {sortedGpus.map((g) => (
+                  <option key={g.id} value={g.name}>
+                    {g.id === suggested?.id ? "Sugerida" : g.brand}
+                  </option>
                 ))}
-              </select>
+              </datalist>
               <span id={`${id}-gpu-hint`} className="hint">
-                {suggested
-                  ? isSuggested
-                    ? "Preseleccionamos una GPU común que se equilibra bien con este procesador. Cámbiala por la de la laptop que estás mirando."
-                    : `Sugerida para este procesador: ${suggested.name}.`
-                  : "Los procesadores de bajo consumo rara vez vienen con GPU dedicada."}
+                {gpuQuery.trim() !== "" && !gpu
+                  ? "No encontramos esa GPU o hay varias que coinciden: sigue escribiendo o elige una de la lista."
+                  : gpuQuery.trim() === ""
+                    ? suggested
+                      ? `Sin GPU dedicada. Sugerida para este procesador: ${suggested.name}.`
+                      : "Sin GPU dedicada. Los procesadores de bajo consumo rara vez la traen."
+                    : isSuggested
+                      ? "Sugerida: una GPU común que se equilibra bien con este procesador. Cámbiala por la de la laptop que estás mirando."
+                      : "Borra el campo para evaluar la laptop sin GPU dedicada."}
               </span>
             </div>
             {gpu && (
               <div className="field">
-                <label htmlFor={`${id}-tgp`}>TGP de la GPU</label>
-                <select
+                <label htmlFor={`${id}-tgp`}>TGP de la GPU (W)</label>
+                <input
                   id={`${id}-tgp`}
+                  type="text"
+                  inputMode="numeric"
                   name="tgp"
-                  value={tgp}
-                  onChange={(e) => setTgp(e.target.value === "" ? "" : Number(e.target.value))}
+                  list={`${id}-tgp-list`}
+                  value={tgpText}
+                  placeholder="No lo sé (ej.: 115)"
+                  onChange={(e) => setTgpText(e.target.value)}
                   aria-describedby={`${id}-tgp-hint`}
-                  disabled={steps.length === 0}
-                >
-                  <option value="">{steps.length ? "No lo sé" : `${gpu.power_w?.max ?? "?"} W (fijo)`}</option>
-                  {steps.map((w) => <option key={w} value={w}>{w} W</option>)}
-                </select>
+                  aria-invalid={parsedTgp === null ? true : undefined}
+                  autoComplete="off"
+                  autoCorrect="off"
+                  spellCheck={false}
+                  enterKeyHint="done"
+                />
+                <datalist id={`${id}-tgp-list`}>
+                  {steps.map((w) => (
+                    <option key={w} value={String(w)}>
+                      {w} W{gpu.power_w && w > gpu.power_w.max ? " (con Dynamic Boost)" : ""}
+                    </option>
+                  ))}
+                </datalist>
                 <span id={`${id}-tgp-hint`} className="hint">
-                  Búscalo como «TGP» o «potencia gráfica» en la ficha o review de la laptop.
+                  {parsedTgp === null
+                    ? "Escribe solo los vatios, por ejemplo «115». Mientras tanto se evalúa como «no lo sé»."
+                    : <>
+                        Búscalo como «TGP» o «potencia gráfica» en la ficha o review de la laptop; déjalo vacío si no lo
+                        sabes. Oficial:{" "}
+                        {gpu.power_w ? (gpu.power_w.min === gpu.power_w.max ? `${gpu.power_w.max} W` : `${gpu.power_w.min}–${gpu.power_w.max} W`) : "sin dato"}.
+                      </>}
                 </span>
               </div>
             )}
@@ -200,9 +244,9 @@ export function LaptopCpuScores({ cpu, igpu, gpus, config }: { cpu: CPU; igpu: G
           <p className="note">
             {BALANCE_HINT[combo.balance]} Índice de la GPU {tgp === "" ? "" : `a ${tgp} W`}:{" "}
             {combo.gpuRange
-              ? `${Math.round(combo.gpuRange[0])}–${Math.round(combo.gpuRange[1])} según el TGP`
-              : Math.round(combo.gpuIndex)}{" "}
-            (100 = RTX 4060 de escritorio).
+              ? `${relative(combo.gpuRange[0], topGpu)}–${relative(combo.gpuRange[1], topGpu)} / 100 según el TGP`
+              : `${relative(combo.gpuIndex, topGpu)} / 100`}{" "}
+            (100 = {topGpu.name}, la más potente actual).
           </p>
         </div>
       )}

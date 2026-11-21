@@ -12,6 +12,17 @@ export interface SearchItem {
 const normalize = (s: string) => s.toLowerCase().normalize("NFD").replace(/[^a-z0-9]+/g, " ").trim();
 const compact = (s: string) => normalize(s).replace(/ /g, "");
 
+/** GPU que corresponde a lo escrito: nombre o alias exacto, o una única coincidencia parcial. */
+export function matchGpu<T extends { name: string; aliases: string[] }>(gpus: T[], query: string): T | null {
+  const q = compact(query);
+  if (!q) return null;
+  const names = (g: T) => [g.name, ...g.aliases].map(compact);
+  const exact = gpus.find((g) => names(g).includes(q));
+  if (exact) return exact;
+  const partial = gpus.filter((g) => names(g).some((n) => n.includes(q)));
+  return partial.length === 1 ? partial[0] : null;
+}
+
 export function searchChips(items: SearchItem[], query: string, limit = 12): SearchItem[] {
   const tokens = normalize(query).split(" ").filter(Boolean);
   if (!tokens.length) return [];

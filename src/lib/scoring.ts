@@ -70,7 +70,10 @@ export interface GpuGaming {
   powerUnknown: boolean;
 }
 
-/** Índice gaming de una GPU para una potencia dada (o el punto medio si no se conoce). */
+/**
+ * Índice gaming de una GPU para una potencia dada (o el punto medio si no se conoce).
+ * Una potencia sobre el máximo oficial (TGP anunciado con Dynamic Boost) se evalúa como el máximo.
+ */
 export function gpuGamingIndex(gpu: GPU, powerW?: number): GpuGaming {
   const { at_min_power: lo, at_max_power: hi } = gpu.scores.gaming;
   if (lo === null || hi === null) return { value: null, powerUnknown: false };
