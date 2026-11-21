@@ -10,12 +10,15 @@ const CPU_IPC = [
   [/Zen 3\+/, 0.92],
   [/Zen 3/, 0.9],
   [/Zen 2/, 0.8],
+  [/Zen\+/, 0.7],
   [/Arrow Lake|Lunar Lake/, 1.07],
   [/Raptor Lake/, 1.02],
   [/Alder Lake-N|Twin Lake|Gracemont/, 0.7],
   [/Alder Lake/, 1.0],
   [/Meteor Lake/, 0.98],
   [/Rocket Lake|Tiger Lake/, 0.88],
+  [/Ice Lake/, 0.86],
+  [/Coffee Lake|Comet Lake/, 0.72], // núcleo Skylake
 ];
 // Núcleos de eficiencia / compactos: IPC y frecuencia relativa al núcleo P.
 const E_CORES = [
@@ -70,14 +73,20 @@ const GPU_ARCH = [
   [/RDNA 2/, 1.41],
   [/Battlemage/, 1.21],
   [/Alchemist/, 0.82],
+  [/Turing/, 1.45], // sus TFLOPS no están inflados por dual-issue como en Ampere
+  [/RDNA 1/, 1.4],
 ];
+/** Turing con GDDR5 (GTX 1650/1660 originales) queda limitada por el ancho de banda. */
+const GDDR5_TURING_FACTOR = 0.8;
 const EXPONENT = 0.7; // el rendimiento no escala linealmente con los TFLOPS
 const MOBILE_FACTOR = 0.9; // térmica y memoria de laptop frente a la misma GPU en escritorio
 const POWER_EXPONENT = 0.55; // rendimiento ~ potencia^0.55 dentro del rango de TGP
 
 const gpuRaw = (gpu) => {
   const k = pick(GPU_ARCH, gpu.architecture, null);
-  return k === null || !gpu.fp32_tflops ? null : gpu.fp32_tflops * k;
+  if (k === null || !gpu.fp32_tflops) return null;
+  const memory = /Turing/.test(gpu.architecture) && gpu.vram?.type === "GDDR5" ? GDDR5_TURING_FACTOR : 1;
+  return gpu.fp32_tflops * k * memory;
 };
 
 /** Índice gaming estimado (a potencia mínima y máxima), o null si faltan datos. */

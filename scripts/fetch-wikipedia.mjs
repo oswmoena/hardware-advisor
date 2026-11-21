@@ -14,6 +14,9 @@ import * as cheerio from "cheerio";
 const PAGES = [
   // CPUs
   "List of AMD Ryzen processors",
+  "Coffee Lake",
+  "Comet Lake",
+  "Ice Lake (microprocessor)",
   "Tiger Lake",
   "Rocket Lake",
   "Alder Lake",

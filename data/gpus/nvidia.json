@@ -1,5 +1,577 @@
 [
   {
+    "id": "nvidia-geforce-gtx-1630",
+    "brand": "NVIDIA",
+    "name": "GeForce GTX 1630",
+    "aliases": ["GTX 1630"],
+    "type": "desktop",
+    "release": "2022-06",
+    "architecture": "Turing",
+    "vram": { "gb": 4, "type": "GDDR6", "bus_bits": 64 },
+    "power_w": { "min": 75, "max": 75 },
+    "fp32_tflops": 1.83,
+    "features": { "ray_tracing": false, "upscaling": [], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 30, "at_max_power": 30 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-gtx-1650",
+    "brand": "NVIDIA",
+    "name": "GeForce GTX 1650",
+    "aliases": ["GTX 1650"],
+    "type": "desktop",
+    "release": "2019-04",
+    "architecture": "Turing",
+    "vram": { "gb": 4, "type": "GDDR5", "bus_bits": 128 },
+    "power_w": { "min": 75, "max": 75 },
+    "fp32_tflops": 2.98,
+    "features": { "ray_tracing": false, "upscaling": [], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 36, "at_max_power": 36 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-gtx-1650-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce GTX 1650 Laptop",
+    "aliases": ["GTX 1650 Laptop", "GTX 1650 Laptop GPU", "GTX 1650 Mobile"],
+    "type": "mobile",
+    "release": "2019-04",
+    "architecture": "Turing",
+    "vram": { "gb": 4, "type": "GDDR5", "bus_bits": 128 },
+    "power_w": { "min": 50, "max": 50 },
+    "pcie": { "gen": 3, "lanes": 16 },
+    "fp32_tflops": 3.2,
+    "features": { "ray_tracing": false, "upscaling": [], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 34, "at_max_power": 34 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-gtx-1650-max-q-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce GTX 1650 Max-Q Laptop",
+    "aliases": ["GTX 1650 Max-Q Laptop", "GTX 1650 Max-Q Laptop GPU", "GTX 1650 Max-Q Mobile"],
+    "type": "mobile",
+    "release": "2019-04",
+    "architecture": "Turing",
+    "vram": { "gb": 4, "type": "GDDR5", "bus_bits": 128 },
+    "power_w": { "min": 30, "max": 30 },
+    "pcie": { "gen": 3, "lanes": 16 },
+    "fp32_tflops": 2.55,
+    "features": { "ray_tracing": false, "upscaling": [], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 29, "at_max_power": 29 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-gtx-1650-super",
+    "brand": "NVIDIA",
+    "name": "GeForce GTX 1650 Super",
+    "aliases": ["GTX 1650 Super"],
+    "type": "desktop",
+    "release": "2019-11",
+    "architecture": "Turing",
+    "vram": { "gb": 4, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 100, "max": 100 },
+    "fp32_tflops": 4.42,
+    "features": { "ray_tracing": false, "upscaling": [], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 55, "at_max_power": 55 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-gtx-1650-ti-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce GTX 1650 Ti Laptop",
+    "aliases": ["GTX 1650 Ti Laptop", "GTX 1650 Ti Laptop GPU", "GTX 1650 Ti Mobile"],
+    "type": "mobile",
+    "release": "2020-04",
+    "architecture": "Turing",
+    "vram": { "gb": 4, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 55, "max": 55 },
+    "pcie": { "gen": 3, "lanes": 16 },
+    "fp32_tflops": 3.04,
+    "features": { "ray_tracing": false, "upscaling": [], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 38, "at_max_power": 38 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-gtx-1650-ti-max-q-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce GTX 1650 Ti Max-Q Laptop",
+    "aliases": [
+      "GTX 1650 Ti Max-Q Laptop",
+      "GTX 1650 Ti Max-Q Laptop GPU",
+      "GTX 1650 Ti Max-Q Mobile"
+    ],
+    "type": "mobile",
+    "release": "2020-04",
+    "architecture": "Turing",
+    "vram": { "gb": 4, "type": "GDDR6", "bus_bits": 128 },
+    "power_w": { "min": 35, "max": 35 },
+    "pcie": { "gen": 3, "lanes": 16 },
+    "fp32_tflops": 2.46,
+    "features": { "ray_tracing": false, "upscaling": [], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 33, "at_max_power": 33 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-gtx-1660",
+    "brand": "NVIDIA",
+    "name": "GeForce GTX 1660",
+    "aliases": ["GTX 1660"],
+    "type": "desktop",
+    "release": "2019-03",
+    "architecture": "Turing",
+    "vram": { "gb": 6, "type": "GDDR5", "bus_bits": 192 },
+    "power_w": { "min": 120, "max": 120 },
+    "fp32_tflops": 5.03,
+    "features": { "ray_tracing": false, "upscaling": [], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 51, "at_max_power": 51 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-gtx-1660-super",
+    "brand": "NVIDIA",
+    "name": "GeForce GTX 1660 Super",
+    "aliases": ["GTX 1660 Super"],
+    "type": "desktop",
+    "release": "2019-10",
+    "architecture": "Turing",
+    "vram": { "gb": 6, "type": "GDDR6", "bus_bits": 192 },
+    "power_w": { "min": 125, "max": 125 },
+    "fp32_tflops": 5.03,
+    "features": { "ray_tracing": false, "upscaling": [], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 60, "at_max_power": 60 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-gtx-1660-ti",
+    "brand": "NVIDIA",
+    "name": "GeForce GTX 1660 Ti",
+    "aliases": ["GTX 1660 Ti"],
+    "type": "desktop",
+    "release": "2019-02",
+    "architecture": "Turing",
+    "vram": { "gb": 6, "type": "GDDR6", "bus_bits": 192 },
+    "power_w": { "min": 120, "max": 120 },
+    "fp32_tflops": 5.44,
+    "features": { "ray_tracing": false, "upscaling": [], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 63, "at_max_power": 63 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-gtx-1660-ti-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce GTX 1660 Ti Laptop",
+    "aliases": ["GTX 1660 Ti Laptop", "GTX 1660 Ti Laptop GPU", "GTX 1660 Ti Mobile"],
+    "type": "mobile",
+    "release": "2019-04",
+    "architecture": "Turing",
+    "vram": { "gb": 6, "type": "GDDR6", "bus_bits": 192 },
+    "power_w": { "min": 80, "max": 80 },
+    "pcie": { "gen": 3, "lanes": 16 },
+    "fp32_tflops": 4.88,
+    "features": { "ray_tracing": false, "upscaling": [], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 53, "at_max_power": 53 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-gtx-1660-ti-max-q-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce GTX 1660 Ti Max-Q Laptop",
+    "aliases": [
+      "GTX 1660 Ti Max-Q Laptop",
+      "GTX 1660 Ti Max-Q Laptop GPU",
+      "GTX 1660 Ti Max-Q Mobile"
+    ],
+    "type": "mobile",
+    "release": "2019-04",
+    "architecture": "Turing",
+    "vram": { "gb": 6, "type": "GDDR6", "bus_bits": 192 },
+    "power_w": { "min": 60, "max": 60 },
+    "pcie": { "gen": 3, "lanes": 16 },
+    "fp32_tflops": 4.1,
+    "features": { "ray_tracing": false, "upscaling": [], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 47, "at_max_power": 47 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-2050-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 2050 Laptop",
+    "aliases": ["RTX 2050 Laptop", "RTX 2050 Laptop GPU", "RTX 2050 Mobile"],
+    "type": "mobile",
+    "release": "2022-01",
+    "architecture": "Turing",
+    "vram": { "gb": 4, "type": "GDDR6", "bus_bits": 64 },
+    "power_w": { "min": 30, "max": 45 },
+    "pcie": { "gen": 3, "lanes": 8 },
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": null, "at_max_power": null } },
+    "score_meta": { "method": "pending" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-2060",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 2060",
+    "aliases": ["RTX 2060"],
+    "type": "desktop",
+    "release": "2019-01",
+    "architecture": "Turing",
+    "vram": { "gb": 6, "type": "GDDR6", "bus_bits": 192 },
+    "power_w": { "min": 160, "max": 160 },
+    "fp32_tflops": 6.45,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 71, "at_max_power": 71 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-2060-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 2060 Laptop",
+    "aliases": ["RTX 2060 Laptop", "RTX 2060 Laptop GPU", "RTX 2060 Mobile"],
+    "type": "mobile",
+    "release": "2019-01",
+    "architecture": "Turing",
+    "vram": { "gb": 6, "type": "GDDR6", "bus_bits": 192 },
+    "power_w": { "min": 80, "max": 80 },
+    "pcie": { "gen": 3, "lanes": 16 },
+    "fp32_tflops": 4.61,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 51, "at_max_power": 51 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-2060-max-q-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 2060 Max-Q Laptop",
+    "aliases": ["RTX 2060 Max-Q Laptop", "RTX 2060 Max-Q Laptop GPU", "RTX 2060 Max-Q Mobile"],
+    "type": "mobile",
+    "release": "2019-01",
+    "architecture": "Turing",
+    "vram": { "gb": 6, "type": "GDDR6", "bus_bits": 192 },
+    "power_w": { "min": 65, "max": 65 },
+    "pcie": { "gen": 3, "lanes": 16 },
+    "fp32_tflops": 4.55,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 50, "at_max_power": 50 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-2060-super",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 2060 SUPER",
+    "aliases": ["RTX 2060 SUPER"],
+    "type": "desktop",
+    "release": "2019-07",
+    "architecture": "Turing",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 175, "max": 175 },
+    "fp32_tflops": 7.18,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 77, "at_max_power": 77 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-2070",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 2070",
+    "aliases": ["RTX 2070"],
+    "type": "desktop",
+    "release": "2018-10",
+    "architecture": "Turing",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 175, "max": 175 },
+    "fp32_tflops": 7.47,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 79, "at_max_power": 79 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-2070-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 2070 Laptop",
+    "aliases": ["RTX 2070 Laptop", "RTX 2070 Laptop GPU", "RTX 2070 Mobile"],
+    "type": "mobile",
+    "release": "2019-01",
+    "architecture": "Turing",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 115, "max": 115 },
+    "pcie": { "gen": 3, "lanes": 16 },
+    "fp32_tflops": 6.64,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 66, "at_max_power": 66 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-2070-max-q-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 2070 Max-Q Laptop",
+    "aliases": ["RTX 2070 Max-Q Laptop", "RTX 2070 Max-Q Laptop GPU", "RTX 2070 Max-Q Mobile"],
+    "type": "mobile",
+    "release": "2019-01",
+    "architecture": "Turing",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 80, "max": 80 },
+    "pcie": { "gen": 3, "lanes": 16 },
+    "fp32_tflops": 5.46,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 57, "at_max_power": 57 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-2070-super",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 2070 SUPER",
+    "aliases": ["RTX 2070 SUPER"],
+    "type": "desktop",
+    "release": "2019-07",
+    "architecture": "Turing",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 215, "max": 215 },
+    "fp32_tflops": 9.06,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 91, "at_max_power": 91 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-2070-super-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 2070 Super Laptop",
+    "aliases": ["RTX 2070 Super Laptop", "RTX 2070 Super Laptop GPU", "RTX 2070 Super Mobile"],
+    "type": "mobile",
+    "release": "2020-04",
+    "architecture": "Turing",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 115, "max": 115 },
+    "pcie": { "gen": 3, "lanes": 16 },
+    "fp32_tflops": 7.07,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 69, "at_max_power": 69 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-2070-super-max-q-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 2070 Super Max-Q Laptop",
+    "aliases": [
+      "RTX 2070 Super Max-Q Laptop",
+      "RTX 2070 Super Max-Q Laptop GPU",
+      "RTX 2070 Super Max-Q Mobile"
+    ],
+    "type": "mobile",
+    "release": "2020-04",
+    "architecture": "Turing",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 80, "max": 80 },
+    "pcie": { "gen": 3, "lanes": 16 },
+    "fp32_tflops": 5.53,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 58, "at_max_power": 58 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-2080",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 2080",
+    "aliases": ["RTX 2080"],
+    "type": "desktop",
+    "release": "2018-09",
+    "architecture": "Turing",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 215, "max": 215 },
+    "fp32_tflops": 10.07,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 98, "at_max_power": 98 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-2080-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 2080 Laptop",
+    "aliases": ["RTX 2080 Laptop", "RTX 2080 Laptop GPU", "RTX 2080 Mobile"],
+    "type": "mobile",
+    "release": "2019-01",
+    "architecture": "Turing",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 150, "max": 150 },
+    "pcie": { "gen": 3, "lanes": 16 },
+    "fp32_tflops": 9.36,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 83, "at_max_power": 83 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-2080-max-q-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 2080 Max-Q Laptop",
+    "aliases": ["RTX 2080 Max-Q Laptop", "RTX 2080 Max-Q Laptop GPU", "RTX 2080 Max-Q Mobile"],
+    "type": "mobile",
+    "release": "2019-01",
+    "architecture": "Turing",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 80, "max": 80 },
+    "pcie": { "gen": 3, "lanes": 16 },
+    "fp32_tflops": 6.45,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 64, "at_max_power": 64 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-2080-super",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 2080 SUPER",
+    "aliases": ["RTX 2080 SUPER"],
+    "type": "desktop",
+    "release": "2019-07",
+    "architecture": "Turing",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 250, "max": 250 },
+    "fp32_tflops": 11.15,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 105, "at_max_power": 105 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-2080-super-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 2080 Super Laptop",
+    "aliases": ["RTX 2080 Super Laptop", "RTX 2080 Super Laptop GPU", "RTX 2080 Super Mobile"],
+    "type": "mobile",
+    "release": "2020-04",
+    "architecture": "Turing",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 150, "max": 150 },
+    "pcie": { "gen": 3, "lanes": 16 },
+    "fp32_tflops": 9.59,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 85, "at_max_power": 85 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-2080-super-max-q-laptop",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 2080 Super Max-Q Laptop",
+    "aliases": [
+      "RTX 2080 Super Max-Q Laptop",
+      "RTX 2080 Super Max-Q Laptop GPU",
+      "RTX 2080 Super Max-Q Mobile"
+    ],
+    "type": "mobile",
+    "release": "2020-04",
+    "architecture": "Turing",
+    "vram": { "gb": 8, "type": "GDDR6", "bus_bits": 256 },
+    "power_w": { "min": 80, "max": 80 },
+    "pcie": { "gen": 3, "lanes": 16 },
+    "fp32_tflops": 6.64,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 66, "at_max_power": 66 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-geforce-rtx-2080-ti",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 2080 Ti",
+    "aliases": ["RTX 2080 Ti"],
+    "type": "desktop",
+    "release": "2018-09",
+    "architecture": "Turing",
+    "vram": { "gb": 11, "type": "GDDR6", "bus_bits": 352 },
+    "power_w": { "min": 250, "max": 250 },
+    "fp32_tflops": 13.45,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 120, "at_max_power": 120 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
     "id": "nvidia-geforce-rtx-3050",
     "brand": "NVIDIA",
     "name": "GeForce RTX 3050",
@@ -970,6 +1542,24 @@
       "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
     ],
     "scores": { "gaming": { "at_min_power": 151, "at_max_power": 194 } },
+    "score_meta": { "method": "estimated" }
+  },
+  {
+    "id": "nvidia-titan-rtx",
+    "brand": "NVIDIA",
+    "name": "Titan RTX",
+    "aliases": [],
+    "type": "desktop",
+    "release": "2018-12",
+    "architecture": "Turing",
+    "vram": { "gb": 24, "type": "GDDR6", "bus_bits": 384 },
+    "power_w": { "min": 280, "max": 280 },
+    "fp32_tflops": 16.31,
+    "features": { "ray_tracing": true, "upscaling": ["DLSS"], "frame_generation": false },
+    "spec_sources": [
+      "https://en.wikipedia.org/w/index.php?title=List_of_Nvidia_graphics_processing_units&oldid=1386772380"
+    ],
+    "scores": { "gaming": { "at_min_power": 137, "at_max_power": 137 } },
     "score_meta": { "method": "estimated" }
   }
 ]
