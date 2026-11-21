@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs.tsx";
 import { EstimateNotice } from "@/components/EstimateNotice.tsx";
 import { GpuPairing } from "@/components/GpuPairing.tsx";
+import { LaptopCpuScores } from "@/components/LaptopCpuScores.tsx";
 import { ScoreCard } from "@/components/ScoreCard.tsx";
 import type { CPU, GPU } from "@/lib/data-types.ts";
 import { getCpu, getCpus, getGpu, getGpus, getProfiles, getReferenceCpu } from "@/lib/data.ts";
@@ -83,27 +84,33 @@ export default async function CpuPage({ params }: Props) {
           </p>
         ) : recommended.length ? (
           <p>
-            <strong>Recomendable para {recommended.join(" y ")}.</strong> Para juegos, lo que más pesa es la tarjeta
-            gráfica.
+            <strong>Recomendable para {recommended.join(" y ")}</strong> (con {ASSUMED_RAM_GB} GB de RAM). Para juegos,
+            lo que más pesa es la tarjeta gráfica.
           </p>
         ) : (
-          <p>No es especialmente recomendable para programar ni para un uso de oficina exigente.</p>
+          <p>
+            Con {ASSUMED_RAM_GB} GB de RAM no es especialmente recomendable para programar ni para un uso de oficina
+            exigente.
+          </p>
         )}
       </section>
 
       {cpu.score_meta.method === "estimated" && <EstimateNotice context="chip" />}
 
       <h2>Nota por uso</h2>
-      <div className="scores">
-        {results.map((r) => (
-          <ScoreCard key={r.key} result={r} note={`Con ${ASSUMED_RAM_GB} GB de RAM.`} />
-        ))}
-        <article className="score-card">
-          <h3>Juegos</h3>
-          <p>Depende sobre todo de la tarjeta gráfica que acompañe al procesador.</p>
-          {cpu.platform === "mobile" && <p className="note">En una laptop, revisa también el TGP de la GPU.</p>}
-        </article>
-      </div>
+      {cpu.platform === "mobile" && !pending ? (
+        <LaptopCpuScores cpu={cpu} igpu={igpu} config={getProfiles()} />
+      ) : (
+        <div className="scores">
+          {results.map((r) => (
+            <ScoreCard key={r.key} result={r} note={`Con ${ASSUMED_RAM_GB} GB de RAM.`} />
+          ))}
+          <article className="score-card">
+            <h3>Juegos</h3>
+            <p>Depende sobre todo de la tarjeta gráfica que acompañe al procesador.</p>
+          </article>
+        </div>
+      )}
 
       {cpu.platform === "desktop" && !pending && <GpuPairing cpu={cpu} gpus={pairingCandidates()} config={getProfiles()} />}
 
