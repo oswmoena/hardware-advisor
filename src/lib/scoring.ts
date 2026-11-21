@@ -131,11 +131,16 @@ export function scoreSystem(spec: SystemSpec, config: ProfilesConfig): ProfileRe
     }
 
     let cap = 10;
-    for (const rule of profile.rules) {
-      const fact = facts[rule.metric];
-      if (fact === null || !compare(fact, rule.op, rule.value)) continue; // dato desconocido: la regla no aplica
+    // Dato desconocido: la regla no aplica.
+    const fired = profile.rules.filter((rule) => facts[rule.metric] !== null && compare(facts[rule.metric]!, rule.op, rule.value));
+    for (const rule of fired) {
       if (rule.max_score !== undefined) cap = Math.min(cap, rule.max_score);
-      if (rule.warning) warnings.push(rule.warning);
+      // Si también se cumple una regla más estricta sobre el mismo dato (p. ej. "< 8 GB" frente a "< 16 GB"),
+      // se muestra solo la advertencia de esa: la más suave sería redundante o confusa.
+      const stricter = fired.some(
+        (other) => other !== rule && other.metric === rule.metric && rule.op === "<" && other.op === "<" && other.value < rule.value,
+      );
+      if (rule.warning && !stricter) warnings.push(rule.warning);
     }
     if (gaming?.powerUnknown && "gpu_gaming" in profile.weights) {
       warnings.push("El rendimiento de esta GPU de laptop depende mucho de su TGP; sin ese dato se usa un valor intermedio.");
