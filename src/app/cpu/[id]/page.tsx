@@ -20,10 +20,10 @@ const coresText = (cpu: CPU) => {
 };
 const fmt = (n: number) => n.toLocaleString("es");
 
-/** GPUs de escritorio con puntuación, sin campos que el cliente no necesita. */
-const pairingCandidates = (): GPU[] =>
+/** GPUs con puntuación del tipo indicado, sin campos que el cliente no necesita. */
+const scoredGpus = (type: GPU["type"]): GPU[] =>
   getGpus()
-    .filter((g) => g.type === "desktop" && g.scores.gaming.at_max_power !== null)
+    .filter((g) => g.type === type && g.scores.gaming.at_max_power !== null)
     .map(({ spec_sources: _s, notes: _n, ...g }) => g);
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -107,9 +107,9 @@ export default async function CpuPage({ params }: Props) {
           ))}
         </div>
       ) : cpu.platform === "mobile" ? (
-        <LaptopCpuScores cpu={clientCpu} igpu={igpu} config={getProfiles()} />
+        <LaptopCpuScores cpu={clientCpu} igpu={igpu} gpus={scoredGpus("mobile")} config={getProfiles()} />
       ) : (
-        <DesktopCpuSection cpu={clientCpu} igpu={igpu} gpus={pairingCandidates()} config={getProfiles()} />
+        <DesktopCpuSection cpu={clientCpu} igpu={igpu} gpus={scoredGpus("desktop")} config={getProfiles()} />
       )}
 
       <h2>Índices de rendimiento</h2>
