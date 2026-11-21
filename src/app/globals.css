@@ -197,16 +197,53 @@ main {
   flex: 1;
   min-inline-size: 0;
 }
+/* Todos los campos (texto, búsqueda, selectores) comparten la misma caja: misma altura,
+   borde, radio y colores en Chrome, Safari y Firefox. appearance: none quita el estilo
+   nativo de Safari (que ignora padding y altura); el desplegable sigue siendo el nativo. */
 input[type="search"],
+input[type="text"],
+select,
 .button {
   font: inherit;
   font-size: max(1rem, 1em);
+  line-height: 1.25;
   min-block-size: 48px;
   border-radius: var(--radius);
   border: 1px solid var(--muted);
   padding: 0.625rem 0.875rem;
-  background: var(--surface);
+  background-color: var(--surface);
   color: var(--text);
+}
+input[type="search"],
+input[type="text"],
+select {
+  appearance: none;
+  inline-size: 100%;
+  min-inline-size: 0;
+}
+input::placeholder {
+  color: var(--muted);
+  opacity: 1;
+}
+input[aria-invalid="true"] {
+  border-color: var(--poor);
+}
+/* Flecha propia del selector, dibujada con dos degradados para que siga el color del tema. */
+select {
+  padding-inline-end: 2.5rem;
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--muted) 50%),
+    linear-gradient(135deg, var(--muted) 50%, transparent 50%);
+  background-position:
+    right 1.15rem center,
+    right 0.8rem center;
+  background-size: 0.35rem 0.35rem;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+select:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
 }
 .button {
   background: var(--accent);
@@ -401,16 +438,6 @@ input[type="search"],
   margin-block-end: 0.25rem;
   font-weight: 400;
 }
-select {
-  font: inherit;
-  font-size: max(1rem, 1em);
-  min-block-size: 48px;
-  border-radius: var(--radius);
-  border: 1px solid var(--muted);
-  padding: 0.5rem 0.75rem;
-  background: var(--surface);
-  color: var(--text);
-}
 .radio {
   display: flex;
   align-items: center;
@@ -488,6 +515,10 @@ select {
 }
 .combo p {
   margin: 0;
+}
+.combo .pairing-head,
+.pairing-item .pairing-head {
+  max-inline-size: none;
 }
 .combo p + p {
   margin-block-start: 0.25rem;
