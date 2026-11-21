@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs.tsx";
 import { EstimateNotice } from "@/components/EstimateNotice.tsx";
-import { GpuPairing } from "@/components/GpuPairing.tsx";
+import { DesktopCpuSection } from "@/components/DesktopCpuSection.tsx";
 import { LaptopCpuScores } from "@/components/LaptopCpuScores.tsx";
 import { ScoreCard } from "@/components/ScoreCard.tsx";
 import type { CPU, GPU } from "@/lib/data-types.ts";
@@ -47,6 +47,8 @@ export default async function CpuPage({ params }: Props) {
   const reference = getReferenceCpu();
   const pending = cpu.score_meta.method === "pending";
   const kind = cpu.platform === "mobile" ? "Procesador de laptop" : "Procesador de escritorio";
+  // Al cliente solo lo que necesita para calcular (sin fuentes ni notas).
+  const { spec_sources: _s, notes: _n, ...clientCpu } = cpu;
 
   const specs: [string, string | null | undefined][] = [
     ["Marca", cpu.brand],
@@ -98,21 +100,17 @@ export default async function CpuPage({ params }: Props) {
       {cpu.score_meta.method === "estimated" && <EstimateNotice context="chip" />}
 
       <h2>Nota por uso</h2>
-      {cpu.platform === "mobile" && !pending ? (
-        <LaptopCpuScores cpu={cpu} igpu={igpu} config={getProfiles()} />
-      ) : (
+      {pending ? (
         <div className="scores">
           {results.map((r) => (
             <ScoreCard key={r.key} result={r} note={`Con ${ASSUMED_RAM_GB} GB de RAM.`} />
           ))}
-          <article className="score-card">
-            <h3>Juegos</h3>
-            <p>Depende sobre todo de la tarjeta gráfica que acompañe al procesador.</p>
-          </article>
         </div>
+      ) : cpu.platform === "mobile" ? (
+        <LaptopCpuScores cpu={clientCpu} igpu={igpu} config={getProfiles()} />
+      ) : (
+        <DesktopCpuSection cpu={clientCpu} igpu={igpu} gpus={pairingCandidates()} config={getProfiles()} />
       )}
-
-      {cpu.platform === "desktop" && !pending && <GpuPairing cpu={cpu} gpus={pairingCandidates()} config={getProfiles()} />}
 
       <h2>Índices de rendimiento</h2>
       <table className="specs">
@@ -157,18 +155,6 @@ export default async function CpuPage({ params }: Props) {
             ))}
           </ul>
         </>
-      ) : null}
-
-      {cpu.spec_sources?.length ? (
-        <p className="note">
-          Fuente de las especificaciones:{" "}
-          {cpu.spec_sources.map((s, i) => (
-            <a key={s} href={s} rel="nofollow noopener">
-              {i ? ", " : ""}Wikipedia
-            </a>
-          ))}
-          {" "}(CC BY-SA 4.0).
-        </p>
       ) : null}
     </article>
   );

@@ -29,8 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="site-footer">
           <div className="container">
             <p>
-              Especificaciones de Wikipedia (CC BY-SA 4.0) y fichas oficiales. Las notas son estimaciones propias:
-              índice 100 = AMD Ryzen 5 7600 (CPU) y NVIDIA GeForce RTX 4060 (GPU).
+              Las notas son estimaciones propias: índice 100 = AMD Ryzen 5 7600 (CPU) y NVIDIA GeForce RTX 4060 (GPU).
             </p>
           </div>
         </footer>
