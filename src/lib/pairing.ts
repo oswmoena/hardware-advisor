@@ -208,6 +208,9 @@ export function laptopCombo(cpu: CPU, gpu: GPU, setup: LaptopSetup, config: Prof
   if (gpu.vram && gpu.vram.gb < VRAM_MIN[setup.resolution]) {
     warnings.push(`${gpu.vram.gb} GB de VRAM se quedan cortos en ${setup.resolution} con juegos nuevos.`);
   }
+  if (gpu.power_w && setup.gpuPowerW !== undefined && setup.gpuPowerW < gpu.power_w.min) {
+    warnings.push(`${setup.gpuPowerW} W está bajo el TGP mínimo oficial (${gpu.power_w.min} W); lo evaluamos como ${gpu.power_w.min} W.`);
+  }
   if (gpu.power_w && setup.gpuPowerW !== undefined && setup.gpuPowerW > gpu.power_w.max) {
     warnings.push(
       `${setup.gpuPowerW} W supera el TGP oficial (${gpu.power_w.max} W): probablemente incluye Dynamic Boost, que suma poco rendimiento; lo evaluamos como ${gpu.power_w.max} W.`,

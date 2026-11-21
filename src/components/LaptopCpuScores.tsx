@@ -38,6 +38,16 @@ function tgpSteps(gpu: GPU): number[] {
   return [...steps].sort((a, b) => a - b);
 }
 
+/** Texto del campo de TGP → vatios; "" = no lo sabe; null = no es un número válido. */
+function parseTgp(text: string): number | "" | null {
+  const t = text.trim();
+  if (!t) return "";
+  const m = t.replace(",", ".").match(/^(\d{1,3}(?:\.\d+)?)\s*w?$/i);
+  if (!m) return null;
+  const w = Math.round(Number(m[1]));
+  return w > 0 && w <= 400 ? w : null;
+}
+
 // Notas por uso de una CPU de laptop con memoria editable y GPU opcional para evaluar la combinación.
 export function LaptopCpuScores({
   cpu, igpu, gpus, config, topGpu,
@@ -51,7 +61,10 @@ export function LaptopCpuScores({
     [cpu, memory, gpus, config],
   );
   const [gpuQuery, setGpuQuery] = useState(() => suggested?.name ?? "");
-  const [tgp, setTgp] = useState<number | "">("");
+  const [tgpText, setTgpText] = useState("");
+  const parsedTgp = parseTgp(tgpText);
+  // Un texto inválido se trata como "no lo sé" mientras se corrige (la pista lo indica).
+  const tgp: number | "" = parsedTgp === null ? "" : parsedTgp;
   const [resolution, setResolution] = useState<Resolution>("1080p");
   const id = useId();
 
@@ -132,7 +145,7 @@ export function LaptopCpuScores({
                 placeholder="Ej.: RTX 4060, RX 7600S, Arc A770M"
                 onChange={(e) => {
                   const next = findGpu(e.target.value);
-                  if (next?.id !== gpu?.id) setTgp("");
+                  if (next?.id !== gpu?.id) setTgpText("");
                   setGpuQuery(e.target.value);
                 }}
                 aria-describedby={`${id}-gpu-hint`}
@@ -164,25 +177,38 @@ export function LaptopCpuScores({
             </div>
             {gpu && (
               <div className="field">
-                <label htmlFor={`${id}-tgp`}>TGP de la GPU</label>
-                <select
+                <label htmlFor={`${id}-tgp`}>TGP de la GPU (W)</label>
+                <input
                   id={`${id}-tgp`}
+                  type="text"
+                  inputMode="numeric"
                   name="tgp"
-                  value={tgp}
-                  onChange={(e) => setTgp(e.target.value === "" ? "" : Number(e.target.value))}
+                  list={`${id}-tgp-list`}
+                  value={tgpText}
+                  placeholder="No lo sé (ej.: 115)"
+                  onChange={(e) => setTgpText(e.target.value)}
                   aria-describedby={`${id}-tgp-hint`}
-                  disabled={steps.length === 0}
-                >
-                  <option value="">No lo sé</option>
+                  aria-invalid={parsedTgp === null ? true : undefined}
+                  autoComplete="off"
+                  autoCorrect="off"
+                  spellCheck={false}
+                  enterKeyHint="done"
+                />
+                <datalist id={`${id}-tgp-list`}>
                   {steps.map((w) => (
-                    <option key={w} value={w}>
+                    <option key={w} value={String(w)}>
                       {w} W{gpu.power_w && w > gpu.power_w.max ? " (con Dynamic Boost)" : ""}
                     </option>
                   ))}
-                </select>
+                </datalist>
                 <span id={`${id}-tgp-hint`} className="hint">
-                  Búscalo como «TGP» o «potencia gráfica» en la ficha o review de la laptop; si tu valor no está, elige
-                  el más cercano. Oficial: {gpu.power_w ? (gpu.power_w.min === gpu.power_w.max ? `${gpu.power_w.max} W` : `${gpu.power_w.min}–${gpu.power_w.max} W`) : "sin dato"}.
+                  {parsedTgp === null
+                    ? "Escribe solo los vatios, por ejemplo «115». Mientras tanto se evalúa como «no lo sé»."
+                    : <>
+                        Búscalo como «TGP» o «potencia gráfica» en la ficha o review de la laptop; déjalo vacío si no lo
+                        sabes. Oficial:{" "}
+                        {gpu.power_w ? (gpu.power_w.min === gpu.power_w.max ? `${gpu.power_w.max} W` : `${gpu.power_w.min}–${gpu.power_w.max} W`) : "sin dato"}.
+                      </>}
                 </span>
               </div>
             )}
