@@ -112,7 +112,7 @@ export default async function CpuPage({ params }: Props) {
       ) : cpu.platform === "mobile" ? (
         <LaptopCpuScores cpu={clientCpu} igpu={igpu} gpus={scoredGpus("mobile")} config={getProfiles()} topGpu={tops.gpuGaming} />
       ) : (
-        <DesktopCpuSection cpu={clientCpu} igpu={igpu} gpus={scoredGpus("desktop")} config={getProfiles()} />
+        <DesktopCpuSection cpu={clientCpu} igpu={igpu} gpus={scoredGpus("desktop")} config={getProfiles()} topGpu={tops.gpuGaming} />
       )}
 
       <h2>Índices de rendimiento</h2>
