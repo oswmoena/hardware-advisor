@@ -1,0 +1,87 @@
+# CI en cada PR (tests + build) y publicación en oswallmoena.cl/apps/hardware-advisor
+# en cada push a main. Secretos necesarios (Settings → Secrets and variables → Actions):
+#   DEPLOY_HOST         IP o dominio del droplet
+#   DEPLOY_USER         usuario de despliegue (p. ej. deploy)
+#   DEPLOY_SSH_KEY      clave privada SSH de ese usuario (solo para este workflow)
+#   DEPLOY_KNOWN_HOSTS  salida de `ssh-keyscan -t ed25519 <host>`
+name: CI/CD
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Nunca dos publicaciones a la vez; una nueva espera a que termine la anterior.
+concurrency:
+  group: ci-cd-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Tests
+        run: npm test
+
+      - name: Build estático para el portafolio
+        run: npm run build:portfolio
+
+      - name: Comprobar el export
+        run: |
+          test -f out/index.html
+          test -f out/404.html
+          grep -q 'action="/apps/hardware-advisor/buscar"' out/index.html
+          echo "Páginas generadas: $(find out -name '*.html' | wc -l)"
+
+      # --- Publicación: solo en push a main (o lanzada a mano) ---
+
+      - name: Configurar SSH
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        env:
+          SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          KNOWN_HOSTS: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
+        run: |
+          if [ -z "$SSH_KEY" ] || [ -z "$KNOWN_HOSTS" ]; then
+            echo "::error::Faltan los secretos DEPLOY_SSH_KEY / DEPLOY_KNOWN_HOSTS"
+            exit 1
+          fi
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          printf '%s\n' "$KNOWN_HOSTS" > ~/.ssh/known_hosts
+
+      - name: Publicar con rsync
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        env:
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+        # --delay-updates: los archivos nuevos se activan todos juntos al final;
+        # --delete-delay: lo que sobra se borra después, sin dejar el sitio a medias.
+        run: |
+          rsync -az --delete-delay --delay-updates \
+            -e "ssh -i ~/.ssh/deploy_key -o IdentitiesOnly=yes" \
+            out/ "$DEPLOY_USER@$DEPLOY_HOST:/var/www/apps/hardware-advisor/"
+
+      - name: Verificar en producción
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        run: |
+          base=https://oswallmoena.cl/apps/hardware-advisor
+          curl -fsS "$base/" | grep -q '<title>Hardware Advisor'
+          curl -fsS -o /dev/null "$base/buscar"
+          curl -fsS -o /dev/null "$base/sitemap.xml"
+          echo "Publicado: $base/"

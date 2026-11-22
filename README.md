@@ -54,6 +54,9 @@ servidor de archivos, sin proceso Node. Variables de build:
 
 ### Publicar en el portafolio (nginx)
 
+Cada push a `main` se publica solo con GitHub Actions (`.github/workflows/ci-cd.yml`): tests,
+build y `rsync` al servidor. En los PR solo corren los tests y el build. Para publicar a mano:
+
 ```sh
 npm run build:portfolio
 rsync -az --delete out/ usuario@servidor:/var/www/apps/hardware-advisor/
