@@ -61,6 +61,10 @@ rsync -az --delete out/ usuario@servidor:/var/www/apps/hardware-advisor/
 
 ```nginx
 # Dentro del server {} de oswallmoena.cl. Los archivos viven en /var/www/apps/hardware-advisor/.
+# Sin barra final, la ruta caería en `location /` (el portafolio). Next también la pide al navegar.
+location = /apps/hardware-advisor {
+    return 301 /apps/hardware-advisor/;
+}
 location /apps/hardware-advisor/ {
     root /var/www;
     try_files $uri $uri.html $uri/index.html =404;
@@ -68,8 +72,7 @@ location /apps/hardware-advisor/ {
 }
 location /apps/hardware-advisor/_next/static/ {
     root /var/www;
-    expires 1y;
-    add_header Cache-Control "public, immutable";
+    add_header Cache-Control "public, max-age=31536000, immutable";
 }
 ```
 
