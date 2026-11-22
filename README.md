@@ -51,7 +51,7 @@ servidor de archivos, sin proceso Node. Variables de build:
 | `NEXT_PUBLIC_SITE_URL` | URL pública completa, incluida la ruta base (p. ej. `https://oswallmoena.cl/apps/hardware-advisor`). Se usa en canónicas, sitemap y datos estructurados. |
 | `NEXT_PUBLIC_BASE_PATH` | Ruta bajo la que se publica (p. ej. `/apps/hardware-advisor`). Vacía = raíz del dominio. |
 | `NEXT_PUBLIC_PORTFOLIO_URL` | Si se define, muestra la barra del portafolio (volver, otras apps, ver código). |
-| `NEXT_PUBLIC_GA_ID` | ID de Google Analytics 4 (`G-XXXX`). En CI viene de la variable del repo `PUBLIC_GA_ID`; sin ella no se mide. |
+| `NEXT_PUBLIC_GA_ID` | ID de Google Analytics 4 (`G-XXXX`). En CI viene de la variable del repo `PUBLIC_GA_ID`; sin ella no se mide. | Con Consent Mode v2: analítica denegada por defecto en UE/EEE, Reino Unido y Suiza; aviso para zona horaria europea; elección compartida con el portafolio en `localStorage["om-consent"]`. |
 
 ### Publicar en el portafolio (nginx)
 

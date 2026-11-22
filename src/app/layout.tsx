@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Link from "next/link";
-import { Analytics } from "@/components/Analytics.tsx";
+import { Analytics, GA_ENABLED } from "@/components/Analytics.tsx";
 import { PortfolioBar } from "@/components/PortfolioBar.tsx";
 import { SITE_NAME, SITE_URL } from "@/lib/present.ts";
 import "./globals.css";
@@ -34,6 +34,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <p>
               Las notas son estimaciones propias. En los índices, 100 = el mejor procesador o tarjeta gráfica actual.
             </p>
+            {GA_ENABLED && (
+              <p>
+                <button type="button" className="link-button" data-cookie-prefs>
+                  Preferencias de cookies
+                </button>
+              </p>
+            )}
           </div>
         </footer>
         <Analytics />
