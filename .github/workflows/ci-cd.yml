@@ -39,6 +39,9 @@ jobs:
         run: npm test
 
       - name: Build estático para el portafolio
+        # NEXT_PUBLIC_GA_ID: variable del repo con el ID de Google Analytics 4 (G-XXXX). Vacía = sin medición.
+        env:
+          NEXT_PUBLIC_GA_ID: ${{ vars.PUBLIC_GA_ID }}
         run: npm run build:portfolio
 
       - name: Comprobar el export
