@@ -38,18 +38,49 @@ Las notas de 0 a 10 por uso **no se guardan**: se calculan con `scoring/profiles
 ```sh
 npm install
 npm run dev          # http://localhost:3000
-npm run build        # genera una página estática por chip + sitemap
+npm run build        # exporta el sitio estático completo a out/
+npm run build:portfolio  # igual, pero para publicarlo en oswallmoena.cl/apps/hardware-advisor
 npm test             # tests del motor de puntuación y la búsqueda
 ```
 
-En producción define `NEXT_PUBLIC_SITE_URL` (p. ej. `https://midominio.cl`): se usa para
-las URLs canónicas, el sitemap y los datos estructurados.
+El sitio es 100 % estático (`output: "export"`): `out/` se puede servir con nginx o cualquier
+servidor de archivos, sin proceso Node. Variables de build:
+
+| Variable | Para qué |
+|---|---|
+| `NEXT_PUBLIC_SITE_URL` | URL pública completa, incluida la ruta base (p. ej. `https://oswallmoena.cl/apps/hardware-advisor`). Se usa en canónicas, sitemap y datos estructurados. |
+| `NEXT_PUBLIC_BASE_PATH` | Ruta bajo la que se publica (p. ej. `/apps/hardware-advisor`). Vacía = raíz del dominio. |
+| `NEXT_PUBLIC_PORTFOLIO_URL` | Si se define, muestra la barra del portafolio (volver, otras apps, ver código). |
+
+### Publicar en el portafolio (nginx)
+
+```sh
+npm run build:portfolio
+rsync -az --delete out/ usuario@servidor:/var/www/apps/hardware-advisor/
+```
+
+```nginx
+# Dentro del server {} de oswallmoena.cl. Los archivos viven en /var/www/apps/hardware-advisor/.
+location /apps/hardware-advisor/ {
+    root /var/www;
+    try_files $uri $uri.html $uri/index.html =404;
+    error_page 404 /apps/hardware-advisor/404.html;
+}
+location /apps/hardware-advisor/_next/static/ {
+    root /var/www;
+    expires 1y;
+    add_header Cache-Control "public, immutable";
+}
+```
+
+Cada página pesa unos 140 KB de HTML (unos 16 KB con gzip), porque las fichas de CPU incluyen
+la lista de GPUs para armar combinaciones; conviene tener `gzip on;` en nginx.
 
 | Ruta | Qué es |
 |---|---|
 | `/` | búsqueda en vivo de CPUs y GPUs |
 | `/cpu/[id]`, `/gpu/[id]` | ficha estática e indexable de cada chip; las CPUs de escritorio incluyen las GPUs recomendadas con un equipo de ejemplo editable |
-| `/buscar?q=` | resultados sin JavaScript (no indexada) |
+| `/buscar?q=` | destino del formulario de búsqueda; lee `?q=` en el navegador (no indexada) |
 | `/sitemap.xml`, `/robots.txt` | SEO |
 
 El código de la app está en `src/`: `src/lib/scoring.ts` (motor de puntuación, lógica pura),

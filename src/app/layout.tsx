@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Link from "next/link";
+import { PortfolioBar } from "@/components/PortfolioBar.tsx";
 import { SITE_NAME, SITE_URL } from "@/lib/present.ts";
 import "./globals.css";
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="es">
       <body>
+        <PortfolioBar />
         <header className="site-header">
           <div className="container">
             <Link href="/" className="brand">

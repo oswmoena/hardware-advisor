@@ -4,7 +4,13 @@ import { scoreSystem, type ProfileResult, type ProfilesConfig } from "./scoring.
 import type { SearchItem } from "./search.ts";
 
 export const SITE_NAME = "Hardware Advisor";
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+/** URL pública completa de la app, incluida la ruta base si la hay (sin barra final). */
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000").replace(/\/$/, "");
+/** Ruta base cuando la app vive dentro de otro sitio (p. ej. "/apps/hardware-advisor"). Vacía en la raíz. */
+export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+/** Portafolio que aloja la app. Si está definido, se muestra su barra sobre el sitio. */
+export const PORTFOLIO_URL = (process.env.NEXT_PUBLIC_PORTFOLIO_URL ?? "").replace(/\/$/, "");
+export const REPO_URL = "https://github.com/oswmoena/hardware-advisor";
 export const ASSUMED_RAM_GB = 16;
 
 export const cpuTag = (cpu: CPU) => (cpu.platform === "mobile" ? "Laptop" : "Escritorio");
