@@ -5,12 +5,16 @@ export interface Crumb {
   href: string;
 }
 
+// Une la URL del sitio (que puede incluir una ruta base) con una ruta interna. `new URL("/x", base)`
+// descartaría la ruta base, por eso se concatena.
+const absoluteUrl = (siteUrl: string, href: string) => `${siteUrl.replace(/\/$/, "")}${href === "/" ? "/" : href}`;
+
 // Migas de pan visibles + datos estructurados BreadcrumbList para buscadores.
 export function Breadcrumbs({ items, siteUrl }: { items: Crumb[]; siteUrl: string }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: items.map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.name, item: new URL(c.href, siteUrl).toString() })),
+    itemListElement: items.map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.name, item: absoluteUrl(siteUrl, c.href) })),
   };
   return (
     <nav aria-label="Ruta de navegación" className="breadcrumbs">

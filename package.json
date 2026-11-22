@@ -13,7 +13,7 @@
     "import:cpus": "node scripts/import-cpus.mjs",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "build:portfolio": "NEXT_PUBLIC_BASE_PATH=/apps/hardware-advisor NEXT_PUBLIC_SITE_URL=https://oswallmoena.cl/apps/hardware-advisor NEXT_PUBLIC_PORTFOLIO_URL=https://oswallmoena.cl next build",
     "test": "node --experimental-strip-types --no-warnings --test src/lib/*.test.ts scripts/lib/*.test.mjs",
     "types:gen": "node scripts/gen-types.mjs",
     "import:gpus": "node scripts/import-gpus.mjs",

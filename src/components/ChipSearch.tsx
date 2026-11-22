@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useDeferredValue, useId, useMemo, useState } from "react";
+import { BASE_PATH } from "@/lib/present.ts";
 import { searchChips, type SearchItem } from "@/lib/search.ts";
 
 // Búsqueda con resultados en vivo. Sin JavaScript, el formulario GET lleva a /buscar.
@@ -13,7 +14,7 @@ export function ChipSearch({ items, initialQuery = "" }: { items: SearchItem[]; 
 
   return (
     <search>
-      <form action="/buscar" method="GET" className="search-form">
+      <form action={`${BASE_PATH}/buscar`} method="GET" className="search-form">
         <label htmlFor={`${id}-q`}>Procesador o tarjeta gráfica</label>
         <div className="search-row">
           <input

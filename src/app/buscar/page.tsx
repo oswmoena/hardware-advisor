@@ -1,19 +1,22 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { ChipSearch } from "@/components/ChipSearch.tsx";
+import { SearchFromUrl } from "@/components/SearchFromUrl.tsx";
 import { getCpus, getGpus } from "@/lib/data.ts";
 import { toSearchItem } from "@/lib/present.ts";
 
-// Página de resultados para cuando el formulario se envía sin JavaScript. No se indexa.
+// Destino del formulario de búsqueda (GET ?q=). El sitio es estático, así que la consulta se lee en el
+// navegador; mientras carga se muestra el buscador vacío. No se indexa.
 export const metadata: Metadata = { title: "Buscar", robots: { index: false, follow: true } };
 
-export default async function SearchPage({ searchParams }: { searchParams: Promise<{ q?: string | string[] }> }) {
-  const { q } = await searchParams;
-  const query = (Array.isArray(q) ? q[0] : q) ?? "";
+export default function SearchPage() {
   const items = [...getCpus().map((c) => toSearchItem(c, "cpu")), ...getGpus().map((g) => toSearchItem(g, "gpu"))];
   return (
     <>
       <h1>Buscar</h1>
-      <ChipSearch items={items} initialQuery={query} />
+      <Suspense fallback={<ChipSearch items={items} />}>
+        <SearchFromUrl items={items} />
+      </Suspense>
     </>
   );
 }
