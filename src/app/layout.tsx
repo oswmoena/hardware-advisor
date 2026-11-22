@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Link from "next/link";
+import { Analytics } from "@/components/Analytics.tsx";
 import { PortfolioBar } from "@/components/PortfolioBar.tsx";
 import { SITE_NAME, SITE_URL } from "@/lib/present.ts";
 import "./globals.css";
@@ -35,6 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </p>
           </div>
         </footer>
+        <Analytics />
       </body>
     </html>
   );
